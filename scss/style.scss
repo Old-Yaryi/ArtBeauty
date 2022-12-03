@@ -43,8 +43,27 @@
   font-style: normal;
 }
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,400&display=swap');
-h1 {
-  font-family: 'Kudryashev Display';
-  font-size: 52px;
-  color: black;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+// ****************COLOR**************************
+$bcgr-primary: #F0E3DA;
+$bcgr-accent: #EACFBC;
+$bcgr-offer_bej: #D1AE8E;
+$bcgr-offer_dark:#1D1D1A;
+// **********************************************
+body {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  color: #1D1D1A;
+}
+header {
+  color: #fff ;
+  background-image: url(../img/Header_bgr.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.container {
+  max-width: 1420px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
 }
