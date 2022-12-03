@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Kudryashev Display';
+  src: url("../font/KudryashevDisplay-Sans.eot");
+  src: local("../Kudryashev Display Sans"), local("KudryashevDisplay-Sans"), url("../font/KudryashevDisplay-Sans.eot?#iefix") format("embedded-opentype"), url("../font/KudryashevDisplay-Sans.woff2") format("woff2"), url("../font/KudryashevDisplay-Sans.woff") format("woff"), url("../font/KudryashevDisplay-Sans.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kudryashev Headline';
+  src: url("../font/KudryashevHeadline.eot");
+  src: local("../font/Kudryashev Headline"), local("KudryashevHeadline"), url("../font/KudryashevHeadline.eot?#iefix") format("embedded-opentype"), url("../font/KudryashevHeadline.woff2") format("woff2"), url("../font/KudryashevHeadline.woff") format("woff"), url("../font/KudryashevHeadline.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kudryashev Display';
+  src: url("../font/KudryashevDisplay.eot");
+  src: local("../font/Kudryashev Display"), local("KudryashevDisplay"), url("../font/KudryashevDisplay.eot?#iefix") format("embedded-opentype"), url("../font/KudryashevDisplay.woff2") format("woff2"), url("../font/KudryashevDisplay.woff") format("woff"), url("../font/KudryashevDisplay.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kudryashev Headline';
+  src: url("../font/KudryashevHeadline-Sans.eot");
+  src: local("../font/Kudryashev Headline Sans"), local("KudryashevHeadline-Sans"), url("../font/KudryashevHeadline-Sans.eot?#iefix") format("embedded-opentype"), url("../font/KudryashevHeadline-Sans.woff2") format("woff2"), url("../font/KudryashevHeadline-Sans.woff") format("woff"), url("../font/KudryashevHeadline-Sans.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+h1 {
+  font-family: 'Kudryashev Display';
+  font-size: 50px;
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */
