@@ -64,14 +64,127 @@ header {
   background-image: url(../img/Header_bgr.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position-y: 0;
+  position: relative;
   & a {
     color: #fff;
   }
 }
 .container {
   max-width: 1420px;
-  width: 100%;
   margin: 0 auto;
   padding: 0 10px;
+}
+.join {
+  position: relative;
+  height: 50vh;
+  &__ellips_wite {
+    position: absolute;
+  }
+  &__ellips_wite-small {
+    position: absolute;
+    top: -5px;
+  }
+
+}
+.header {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 68px;
+    &-inner {
+      display: flex;
+      column-gap: 30px;
+      align-items: center;
+      &.social {
+        margin-right: 30px;
+      }
+    }
+    &_logo {
+      width: 17vw;
+      height: auto;
+    }
+    &-title, &-adress, &-adress_link {
+      font-size: 14px;
+      line-height: 158.9%;
+    }
+    &-title {
+      width: 175px;
+    }
+    &-adress {
+      position: relative;
+      &::before {
+        position: absolute;
+        content: url(../img/Adress_before.svg);
+        bottom: 2px;
+        right: -20px;
+        cursor: pointer;
+      }
+    }
+    &-call {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      &_tel {
+        font-family: 'Kudryashev Headline';
+        font-size: 22px;
+        line-height: 26px;
+        letter-spacing: 0.05em;
+        font-weight: 700;
+        position: relative;
+        &::before{
+          position: absolute;
+          content: url(../img/Adress_before.svg);
+          right: -20px;
+          top: -5px;
+          cursor: pointer;
+        }
+      }
+      &_call {
+        text-transform: lowercase;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        margin-top: 13px;
+        border: none;
+        background: none;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+    
+  }
+  &__title {
+    width: 580px;
+    & h1 {
+      font-family: 'Kudryashev Headline';
+      font-weight: 400;
+      font-size: 60px;
+      line-height: 131.2%;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+      margin-bottom: 60px;
+      & span {
+        font-size: 80px;
+      }
+    }
+    & p {
+      font-size: 23px;
+      line-height: 164.9%;
+      width: 380px;
+      margin-bottom: 35px;
+    }
+  }
+  &__texture {
+    &-cell {
+      position: absolute;
+      right: 92px;
+      top: 0;
+    }
+    &-ellipse {
+      position: absolute;
+      top: 335px;
+      right: 210px;
+    }
+  }
 }
