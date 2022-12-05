@@ -63,16 +63,56 @@ header a {
 
 .join {
   position: relative;
-  height: 50vh;
+  height: 45vh;
 }
 
-.join__ellips_wite {
+.join-ellips {
   position: absolute;
+  pointer-events: none;
 }
 
-.join__ellips_wite-small {
+.join-ellips__small {
   position: absolute;
   top: -5px;
+  left: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.join-ellips__small:hover {
+  top: 2px;
+  left: 13px;
+}
+
+.join__link {
+  top: 20%;
+  position: absolute;
+  left: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.join__link-action {
+  width: 320px;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-left: 16px;
+  -webkit-transition: margin-left 0.3s ease 0s;
+  transition: margin-left 0.3s ease 0s;
+}
+
+.join__link-action:hover {
+  margin-left: 26px;
+}
+
+.header {
+  margin-bottom: 93px;
 }
 
 .header__top {
@@ -195,11 +235,13 @@ header a {
   position: absolute;
   right: 92px;
   top: 0;
+  pointer-events: none;
 }
 
 .header__texture-ellipse {
   position: absolute;
   top: 335px;
   right: 210px;
+  pointer-events: none;
 }
 /*# sourceMappingURL=style.css.map */

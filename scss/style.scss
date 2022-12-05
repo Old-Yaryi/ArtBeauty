@@ -77,17 +77,46 @@ header {
 }
 .join {
   position: relative;
-  height: 50vh;
-  &__ellips_wite {
+  height: 45vh;
+  &-ellips {
     position: absolute;
+    pointer-events: none;
   }
-  &__ellips_wite-small {
+  &-ellips__small {
     position: absolute;
     top: -5px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    &:hover {
+      top: 2px;
+      left: 13px;
+    }
+  }
+  &__link {
+    top: 20%;
+    position: absolute;
+    left: 35px;
+    display: flex;
+    &-action {
+      width: 320px;
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 30px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      cursor: pointer;
+      margin-left: 16px;
+      transition: margin-left 0.3s ease 0s;
+      &:hover {
+        margin-left: 26px;
+      }
+    }
   }
 
 }
 .header {
+  margin-bottom: 93px;
   &__top {
     display: flex;
     justify-content: space-between;
@@ -180,11 +209,14 @@ header {
       position: absolute;
       right: 92px;
       top: 0;
+      pointer-events: none;
     }
     &-ellipse {
       position: absolute;
       top: 335px;
       right: 210px;
+      pointer-events: none;
     }
+    
   }
 }
