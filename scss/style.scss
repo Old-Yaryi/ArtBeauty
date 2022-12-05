@@ -120,6 +120,7 @@ header {
 
 }
 .header {
+  margin-bottom: -3px;
   &__top {
     display: flex;
     justify-content: space-between;
@@ -228,6 +229,7 @@ header {
 }
 .inner {
   width: 50%;
+  position: relative;
 }
 .texture {
   position: absolute;
@@ -314,5 +316,12 @@ header {
   }
 }
 .thread {
-
+  &__inner-img {
+    &::before {
+      position: absolute;
+      content: "";
+      width: 832px;
+      
+    }
+  }
 }
