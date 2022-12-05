@@ -54,7 +54,7 @@ body {
   font-family: 'Montserrat';
   font-weight: 400;
   color: #1D1D1A;
-  
+  background-color: $bcgr-primary;
 }
 a {
   text-decoration: none;
@@ -80,7 +80,7 @@ header {
   height: 45vh;
   &-ellips {
     position: absolute;
-    pointer-events: none;
+    cursor: pointer;
   }
   &-ellips__small {
     position: absolute;
@@ -98,6 +98,7 @@ header {
     position: absolute;
     left: 35px;
     display: flex;
+    top: 45px;
     &-action {
       width: 320px;
       font-weight: 600;
@@ -111,12 +112,14 @@ header {
       &:hover {
         margin-left: 26px;
       }
+      &.black {
+        color: #1D1D1A
+      }
     }
   }
 
 }
 .header {
-  margin-bottom: 93px;
   &__top {
     display: flex;
     justify-content: space-between;
@@ -219,4 +222,97 @@ header {
     }
     
   }
+}
+.item {
+  display: flex;
+}
+.inner {
+  width: 50%;
+}
+.texture {
+  position: absolute;
+  content: url(../img/texture_cell.svg);
+  margin-left: 33.33%;
+  margin-top: -93px;
+  z-index: 1;
+}
+.problem {
+  padding-top: 93px;
+  padding-bottom: 120px;
+  margin-bottom: 120px;
+  position: relative;
+  background-color: #fff;
+  &-title {
+    font-family: 'Kudryashev Display';
+    font-weight: 400;
+    font-size: 89px;
+    line-height: 105%;
+    letter-spacing: 4.96px;
+    text-transform: uppercase;
+    margin-left: -156px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+  }
+  &-subtitle {
+    font-family: 'Kudryashev Display';
+    font-weight: 400;
+    font-size: 77px;
+    line-height: 60%;
+    letter-spacing: 4.96px;
+    text-transform: uppercase;
+    color: #B68C6E;
+    margin-bottom: 60px;
+    & span {
+      font-family: 'Montserrat';
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 105%;
+      text-transform: uppercase;
+      color: #312C38;
+    }
+  }
+  & .inner {
+    & .join {
+      height: 152px;
+    }
+  }
+  &__img {
+    position: relative;
+    z-index: 0;
+    &::after {
+      position: absolute;
+      content: "";
+      background: $bcgr-primary;
+      height: 385px;
+      width: 710px;
+      left: -132px;
+      bottom: -70px;
+      z-index: -1;
+    }
+    &-problem {
+      position: absolute;
+      bottom: 32px;
+      left: -70px;
+    }
+  }
+  &-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+    margin-bottom: 135px;
+    &__item {
+      display: flex;
+      column-gap: 25px;
+      align-items: center;
+    }
+    &__text {
+      width: 210px;
+    }
+  }
+}
+.thread {
+
 }
