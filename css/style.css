@@ -524,6 +524,13 @@ header a {
   line-height: 200%;
 }
 
+.thread__banner {
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  z-index: 5;
+}
+
 .how-item {
   padding-right: 55px;
 }
@@ -547,6 +554,11 @@ header a {
   width: 100%;
   top: 0;
   z-index: -2;
+}
+
+.how .inner.step {
+  padding-top: 66px;
+  margin-left: 28px;
 }
 
 .how-video__block {
@@ -618,5 +630,102 @@ header a {
 .how-list__link span {
   color: #B68C6E;
   text-decoration: underline;
+}
+
+.how-title {
+  font-family: 'Kudryashev Display';
+  font-weight: 400;
+  font-size: 85px;
+  line-height: 90%;
+  color: #1D1D1A;
+  margin-left: -185px;
+  margin-bottom: 62px;
+}
+
+.how-title span {
+  color: #B68C6E;
+}
+
+.how-step {
+  padding-bottom: 14px;
+  margin-bottom: 75px;
+}
+
+.how-step__item {
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.how-step__item-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 44px;
+}
+
+.how-step__item-counter {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 180%;
+  color: #22211E;
+  margin-top: -10px;
+  margin-right: 20px;
+}
+
+.how-step__item-move {
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 138.2%;
+  color: #1D1D1A;
+  width: 200px;
+}
+
+.how-step__item-text {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 180%;
+  color: #1D1D1A;
+  width: 460px;
+}
+
+.how-desription {
+  margin-bottom: 120px;
+}
+
+.how-desription__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: #B68C6E 1px solid;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 0 20px;
+}
+
+.how-desription__item-name {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 134%;
+  text-transform: uppercase;
+  color: #1D1D1A;
+}
+
+.how-desription__item-value {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 105%;
+  color: #1D1D1A;
 }
 /*# sourceMappingURL=style.css.map */

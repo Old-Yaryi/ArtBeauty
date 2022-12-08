@@ -447,6 +447,12 @@ header {
       line-height: 200%;
     }
   }
+  &__banner {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    z-index: 5;
+  }
 }
 .how {
   &-item {
@@ -466,6 +472,10 @@ header {
       top: 0;
       z-index: -2;
     }  
+  }
+  & .inner.step {
+    padding-top: 66px;
+    margin-left: 28px;
   }
   &-video {
     &__block {
@@ -525,6 +535,81 @@ header {
       & span {
         color: #B68C6E;
         text-decoration: underline;
+      }
+    }
+  }
+  &-title {
+    font-family: 'Kudryashev Display';
+    font-weight: 400;
+    font-size: 85px;
+    line-height: 90%;
+    color: #1D1D1A;
+    margin-left: -185px;
+    margin-bottom: 62px;
+    & span {
+      color: $font-accent;
+    }
+  }
+  &-step {
+    padding-bottom: 14px;
+    margin-bottom: 75px;
+    &__item {
+      margin-bottom: 40px;
+      display: flex;
+      &-title {
+        display: flex;
+        margin-right: 44px;
+      }
+      &-counter {
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 180%;
+        color: #22211E;
+        margin-top: -10px;
+        margin-right: 20px;
+      }
+      &-move {
+        font-family: 'Lora';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 138.2%;
+        color: #1D1D1A;
+        width: 200px;
+      }
+      &-text {
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 180%;
+        color: #1D1D1A;
+        width: 460px;
+      }
+    }
+  }
+  &-desription {
+    margin-bottom: 120px;
+    &__item {
+      display: flex;
+      border-bottom: $font-accent 1px solid;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 0 20px;
+      &-name {
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 134%;
+        text-transform: uppercase;
+        color: #1D1D1A;
+      }
+      &-value {
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 105%;
+        color: #1D1D1A;
       }
     }
   }
