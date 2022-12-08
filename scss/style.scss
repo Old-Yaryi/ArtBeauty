@@ -614,3 +614,39 @@ header {
     }
   }
 }
+.benefit {
+  background-color: #fff;
+  padding: 110px 0 125px;
+  & h2 {
+    font-family: 'Kudryashev Display';
+    font-weight: 400;
+    font-size: 85px;
+    line-height: 90%;
+    color: #1D1D1A;
+    margin-bottom: 65px;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-img {
+    margin-bottom: 27px;
+  }
+  &-title {
+    margin-bottom: 15px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 138.2%;
+    text-transform: uppercase;
+    color: #22211E;
+  }
+  &-text {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+    color: #22211E;
+    width: 310px;
+  }
+}

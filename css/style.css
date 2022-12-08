@@ -728,4 +728,50 @@ header a {
   line-height: 105%;
   color: #1D1D1A;
 }
+
+.benefit {
+  background-color: #fff;
+  padding: 110px 0 125px;
+}
+
+.benefit h2 {
+  font-family: 'Kudryashev Display';
+  font-weight: 400;
+  font-size: 85px;
+  line-height: 90%;
+  color: #1D1D1A;
+  margin-bottom: 65px;
+}
+
+.benefit__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.benefit-img {
+  margin-bottom: 27px;
+}
+
+.benefit-title {
+  margin-bottom: 15px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 138.2%;
+  text-transform: uppercase;
+  color: #22211E;
+}
+
+.benefit-text {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 180%;
+  color: #22211E;
+  width: 310px;
+}
 /*# sourceMappingURL=style.css.map */
