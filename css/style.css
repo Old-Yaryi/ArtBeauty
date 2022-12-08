@@ -489,7 +489,7 @@ header a {
   line-height: 154%;
   color: #B68C6E;
   margin-bottom: 110px;
-  padding-bottom: 43px;
+  padding-bottom: 52px;
 }
 
 .thread__quote p {
@@ -507,7 +507,7 @@ header a {
       -ms-flex-pack: end;
           justify-content: flex-end;
   position: relative;
-  margin-bottom: 111px;
+  margin-bottom: 119px;
 }
 
 .thread__photo_3 {
@@ -522,5 +522,101 @@ header a {
   font-weight: 400;
   font-size: 18px;
   line-height: 200%;
+}
+
+.how-item {
+  padding-right: 55px;
+}
+
+.how .inner.video {
+  position: relative;
+  padding-top: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.how .inner.video::after {
+  position: absolute;
+  content: "";
+  background-color: #EACFBC;
+  height: 534px;
+  width: 100%;
+  top: 0;
+  z-index: -2;
+}
+
+.how-video__block {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.how-video__video {
+  z-index: -1;
+  right: 55px;
+}
+
+.how-video__play {
+  position: absolute;
+  top: 41%;
+  left: 43%;
+}
+
+.how-video__img {
+  position: absolute;
+  bottom: -10px;
+  right: -40px;
+}
+
+.how-video__img-1 {
+  position: relative;
+}
+
+.how-video__img-2 {
+  position: absolute;
+  top: 19%;
+  left: 8%;
+}
+
+.how-video__img-play {
+  position: absolute;
+  top: 30%;
+  left: 38%;
+  cursor: pointer;
+  -webkit-transition: top, left 0.3s ease 0s;
+  transition: top, left 0.3s ease 0s;
+}
+
+.how-video__img-play img {
+  width: 100%;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.how-video__img-play:hover {
+  top: 28%;
+  left: 36%;
+}
+
+.how-video__img-play:hover img {
+  width: 130%;
+}
+
+.how-list__link {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 190%;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #1D1D1A;
+}
+
+.how-list__link span {
+  color: #B68C6E;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */

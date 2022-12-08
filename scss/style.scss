@@ -49,6 +49,7 @@ $bcgr-primary: #F0E3DA;
 $bcgr-accent: #EACFBC;
 $bcgr-offer_bej: #D1AE8E;
 $bcgr-offer_dark:#1D1D1A;
+$font-accent: #B68C6E;
 // **********************************************
 body {
   font-family: 'Montserrat';
@@ -70,6 +71,7 @@ header {
     color: #fff;
   }
 }
+// *************BLOCKS***************
 .container {
   max-width: 1420px;
   margin: 0 auto;
@@ -119,7 +121,6 @@ header {
   }
 
 }
-// *************TEMLATE***************
 .item {
   display: flex;
 }
@@ -419,7 +420,7 @@ header {
       line-height: 154%;
       color: #B68C6E;
       margin-bottom: 110px;
-      padding-bottom: 43px;
+      padding-bottom: 52px;
     }
     & p {
       font-family: 'Montserrat';
@@ -432,7 +433,7 @@ header {
     display: flex;
     justify-content: flex-end;
     position: relative;
-    margin-bottom: 111px;
+    margin-bottom: 119px;
     &_3 {
       position: absolute;
       bottom: -70px;
@@ -444,6 +445,87 @@ header {
       font-weight: 400;
       font-size: 18px;
       line-height: 200%;
+    }
+  }
+}
+.how {
+  &-item {
+    padding-right: 55px;
+  }
+  & .inner.video {
+    position: relative;
+    padding-top: 160px;
+    display: flex;
+    justify-content: flex-end;
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: $bcgr-accent;
+      height: 534px;
+      width: 100%;
+      top: 0;
+      z-index: -2;
+    }  
+  }
+  &-video {
+    &__block {
+      position: relative;
+      margin-bottom: 100px;
+    }
+    &__video {
+      z-index: -1;
+      right: 55px;
+    }
+    &__play {
+      position: absolute;
+      top: 41%;
+      left: 43%;
+    }
+    &__img{
+      position: absolute;
+      bottom: -10px;
+      right: -40px;
+      &-1 {
+        position: relative;
+      }
+      &-2 {
+        position: absolute;
+        top: 19%;
+        left: 8%;
+      }
+      &-play {
+        position: absolute;
+        top: 30%;
+        left: 38%;
+        cursor: pointer;
+        transition: top, left 0.3s ease 0s;
+        & img {
+          width: 100%;
+          transition: all 0.3s ease 0s;
+        }
+        &:hover {
+          top: 28%;
+          left: 36%;
+          & img {
+          width: 130%;
+          }
+        }
+      }
+    }
+  }
+  &-list {
+    &__link {
+      font-family: 'Montserrat';
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 190%;
+      text-transform: uppercase;
+      cursor: pointer;
+      color: #1D1D1A;
+      & span {
+        color: #B68C6E;
+        text-decoration: underline;
+      }
     }
   }
 }
