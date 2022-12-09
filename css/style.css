@@ -777,10 +777,22 @@ header a {
 
 .example .texture {
   margin-top: 0;
+  pointer-events: none;
 }
 
 .example .inner.result {
   padding: 150px 0 0 160px;
+}
+
+.example .inner.slider {
+  padding-top: 100px;
+}
+
+.example .dragger::before {
+  position: absolute;
+  content: url(../img/example/example_ellipse_before.svg);
+  top: 0;
+  left: 0;
 }
 
 .example__title {

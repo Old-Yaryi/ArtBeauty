@@ -653,9 +653,19 @@ header {
 .example {
   & .texture {
     margin-top: 0;
+    pointer-events: none;
   }
   & .inner.result {
     padding: 150px 0 0 160px;
+  }
+  & .inner.slider {
+    padding-top: 100px;
+  }
+  & .dragger::before {
+    position: absolute;
+    content: url(../img/example/example_ellipse_before.svg);
+    top: 0;
+    left: 0;
   }
   &__title {
     margin-bottom: 72px;
