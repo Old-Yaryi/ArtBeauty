@@ -774,4 +774,51 @@ header a {
   color: #22211E;
   width: 310px;
 }
+
+.example .texture {
+  margin-top: 0;
+}
+
+.example .inner.result {
+  padding: 150px 0 0 160px;
+}
+
+.example__title {
+  margin-bottom: 72px;
+}
+
+.example__title-gold {
+  font-family: 'Kudryashev Display';
+  font-weight: 400;
+  font-size: 85px;
+  line-height: 109.7%;
+  color: #B68C6E;
+  margin-left: -100px;
+}
+
+.example__title-black {
+  font-family: 'Kudryashev Display';
+  font-weight: 400;
+  font-size: 120px;
+  line-height: 109.7%;
+  color: #1D1D1A;
+}
+
+.example__text {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 184.5%;
+  text-transform: uppercase;
+  color: #1D1D1A;
+  margin-bottom: 20px;
+}
+
+.example__text span {
+  color: #B68C6E;
+}
+
+.example .join {
+  margin-left: -100px;
+}
 /*# sourceMappingURL=style.css.map */
