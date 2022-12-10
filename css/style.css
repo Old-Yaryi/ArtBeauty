@@ -777,6 +777,7 @@ header a {
 
 .example {
   background-color: #fff;
+  padding-bottom: 95px;
 }
 
 .example .texture {
@@ -899,5 +900,39 @@ header a {
 
 .example .join {
   margin-left: -100px;
+  height: 25vh;
+}
+
+.exclusive {
+  text-align: center;
+}
+
+.exclusive h2 {
+  text-align: center;
+  font-family: 'Kudryashev Display';
+  font-weight: 400;
+  font-size: 85px;
+  line-height: 90%;
+  color: #1D1D1A;
+  margin-bottom: 45px;
+}
+
+.exclusive-ellipse {
+  margin-left: -610px;
+  margin-top: -125px;
+}
+
+.exclusive__slider-item {
+  height: 670px;
+}
+
+.exclusive__slider-wrapper {
+  width: 927px;
+  height: 670px;
+}
+
+.exclusive__slider-img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=style.css.map */
