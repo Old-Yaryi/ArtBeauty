@@ -750,6 +750,8 @@ header {
 }
 .exclusive{
   text-align: center;
+  margin-bottom: 150px;
+  position: relative;
   & h2 {
     text-align: center;
     font-family: 'Kudryashev Display';
@@ -760,19 +762,43 @@ header {
     margin-bottom: 45px;
   }
   &-ellipse {
-    margin-left: -610px;
-    margin-top: -125px;
+    position: absolute;
+    content: "";
+    margin-left: -28%;
+    top: 72px;
   }
   &__slider {
     &-item {
-      height: 670px;
+      // height: 670px;
+    }
+    &-inner {
+      overflow: hidden;
+      & .slick-list {
+        width: 140vw;
+        margin-left: -15vw;
+      }
+      & .slick-track {
+        & .slick-slide {
+          // margin-right: 50px;
+        }
+        & .slick-center img {
+          width: 100%;
+          margin-left: -28%;
+          padding: 0 100px;
+        }
+      }
     }
     &-wrapper {
-      width: 927px;
-      height: 670px;
+      // width: 927px;
+      // height: 536px;
+      // padding: 0 50px 0;
+      // margin-right: 50px;
     }
     &-img {
       object-fit: cover;
+      width: 75%;
+      padding: 15% 0 0;
+      
     }
   }
 }

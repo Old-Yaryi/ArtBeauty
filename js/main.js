@@ -33,4 +33,14 @@ $(document).ready(function(){
     cursor: 'ew-resize',
     dividingLine: 'solid 2px rgba(255, 255, 255, 1)'
   });
+
+
+  $('.exclusive__slider-inner').slick({
+    arrows: true,
+    dots: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    centerMode: true,
+    // appendArrows:'.example__slider-controls'
+  });
 });

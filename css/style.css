@@ -905,6 +905,8 @@ header a {
 
 .exclusive {
   text-align: center;
+  margin-bottom: 150px;
+  position: relative;
 }
 
 .exclusive h2 {
@@ -918,21 +920,31 @@ header a {
 }
 
 .exclusive-ellipse {
-  margin-left: -610px;
-  margin-top: -125px;
+  position: absolute;
+  content: "";
+  margin-left: -28%;
+  top: 72px;
 }
 
-.exclusive__slider-item {
-  height: 670px;
+.exclusive__slider-inner {
+  overflow: hidden;
 }
 
-.exclusive__slider-wrapper {
-  width: 927px;
-  height: 670px;
+.exclusive__slider-inner .slick-list {
+  width: 140vw;
+  margin-left: -15vw;
+}
+
+.exclusive__slider-inner .slick-track .slick-center img {
+  width: 100%;
+  margin-left: -28%;
+  padding: 0 100px;
 }
 
 .exclusive__slider-img {
   -o-object-fit: cover;
      object-fit: cover;
+  width: 75%;
+  padding: 15% 0 0;
 }
 /*# sourceMappingURL=style.css.map */
