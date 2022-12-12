@@ -41,6 +41,6 @@ $(document).ready(function(){
     slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: true,
-    // appendArrows:'.example__slider-controls'
+    appendArrows:'.exclusive__slider-controls'
   });
 });
