@@ -910,7 +910,7 @@ header a {
 }
 
 .exclusive {
-  margin-bottom: 150px;
+  margin-bottom: 233px;
   position: relative;
   height: 870px;
 }
@@ -1012,8 +1012,8 @@ header a {
   z-index: 5;
   position: absolute;
   bottom: 75px;
-  left: 31%;
-  padding: 76px 25px 82px;
+  left: 30%;
+  padding: 76px 35px 82px;
   background-color: #fff;
 }
 
@@ -1126,5 +1126,106 @@ header a {
   content: url(../img/exclusive_link_before.svg);
   top: -6px;
   right: -25px;
+}
+
+.exclusive__popup.close {
+  display: none;
+}
+
+.price {
+  margin-bottom: 177px;
+}
+
+.price__title {
+  margin-bottom: 75px;
+}
+
+.price__title h2 {
+  font-family: 'Kudryashev Display';
+  font-weight: 400;
+  font-size: 85px;
+  line-height: 90%;
+  width: 525px;
+}
+
+.price-service {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 112.2%;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-left: 85px;
+}
+
+.price-item {
+  margin-bottom: 25px;
+}
+
+.price-inner {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.price-inner__after {
+  width: 65px;
+  margin-right: 21px;
+  position: relative;
+}
+
+.price-inner__after::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #B68C6E;
+  top: -55px;
+}
+
+.price-inner__text {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 184.5%;
+  margin-right: 30px;
+  width: 300px;
+}
+
+.price-inner__price {
+  position: relative;
+}
+
+.price-inner__img_slim {
+  position: absolute;
+  top: -80px;
+  z-index: -1;
+}
+
+.price-inner__img_fat {
+  position: absolute;
+  top: -50px;
+  left: 40px;
+  z-index: -1;
+}
+
+.price-inner__sale {
+  font-family: 'Lora';
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 112.2%;
+  color: #FFFFFF;
+  margin-left: 60px;
+}
+
+.price-service {
+  cursor: pointer;
+}
+
+.price-service.prise__active + .price-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */

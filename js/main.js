@@ -1,5 +1,8 @@
-$(document).ready(function(){
 
+//////*************Jquerry**************/////
+$(document).ready(function(){
+  
+  // --**********SliderExamle**
   $('.example__slider').slick({
     arrows: true,
     dots: false,
@@ -8,7 +11,7 @@ $(document).ready(function(){
     appendArrows:'.example__slider-controls'
   });
 
-
+  // --***********Examle_Before/After**
   $('#aics').anyImageComparisonSlider({
     initialPosition: 0.5,
     autoAnimation: false,
@@ -34,7 +37,7 @@ $(document).ready(function(){
     dividingLine: 'solid 2px rgba(255, 255, 255, 1)'
   });
 
-
+  // --***********SliderExclusive**
   $('.exclusive__slider-inner').slick({
     arrows: true,
     dots: false,
@@ -43,4 +46,11 @@ $(document).ready(function(){
     centerMode: true,
     appendArrows:'.exclusive__slider-controls'
   });
+});
+
+//// ***************PopUpExclusive************////
+const popup = document.querySelector('.exclusive__popup');
+const close = document.querySelector('.exclusive__popup-close_x');
+close.addEventListener('click', function(){
+  popup.classList.toggle('close')
 });
