@@ -1,7 +1,7 @@
 
 //////*************Jquerry**************/////
 $(document).ready(function(){
-  
+
   // --**********SliderExamle**
   $('.example__slider').slick({
     arrows: true,
@@ -46,7 +46,17 @@ $(document).ready(function(){
     centerMode: true,
     appendArrows:'.exclusive__slider-controls'
   });
+
+// --************PriceList**
+  $(function(){
+    let service = $('.price-service');
+    service.on("click",function(){
+      service.removeClass('price-active')
+      $(this).toggleClass('price-active')
+    });
+  });
 });
+
 
 //// ***************PopUpExclusive************////
 const popup = document.querySelector('.exclusive__popup');
