@@ -1494,6 +1494,13 @@ header a {
   position: absolute;
   top: 30%;
   left: 23%;
-  opacity: 0.7;
+  opacity: 0.9;
+  cursor: pointer;
+  -webkit-transition: opacity 0.6s ease 0s;
+  transition: opacity 0.6s ease 0s;
+}
+
+.action-title__img:hover {
+  opacity: 0.3;
 }
 /*# sourceMappingURL=style.css.map */
