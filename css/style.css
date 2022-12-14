@@ -1280,4 +1280,220 @@ header a {
   bottom: 0;
   left: -75px;
 }
+
+.action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 110px;
+}
+
+.action-feedback {
+  padding-top: 120px;
+  width: 50%;
+  background-color: #1D1D1A;
+}
+
+.action-feedback__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.action-feedback__form_small {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 184.5%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+.action-feedback__form h3 {
+  font-family: 'Kudryashev Headline';
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 124%;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #B68C6E;
+  width: 550px;
+  margin-bottom: 50px;
+}
+
+.action-feedback__sale {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+
+.action-feedback__sale-price {
+  font-family: 'Kudryashev Display';
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 112.2%;
+  color: #FFFFFF;
+}
+
+.action-feedback__sale-through {
+  font-family: 'Kudryashev Display';
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 112.2%;
+  color: #504339;
+  text-decoration: line-through;
+}
+
+.action-feedback__userphone {
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.action-feedback__userphone-input {
+  width: 497px;
+  height: 93px;
+  border: 1px solid #B68C6E;
+  background: transparent;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 184.5%;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.action-feedback__userphone-input:focus {
+  outline: none;
+  text-align: center;
+}
+
+.action-feedback__userphone-input:focus + .action-feedback__userphone-placeholder {
+  display: none;
+}
+
+.action-feedback__userphone-placeholder {
+  position: absolute;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 184.5%;
+  text-transform: uppercase;
+  color: #504339;
+  left: 33%;
+  top: 33%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.action-feedback__btn {
+  width: 497px;
+  height: 93px;
+  border: 1px solid #B68C6E;
+  background: transparent;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 184.5%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 45px;
+  cursor: pointer;
+}
+
+.action-feedback__timer {
+  margin-bottom: 95px;
+}
+
+.action-feedback__timer p {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 138.2%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.action-feedback__timer-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 60px;
+          column-gap: 60px;
+  color: #B68C6E;
+}
+
+.action-feedback__timer-value {
+  font-family: 'Kudryashev Display';
+  font-weight: 400;
+  font-size: 57px;
+  line-height: 130.7%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.action-feedback__timer-value::before {
+  position: absolute;
+  content: ":";
+  top: -5px;
+  right: -30px;
+  height: 33px;
+  width: 7px;
+}
+
+.action-feedback__timer-value.last::before {
+  display: none;
+}
+
+.action-feedback__timer-param {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130.7%;
+  color: #504339;
+}
+
+.action-title {
+  padding: 120px 30px 0;
+  width: 50%;
+  background-color: #D1AE8E;
+  position: relative;
+}
+
+.action-title__item {
+  font-family: 'Kudryashev Display';
+  font-weight: 500;
+  font-size: 100px;
+  line-height: 185.7%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #1D1D1A;
+}
+
+.action-title__img {
+  position: absolute;
+  top: 30%;
+  left: 23%;
+  opacity: 0.7;
+}
 /*# sourceMappingURL=style.css.map */
