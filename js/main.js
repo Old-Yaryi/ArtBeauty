@@ -55,6 +55,20 @@ $(document).ready(function(){
       $(this).toggleClass('price-active')
     });
   });
+  $(function() { 
+    let filter = $("[data-service]")
+    filter.on("click", function() {
+      let category = $(this).data('service')
+      $("[data-photo]").each(function(){
+        let sphoto = $(this).data('photo')
+        if (sphoto == category) {
+          $(this).addClass('price-photo_active')
+        } else {
+          $(this).removeClass('price-photo_active')
+        }
+      });
+    });
+  });
 });
 
 
