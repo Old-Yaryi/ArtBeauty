@@ -1285,7 +1285,6 @@ header a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 110px;
 }
 
 .action-feedback {
@@ -1558,5 +1557,143 @@ header a {
   font-weight: 400;
   font-size: 18px;
   line-height: 163.9%;
+}
+
+.team {
+  background-color: #fff;
+  padding-bottom: 150px;
+}
+
+.team-title {
+  position: relative;
+}
+
+.team-title h2 {
+  font-family: 'Kudryashev Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 85px;
+  line-height: 112.2%;
+  color: #1D1D1A;
+  margin-bottom: 97px;
+}
+
+.team-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.team-inner {
+  position: relative;
+  height: 900px;
+  width: 360px;
+}
+
+.team-inner__link {
+  position: relative;
+  z-index: 1;
+}
+
+.team-inner__dermatolog {
+  position: absolute;
+  top: 325px;
+  z-index: 1;
+}
+
+.team-inner__dermatolog .team-inner__link::after {
+  position: absolute;
+  content: "";
+  width: 359px;
+  height: 393px;
+  background-color: #EACFBC;
+  bottom: 83px;
+  left: -71px;
+  z-index: -1;
+}
+
+.team-inner__dermatolog .team-inner__link::before {
+  position: absolute;
+  content: url(../img/team_ellipse.svg);
+  top: -215px;
+  left: -185px;
+}
+
+.team-inner__cosmetolog-1 {
+  margin-top: 62px;
+  z-index: 1;
+}
+
+.team-inner__cosmetolog-1::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 72px;
+  width: 346px;
+  height: 268px;
+  background-color: #EACFBC;
+}
+
+.team-inner__cosmetolog-1 .team-inner__unit {
+  position: absolute;
+  width: 290px;
+  z-index: 1;
+  top: 140px;
+  right: -304px;
+}
+
+.team-inner__cosmetolog-2 {
+  position: absolute;
+  bottom: 62px;
+}
+
+.team-inner__cosmetolog-2 .team-inner__link::before {
+  position: absolute;
+  content: "";
+  background-color: #EACFBC;
+  width: 357px;
+  height: 268px;
+  bottom: -62px;
+  right: -85px;
+}
+
+.team-inner__cosmetolog-2 .team-inner__unit {
+  position: absolute;
+  bottom: -20px;
+  left: -142px;
+  z-index: 1;
+}
+
+.team-inner__img {
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 47px;
+}
+
+.team-inner__img:hover:before {
+  position: absolute;
+  content: "";
+  background-image: url(../img/team_sertificate.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  bottom: 3px;
+  left: 0;
+  width: 100%;
+  height: 412px;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+}
+
+.team-inner__unit {
+  font-family: 'Kudryashev Display';
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 123.2%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #1D1D1A;
 }
 /*# sourceMappingURL=style.css.map */
