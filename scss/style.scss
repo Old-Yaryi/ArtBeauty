@@ -1239,3 +1239,45 @@ header {
     
   }
 }
+.advantage {
+  color: #22211E;
+  font-family: 'Montserrat';
+  background-color: #fff;
+  padding: 155px 0 187px;
+  & h2 {
+    width: 770px;
+    font-family: 'Kudryashev Display';
+    font-weight: 400;
+    font-size: 85px;
+    line-height: 112.2%;
+    margin-bottom: 65px;
+    & span {
+      color: #B68C6E;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 157px;
+  }
+  &__inner {
+    width: 361px;
+    margin-bottom: 64px;
+    &-img {
+      margin-bottom: 29px;
+    }
+    &-title {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 138.2%;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    &-text {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 163.9%;
+    }
+  }
+}

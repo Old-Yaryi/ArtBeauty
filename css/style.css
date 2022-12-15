@@ -1503,4 +1503,60 @@ header a {
 .action-title__img:hover {
   opacity: 0.3;
 }
+
+.advantage {
+  color: #22211E;
+  font-family: 'Montserrat';
+  background-color: #fff;
+  padding: 155px 0 187px;
+}
+
+.advantage h2 {
+  width: 770px;
+  font-family: 'Kudryashev Display';
+  font-weight: 400;
+  font-size: 85px;
+  line-height: 112.2%;
+  margin-bottom: 65px;
+}
+
+.advantage h2 span {
+  color: #B68C6E;
+}
+
+.advantage__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 157px;
+          column-gap: 157px;
+}
+
+.advantage__inner {
+  width: 361px;
+  margin-bottom: 64px;
+}
+
+.advantage__inner-img {
+  margin-bottom: 29px;
+}
+
+.advantage__inner-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 138.2%;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.advantage__inner-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 163.9%;
+}
 /*# sourceMappingURL=style.css.map */
