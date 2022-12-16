@@ -1014,6 +1014,7 @@ header {
   &-service.price-active {
     margin-top: 60px;
     transition: all 0.6s ease 0s;
+    color: $font-accent;
   }
   &-service.price-active + .price-inner {
     display: flex;
@@ -1354,7 +1355,7 @@ header {
     }
     &__cosmetolog-2 {
       position: absolute;
-      bottom: 62px;
+      bottom: 20px;
       & .team-inner__link {
         &::before {
           position: absolute;
@@ -1401,4 +1402,90 @@ header {
       color: #1D1D1A
     }
   }
+}
+.tour {
+  background-color: #fff;
+  padding-bottom: 170px;
+  &__title h2 {
+    font-family: 'Kudryashev Display';
+    font-weight: 400;
+    font-size: 85px;
+    line-height: 112.2%;
+    color: #1D1D1A;
+  }
+  &__categories {
+    display: flex;
+    justify-content: flex-end;
+    &__item {
+      width: 210px;
+      margin-right: 170px;
+    }
+    &-inner {
+      font-family: 'Montserrat';
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 138.2%;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      cursor: pointer;
+      position: relative;
+      &::after {
+        display: none;
+        position: absolute;
+        content: "";
+        background-color: $font-accent;
+        width: 65px;
+        height: 2px;
+        left: -85px;
+        top: 12px;
+      }
+      &.categories__active {
+        color: $font-accent;
+        &::after {
+          display: block;
+        }
+      }
+    }
+
+  }
+  &-slider {
+    position: relative;
+    &__cabinet {
+      position: relative;
+      &-item {
+        pointer-events: none;
+      }
+      & .slick-list {
+        margin-left: -8vw;
+      }
+      & .slick-track {
+        display: flex;
+        column-gap: 120px;
+      }
+      .slick-slide {
+        pointer-events: none;
+      }
+      & .slick-center {
+        & img {
+          padding: 0 150px;
+          width: 130%;
+          margin-left: -180px;
+        }
+      }
+      &-inner {
+        // &.slick-slide.slick-cloned.slick-active {
+        //   margin-top: 150px;
+        // } 
+      }
+      &-img {
+        width: 110%;
+      }
+    }
+    &__controls {
+      position: absolute;
+    }
+  }
+}
+.slick-track .slick-active:first-child {
+  margin-bottom: 150px;
 }

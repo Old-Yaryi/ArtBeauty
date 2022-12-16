@@ -1227,6 +1227,7 @@ header a {
   margin-top: 60px;
   -webkit-transition: all 0.6s ease 0s;
   transition: all 0.6s ease 0s;
+  color: #B68C6E;
 }
 
 .price-service.price-active + .price-inner {
@@ -1647,7 +1648,7 @@ header a {
 
 .team-inner__cosmetolog-2 {
   position: absolute;
-  bottom: 62px;
+  bottom: 20px;
 }
 
 .team-inner__cosmetolog-2 .team-inner__link::before {
@@ -1695,5 +1696,108 @@ header a {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #1D1D1A;
+}
+
+.tour {
+  background-color: #fff;
+  padding-bottom: 170px;
+}
+
+.tour__title h2 {
+  font-family: 'Kudryashev Display';
+  font-weight: 400;
+  font-size: 85px;
+  line-height: 112.2%;
+  color: #1D1D1A;
+}
+
+.tour__categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.tour__categories__item {
+  width: 210px;
+  margin-right: 170px;
+}
+
+.tour__categories-inner {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 138.2%;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+.tour__categories-inner::after {
+  display: none;
+  position: absolute;
+  content: "";
+  background-color: #B68C6E;
+  width: 65px;
+  height: 2px;
+  left: -85px;
+  top: 12px;
+}
+
+.tour__categories-inner.categories__active {
+  color: #B68C6E;
+}
+
+.tour__categories-inner.categories__active::after {
+  display: block;
+}
+
+.tour-slider {
+  position: relative;
+}
+
+.tour-slider__cabinet {
+  position: relative;
+}
+
+.tour-slider__cabinet-item {
+  pointer-events: none;
+}
+
+.tour-slider__cabinet .slick-list {
+  margin-left: -8vw;
+}
+
+.tour-slider__cabinet .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 120px;
+          column-gap: 120px;
+}
+
+.tour-slider__cabinet .slick-slide {
+  pointer-events: none;
+}
+
+.tour-slider__cabinet .slick-center img {
+  padding: 0 150px;
+  width: 130%;
+  margin-left: -180px;
+}
+
+.tour-slider__cabinet-img {
+  width: 110%;
+}
+
+.tour-slider__controls {
+  position: absolute;
+}
+
+.slick-track .slick-active:first-child {
+  margin-bottom: 150px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -69,7 +69,17 @@ $(document).ready(function(){
       });
     });
   });
-
+// --************SliderTour**
+$('.tour-slider__cabinet-item').slick({
+  infinite: true,
+  arrows: true,
+  dots: false,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  centerMode: true,
+  // centerPadding: '100px',
+  appendArrows:'.tour-slider__controls'
+});
 
   
 });
