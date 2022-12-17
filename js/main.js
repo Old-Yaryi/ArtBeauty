@@ -70,8 +70,8 @@ $(document).ready(function(){
     });
   });
 // --************SliderTour**
-$('.tour-slider__cabinet-item').slick({
-  infinite: true,
+$('.tour-slider__item').slick({
+  // infinite: true,
   arrows: true,
   dots: false,
   slidesToShow: 3,
