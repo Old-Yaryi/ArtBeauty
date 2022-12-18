@@ -20,7 +20,7 @@
           <div class="header__top-title">Нитевой лифтинг лица в Санкт-Петербурге</div>
           <div class="header__top-adress">
             <p>Санкт-Петербург,</p>
-            <a href="header__top-adress_link">пр. Просвещения, д.33, корп.2</a>
+            <a class="header__top-adress_link" href="#">пр. Просвещения, д.33, корп.2</a>
           </div>
         </div>
         <div class="header__top-inner social">
@@ -324,7 +324,7 @@
           </div>
           <div class="example__slider-controls"></div>
           <div class="example__after">
-            <img class="examle__after-img" src="./img/After.svg" alt="After">
+            <h5>After</h5>
           </div>
         </div>  
         <div class="inner result">
@@ -487,37 +487,49 @@
           <div class="price-photo__item price-photo_active" data-photo="brows">
             <div class="price-photo__inner">
               <img src="./img/price/brow.png" alt="brows">
-              <img class="price-photo__before" src="./img/price/Brows.svg" alt="brow">
+              <div class="price-photo__before">
+                <h5>Brows</h5>
+              </div>
             </div>
           </div>
           <div class="price-photo__item" data-photo="cheekbones">
             <div class="price-photo__inner">
               <img src="./img/price/sheki-skuly.png" alt="cheekbones">
-              <img class="price-photo__before" src="./img/price/cheekbones.svg" alt="brow">
+              <div class="price-photo__before">
+                <h5>Cheekbones</h5>
+              </div>
             </div>
           </div>
           <div class="price-photo__item" data-photo="nasolabial">
             <div class="price-photo__inner">
               <img src="./img/price/nosogub.png" alt="nasolabial">
-              <img class="price-photo__before" src="./img/price/nasolabial.svg" alt="nasolabial">
+              <div class="price-photo__before">
+                <h5>Nasolabial</h5>
+              </div>
             </div>
           </div>
           <div class="price-photo__item" data-photo="jowl">
             <div class="price-photo__inner">
               <img src="./img/price/bryli.png" alt="jowl">
-              <img class="price-photo__before" src="./img/price/jowl.svg" alt="jowl">
+              <div class="price-photo__before">
+                <h5>Jowl</h5>
+              </div>
             </div>
           </div>
           <div class="price-photo__item" data-photo="neck">
             <div class="price-photo__inner">
               <img src="./img/price/na_shee.png" alt="neck">
-              <img class="price-photo__before" src="./img/price/neck.svg" alt="neck">
+              <div class="price-photo__before">
+                <h5>Neck</h5>
+              </div>
             </div>
           </div>
           <div class="price-photo__item" data-photo="forehead">
             <div class="price-photo__inner">
               <img src="./img/price/na_lbu.png" alt="Forehead">
-              <img class="price-photo__before" src="./img/price/Forehead.svg" alt="Forehead">
+              <div class="price-photo__before">
+                <h5>Forehead</h5>
+              </div>
             </div>
           </div>
         </div>
@@ -657,16 +669,16 @@
         </div>
         <div class="tour__categories">
           <div class="tour__categories__item">
-            <div class="tour__categories-inner categories__active">Кабинеты</div>
-            <div class="tour__categories-inner">Ресепшн</div>
-            <div class="tour__categories-inner">Зал ожидания</div>
+            <div class="tour__categories-inner categories__active" data-categories="cabinets">Кабинеты</div>
+            <div class="tour__categories-inner" data-categories="recepton">Ресепшн</div>
+            <div class="tour__categories-inner" data-categories="hall">Зал ожидания</div>
           </div>
         </div>
       </div>
       
       <div class="tour-slider">
-        <div class="tour-slider__cabinet">
-          <div class="tour-slider__item">           
+        <div class="tour-slider__cabinet tour-slider__active" data-contur="cabinets">
+          <div class="tour-slider__item-cabinet">           
             <div class="tour-slider__inner">
               <img class="tour-slider__img" src="./img/tour/cabinet_1.jpg" alt="cabinet_1">
             </div>                     
@@ -684,12 +696,57 @@
             </div> 
           </div>
           <div class="tour-slider__categories">
-            <img src="./img/tour/cabinets.png" alt="cabinets">
+            <h5>Cabinets</h5>
           </div>
+          <div class="tour-slider__controls-cabinet"></div>
         </div>
-        <div class="tour-slider__reception"></div>
-        <div class="tour-slider__hall"></div>
-        <div class="tour-slider__controls"></div>
+        <div class="tour-slider__reception" data-contur="recepton">
+          <div class="tour-slider__item-reception">           
+            <div class="tour-slider__inner">
+              <img class="tour-slider__img" src="./img/tour/recepton_1.jpg" alt="recepton_1">
+            </div>                     
+            <div class="tour-slider__inner">
+              <img class="tour-slider__img" src="./img/tour/recepton_2.jpg" alt="recepton_2">
+            </div>                       
+            <div class="tour-slider__inner">
+              <img class="tour-slider__img" src="./img/tour/recepton_3.jpg" alt="recepton_3">
+            </div>            
+            <div class="tour-slider__inner">
+              <img class="tour-slider__img" src="./img/tour/recepton_4.jpg" alt="recepton_3">            
+            </div> 
+            <div class="tour-slider__inner">
+              <img class="tour-slider__img" src="./img/tour/recepton_5.jpg" alt="recepton_4">           
+            </div> 
+          </div>
+          <div class="tour-slider__categories">
+            <h5>Recepton</h5>
+          </div>
+          <div class="tour-slider__controls-recepton"></div>
+        </div>
+        <div class="tour-slider__hall" data-contur="hall">
+          <div class="tour-slider__item-hall">           
+            <div class="tour-slider__inner">
+              <img class="tour-slider__img" src="./img/tour/hall_1.jpg" alt="hall_1">
+            </div>                     
+            <div class="tour-slider__inner">
+              <img class="tour-slider__img" src="./img/tour/hall_2.jpg" alt="hall_2">
+            </div>                       
+            <div class="tour-slider__inner">
+              <img class="tour-slider__img" src="./img/tour/hall_3.jpg" alt="hall_3">
+            </div>            
+            <div class="tour-slider__inner">
+              <img class="tour-slider__img" src="./img/tour/hall_4.jpg" alt="hall_4">           
+            </div> 
+            <div class="tour-slider__inner">
+              <img class="tour-slider__img" src="./img/tour/hall_5.jpg" alt="hall_5">           
+            </div> 
+          </div>
+          <div class="tour-slider__categories">
+            <h5>Hall</h5>
+          </div>
+          <div class="tour-slider__controls-hall"></div>
+        </div>
+        
       </div>
       
     </div>

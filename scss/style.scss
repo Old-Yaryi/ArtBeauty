@@ -34,13 +34,24 @@
 @font-face {
   font-family: 'Kudryashev Headline';
   src: url('../font/KudryashevHeadline-Sans.eot');
-  src: local('../font/Kudryashev Headline Sans'), local('KudryashevHeadline-Sans'),
+  src: local('../font/Kudryashev Headline Sans'),
+       local('KudryashevHeadline-Sans'),
       url('../font/KudryashevHeadline-Sans.eot?#iefix') format('embedded-opentype'),
       url('../font/KudryashevHeadline-Sans.woff2') format('woff2'),
       url('../font/KudryashevHeadline-Sans.woff') format('woff'),
       url('../font/KudryashevHeadline-Sans.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
+}
+@font-face {
+	font-family: 'Quente Script';
+	src: url('../font/Quente_Script.eot');
+	src: local('../font/Quente_Script.eot'),
+       url('../font/Quente_Script.woff') format('woff'),
+      url('../font/Quente_Script.ttf') format('truetype'),
+      url('../font/Quente_Script.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
@@ -717,6 +728,11 @@ header {
     position: absolute;
     bottom: -90px;
     left: 75px;
+    & h5 {
+      font-family: 'Quente Script';
+      font-size: 92px;
+      font-weight: 400;
+    }
   }
   &__title {
     margin-bottom: 72px;
@@ -964,17 +980,17 @@ header {
   &-inner {
     display: none;
     align-items: center;
+    position: relative;
     &__after {
       width: 65px;
       margin-right: 21px;
-      position: relative;
       &::after {
         position: absolute;
         content: "";
-        width: 100%;
+        width: 65px;
         height: 2px;
         background-color: #B68C6E;
-        top: -55px;
+        top: -27px;
       }
     }
     &__text {
@@ -1055,7 +1071,12 @@ header {
     &__before {
       position: absolute;
       bottom: 0;
-      left: -75px;
+      left: -53px;
+      & h5 {
+        font-family: 'Quente Script';
+        font-size: 92px;
+        font-weight: 400;
+      }
     }
   }
 }
@@ -1378,7 +1399,7 @@ header {
       position: relative;
       cursor: pointer;
       margin-bottom: 47px;
-      &:hover:before {
+      &::before {
         position: absolute;
         content: "";
         background-image: url(../img/team_sertificate.png);
@@ -1386,10 +1407,16 @@ header {
         background-repeat: no-repeat;
         bottom: 3px;
         left: 0;
-        width: 100%;
-        height: 412px;
+        width: 0;
+        height: 0;
         background-color: rgba(255, 255, 255, 0.8);
         z-index: 1;
+        transition: all 0.6s ease 0s;
+        
+      }
+      &:hover:before {
+        width: 100%;
+        height: 412px;
       }
     }
     &__unit {
@@ -1424,8 +1451,6 @@ header {
     }
   }
   &__categories {
-    // display: flex;
-    // justify-content: flex-end;
     &__item {
       width: 210px;
       margin-right: 170px;
@@ -1470,68 +1495,76 @@ header {
       background-color: #fff;
       z-index: 2;
     }
-    &__cabinet {
+    &__cabinet, &__reception, &__hall {
       position: relative;
       overflow: hidden;
+      height: 0;
+      &.tour-slider__active {
+        height: 100%;
+      }
     }
-      &__item {
-        pointer-events: none;
-      }
-      & .slick-list {
-        margin-left: -5vw;
-      }
-      & .slick-track {
-        display: flex;
-        column-gap: 120px;
-        align-items: center;
-      }
-      &__inner {
-        &.slick-center {
-          & img {
-            padding: 0 150px;
-            width: 130%;
-            margin-left: -180px;
-          }
+    &__item-cabinet, &__item-reception {
+      pointer-events: none;
+    }
+    & .slick-list {
+      margin-left: -5vw;
+    }
+    & .slick-track {
+      display: flex;
+      column-gap: 120px;
+      align-items: center;
+    }
+    &__inner {
+      &.slick-center {
+        & img {
+          padding: 0 150px;
+          width: 130%;
+          margin-left: -180px;
         }
       }
-      &__img {
-        width: 110%;
-      }
-      &__controls {
-        position: absolute;
-        top: 38%;
-        display: flex;
-        justify-content: center;
-        left: 0;
-        right: 0;
-        column-gap: 385px;
-        & .slick-arrow {
-          height: 100px;
-          width: 100px;
-          background-color: #FFFFFF;
-          opacity: 0.6;
-          box-shadow: 0px 54px 100px rgba(0, 0, 0, 0.08);;
-          border: none;
-          font-size: 0;
-          &.slick-prev {
-            background-image: url(../img/example/examle_slider_arrow_left.svg);
-            background-repeat: no-repeat;
-            background-position: center;
-            cursor: pointer;
-          }
-          &.slick-next {
-            background-image: url(../img/example/examle_slider_arrow_right.svg);
-            background-repeat: no-repeat;
-            background-position: center;
-            cursor: pointer;
-          }
+    }
+    &__img {
+      width: 110%;
+    }
+    &__controls-cabinet, &__controls-recepton, &__controls-hall {
+      position: absolute;
+      top: 38%;
+      display: flex;
+      justify-content: center;
+      left: 0;
+      right: 0;
+      column-gap: 385px;
+      & .slick-arrow {
+        height: 100px;
+        width: 100px;
+        background-color: #FFFFFF;
+        opacity: 0.6;
+        box-shadow: 0px 54px 100px rgba(0, 0, 0, 0.08);;
+        border: none;
+        font-size: 0;
+        &.slick-prev {
+          background-image: url(../img/example/examle_slider_arrow_left.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+          cursor: pointer;
+        }
+        &.slick-next {
+          background-image: url(../img/example/examle_slider_arrow_right.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+          cursor: pointer;
         }
       }
-      &__categories {
-        position: absolute;
-        left: 315px;
-        bottom: 0;
-        
+    }
+    &__categories {
+      position: absolute;
+      left: 355px;
+      bottom: 0;
+      & h5 {
+        font-family: 'Quente Script';
+        font-size: 92px;
+        font-weight: 400;
       }
+    }
   }
 }

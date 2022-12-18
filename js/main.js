@@ -47,7 +47,7 @@ $(document).ready(function(){
     appendArrows:'.exclusive__slider-controls'
   });
 
-// --************PriceList**
+  // --************PriceList**
   $(function(){
     let service = $('.price-service');
     service.on("click",function(){
@@ -69,17 +69,59 @@ $(document).ready(function(){
       });
     });
   });
-// --************SliderTour**
-$('.tour-slider__item').slick({
+  // --************TourCategories**
+  $(function() {
+    let choice = $('.tour__categories-inner')
+    choice.on("click", function() {
+      choice.removeClass('categories__active')
+      $(this).toggleClass('categories__active')
+    });
+  });
+  $(function(){
+    let option = $("[data-categories]")
+    option.on("click", function(){
+      let tourCategories = $(this).data('categories') 
+      $("[data-contur]").each(function(){
+        let tourSlider = $(this).data('contur')
+        if (tourCategories == tourSlider) {
+          $(this).addClass('tour-slider__active')
+        } else {
+          $(this).removeClass('tour-slider__active')
+        }
+      })
+    });
+  })
+  // --************TourSliders**
+  $('.tour-slider__item-cabinet').slick({
   // infinite: true,
-  arrows: true,
-  dots: false,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  centerMode: true,
-  // centerPadding: '100px',
-  appendArrows:'.tour-slider__controls'
-});
+    arrows: true,
+    dots: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    centerMode: true,
+    // centerPadding: '100px',
+    appendArrows:'.tour-slider__controls-cabinet'
+  });
+  $('.tour-slider__item-reception').slick({
+    // infinite: true,
+      arrows: true,
+      dots: false,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      centerMode: true,
+      // centerPadding: '100px',
+      appendArrows:'.tour-slider__controls-recepton'
+    });
+    $('.tour-slider__item-hall').slick({
+      // infinite: true,
+        arrows: true,
+        dots: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        centerMode: true,
+        // centerPadding: '100px',
+        appendArrows:'.tour-slider__controls-hall'
+      });
 
   
 });
