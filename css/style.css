@@ -56,7 +56,7 @@ header {
   background-image: url(../img/Header_bgr.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-position-y: 0;
+  background-size: cover;
   position: relative;
 }
 
@@ -1254,7 +1254,7 @@ header a {
   margin-top: 30px;
   height: 0;
   position: absolute;
-  bottom: 50px;
+  bottom: 100px;
 }
 
 .price .inner.price-photo {
@@ -1308,6 +1308,22 @@ header a {
   display: flex;
 }
 
+.action.action__second {
+  margin-bottom: 110px;
+}
+
+.action.action__second .action-title {
+  background-image: url(../img/action_title_bgr.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 62px;
+}
+
+.action.action__second .action-feedback {
+  padding-top: 162px;
+  padding-bottom: 145px;
+}
+
 .action-feedback {
   padding-top: 120px;
   width: 50%;
@@ -1349,6 +1365,22 @@ header a {
   margin-bottom: 50px;
 }
 
+.action-feedback__form .action-feedback__h3 {
+  font-size: 50px;
+}
+
+.action-feedback__form .action-feedback__p {
+  width: 497px;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 203%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 43px;
+}
+
 .action-feedback__sale {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1381,12 +1413,12 @@ header a {
   text-decoration: line-through;
 }
 
-.action-feedback__userphone {
+.action-feedback__userphone, .action-feedback__username {
   position: relative;
   margin-bottom: 22px;
 }
 
-.action-feedback__userphone-input {
+.action-feedback__userphone-input, .action-feedback__username-input {
   width: 497px;
   height: 93px;
   border: 1px solid #B68C6E;
@@ -1399,16 +1431,20 @@ header a {
   color: #fff;
 }
 
-.action-feedback__userphone-input:focus {
+.action-feedback__userphone-input:focus, .action-feedback__username-input:focus {
   outline: none;
   text-align: center;
 }
 
-.action-feedback__userphone-input:focus + .action-feedback__userphone-placeholder {
+.action-feedback__userphone-input:focus + .action-feedback__userphone-placeholder, .action-feedback__username-input:focus + .action-feedback__userphone-placeholder {
   display: none;
 }
 
-.action-feedback__userphone-placeholder {
+.action-feedback__userphone-input:focus + .action-feedback__username-placeholder, .action-feedback__username-input:focus + .action-feedback__username-placeholder {
+  display: none;
+}
+
+.action-feedback__userphone-placeholder, .action-feedback__username-placeholder {
   position: absolute;
   font-family: 'Montserrat';
   font-weight: 400;
@@ -1522,6 +1558,20 @@ header a {
 
 .action-title__img:hover {
   opacity: 0.3;
+}
+
+.action-title__unit {
+  font-family: 'Quente Script';
+  font-weight: 300;
+  font-size: 120px;
+  line-height: 71.04%;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-transform: rotate(-2.21deg);
+          transform: rotate(-2.21deg);
+  text-transform: none;
+  text-align: left;
+  margin-left: 86px;
 }
 
 .advantage {
