@@ -90,7 +90,7 @@ header {
 }
 .join {
   position: relative;
-  height: 30vh;
+  height: 0vh;
   &-ellips {
     position: absolute;
     cursor: pointer;
@@ -1044,7 +1044,7 @@ header {
       margin-top: 30px;
       height: 0;
       position: absolute;
-      bottom: 100px;
+      bottom: 50px;
     }
   }
   & .inner.price-photo {
@@ -1612,6 +1612,64 @@ header {
         font-size: 92px;
         font-weight: 400;
       }
+    }
+  }
+}
+.clients {
+  margin-bottom: 115px;
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    &__title {
+      width: 50%;
+      margin-bottom: 75px;
+      & h2 {
+        font-family: 'Kudryashev Display';
+        font-weight: 400;
+        font-size: 85px;
+        line-height: 112.2%;
+        & span {
+          color: $font-accent;
+        }
+      }
+    }
+  }
+  &-slider {
+    display: flex;
+    margin-bottom: 115px;
+    &__inner {
+      border-left: 1px solid #CCC7C4;
+      padding: 0 30px;
+    }
+    &__img {
+      margin: 0 auto;
+      height: 120px;
+      width: 120px;
+      border-radius: 50%;
+      margin-bottom: 30px;
+    }
+    &__name {
+      font-family: 'Kudryashev Display';
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 112.2%;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    &__text {
+      font-family: 'Montserrat';
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 170.9%;
+      text-align: center;
+      color: #22211E;
+      margin-bottom: 30px;
+    }
+    &__social {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 36px;
     }
   }
 }
