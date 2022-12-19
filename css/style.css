@@ -56,7 +56,7 @@ header {
   background-image: url(../img/Header_bgr.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: inherit;
   position: relative;
 }
 
@@ -245,6 +245,12 @@ header a {
   cursor: pointer;
 }
 
+.header__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .header__title {
   width: 580px;
 }
@@ -270,17 +276,21 @@ header a {
   margin-bottom: 35px;
 }
 
+.header__texture {
+  position: relative;
+}
+
 .header__texture-cell {
   position: absolute;
-  right: 92px;
-  top: 0;
+  left: 92px;
+  top: -170px;
   pointer-events: none;
 }
 
 .header__texture-ellipse {
   position: absolute;
-  top: 335px;
-  right: 210px;
+  top: 130px;
+  left: 475px;
   pointer-events: none;
 }
 

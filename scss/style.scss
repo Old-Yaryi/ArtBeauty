@@ -76,7 +76,7 @@ header {
   background-image: url(../img/Header_bgr.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: inherit;
   position: relative;
   & a {
     color: #fff;
@@ -220,6 +220,9 @@ header {
     }
     
   }
+  &__item {
+    display: flex;
+  }
   &__title {
     width: 580px;
     & h1 {
@@ -242,16 +245,17 @@ header {
     }
   }
   &__texture {
+    position: relative;
     &-cell {
       position: absolute;
-      right: 92px;
-      top: 0;
+      left: 92px;
+      top: -170px;
       pointer-events: none;
     }
     &-ellipse {
       position: absolute;
-      top: 335px;
-      right: 210px;
+      top: 130px;
+      left: 475px;
       pointer-events: none;
     }
     
