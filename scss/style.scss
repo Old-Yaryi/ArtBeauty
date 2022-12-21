@@ -1710,3 +1710,129 @@ header {
     }
   }
 }
+.footer {
+  background-color: $bcgr-offer_dark;
+  padding: 110px 0;
+  color: #fff;
+  & p {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    text-transform: uppercase;
+  }
+  &-item {
+    margin: 0 auto;
+    background-color: #D1AE8E;
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 70px 95px;
+    &-text {
+      font-size: 12px;
+      line-height: 150%;
+      margin-bottom: 10px;
+    }
+    &__head {
+      margin-right: 68px;
+    }
+    &__logo {
+      width: 260px;
+      margin-bottom: 5px;
+    }
+    &__title {
+      line-height: 24px;
+    }
+    &__menu {
+      padding-top: 27px;
+      &-item {
+        display: flex;
+        flex-direction: column;
+        row-gap: 17px;
+        width: 160px;
+        margin-right: 160px;
+      }
+      &-link {
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+        color: #FFFFFF;
+      }
+    }
+    &__contacts {
+      margin-top: 27px;
+      position: relative;
+      width: 280px;
+      margin-right: 75px;
+      & p {
+        margin-bottom: 17px;
+      }
+      &-list {
+        display: flex;
+        flex-direction: column;
+      }
+      &-before {
+        position: absolute;
+        top: 50px;
+        right: 0;
+        cursor: pointer;
+      }
+      &-adress {
+        line-height: 140.4%;
+        color: #fff;
+        margin-bottom: 14px;
+        &.hide {
+          display: none;
+        }
+      }
+      &-map {
+        line-height: 20px;
+        text-decoration: underline;
+        color: #fff;
+        margin-bottom: 18px;
+      }
+      &-mail {
+        line-height: 100%;
+        color: #fff;
+        margin-bottom: 17px;
+      }
+      &-social {
+        display: flex;
+        column-gap: 15px;
+        &_link {
+          width: 40px;
+          height: 40px;
+          border: 1px solid #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+    &__phone {
+      padding-top: 40px;
+      display: flex;
+      flex-direction: column;
+      &-link {
+        font-family: 'Kudryashev Bold';
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+      }
+      &-btn {
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        border: none;
+        background-color: inherit;
+        color: #fff;
+        width: 225px;
+        text-align: left;
+      }
+    }
+  }
+}
