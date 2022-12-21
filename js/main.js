@@ -111,19 +111,28 @@ $(document).ready(function(){
       centerMode: true,
       // centerPadding: '100px',
       appendArrows:'.tour-slider__controls-recepton'
+  });
+  $('.tour-slider__item-hall').slick({
+    // infinite: true,
+      arrows: true,
+      dots: false,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      centerMode: true,
+      // centerPadding: '100px',
+      appendArrows:'.tour-slider__controls-hall'
     });
-    $('.tour-slider__item-hall').slick({
-      // infinite: true,
-        arrows: true,
-        dots: false,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        centerMode: true,
-        // centerPadding: '100px',
-        appendArrows:'.tour-slider__controls-hall'
-      });
-
-  
+  // --************TClirntsSlider**
+  $('.clients-slider').slick({
+    // infinite: true,
+      arrows: true,
+      dots: false,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      // centerMode: true,
+      // centerPadding: '100px',
+      appendArrows:'.clients-slider__controls'
+    });
 });
 
 
