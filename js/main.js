@@ -1,7 +1,22 @@
 
 //////*************Jquerry**************/////
 $(document).ready(function(){
-
+  // --**********MenuAdress**
+  $(function(){
+    let adress = $('.header__top-adress_before')
+    adress.on('click', function(){
+      let adressHide = $('.header__top-adress_link-hide')
+      adressHide.toggleClass('hide')
+    });
+  });
+  // --**********MenuPhone**
+  $(function(){
+    let menuPhone = $('.header__top-call_before')
+    menuPhone.on('click', function(){
+      let phoneHide = $('.header__top-call_tel-hide')
+      phoneHide.toggleClass('hide')
+    })
+  })
   // --**********SliderExamle**
   $('.example__slider').slick({
     arrows: true,
@@ -133,7 +148,33 @@ $(document).ready(function(){
       // centerPadding: '100px',
       appendArrows:'.clients-slider__controls'
     });
+    // --************FooterAdress**
+  $(function(){
+    let hide = $('.footer-item__contacts-before')
+    hide.on('click',function(){
+      let phoneHide = $('.footer-item__contacts-adress_hide')
+      phoneHide.toggleClass('hide')
+    })
+  });  
 });
+
+//// ***************AnimationLineThread************////
+function onEntry(entry) {
+  entry.forEach(change => {
+    if (change.isIntersecting) {
+     change.target.classList.add('element-show');
+    } 
+  });
+}
+let options = {
+  rootMargin: '0px 0px -300px 0px' };
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll('.line');
+
+for (let elm of elements) {
+  observer.observe(elm);
+}
+
 
 
 //// ***************PopUpExclusive************////

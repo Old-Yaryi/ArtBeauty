@@ -55,13 +55,13 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
-// ****************COLOR**************************
+// ****************COLOR*************
 $bcgr-primary: #F0E3DA;
 $bcgr-accent: #EACFBC;
 $bcgr-offer_bej: #D1AE8E;
 $bcgr-offer_dark:#1D1D1A;
 $font-accent: #B68C6E;
-// **********************************************
+// **********************************
 body {
   font-family: 'Montserrat';
   font-weight: 400;
@@ -80,6 +80,36 @@ header {
   position: relative;
   & a {
     color: #fff;
+  }
+}
+// *************LineAnimation********
+.line {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 0;
+  height: 0;
+  content: "";
+  &-svg {
+    display: none;
+  }
+  &-animation {
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 1500;
+    animation: thread_line 7s linear 4s forwards;
+    @keyframes thread_line {
+      100% {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 1500;
+      }
+    }
+  }
+  &.element-show {
+    width: 100%;
+    height: 100%;
+    & .line-svg {
+      display: block;
+    }
   }
 }
 // *************BLOCKS***************
@@ -151,7 +181,7 @@ header {
   left: 0;
   top: 780px;
 }
-// ************SECTION**********
+// ************SECTION**************
 .header {
   margin-bottom: -3px;
   &__top {
@@ -170,7 +200,7 @@ header {
       width: 17vw;
       height: auto;
     }
-    &-title, &-adress, &-adress_link {
+    &-title, &-adress, &-adress_link, &-adress_link-hide {
       font-size: 14px;
       line-height: 158.9%;
     }
@@ -179,32 +209,43 @@ header {
     }
     &-adress {
       position: relative;
-      &::before {
+      display: flex;
+      flex-direction: column;
+      &_block {
+        position: relative;
+      }
+      &_before {
         position: absolute;
-        content: url(../img/Adress_before.svg);
-        bottom: 2px;
-        right: -20px;
+        bottom: -15px;
+        right: -40px;
         cursor: pointer;
+      }
+      &_link-hide.hide {
+        display: none;
       }
     }
     &-call {
       display: flex;
       flex-direction: column;
       margin-top: 20px;
-      &_tel {
+      position: relative;
+      &_before{
+        position: absolute;
+        right: -40px;
+        top: 4px;
+        cursor: pointer;
+      }
+      &_tel, &_tel-hide {
         font-family: 'Kudryashev Headline';
         font-size: 22px;
         line-height: 26px;
         letter-spacing: 0.05em;
         font-weight: 700;
         position: relative;
-        &::before{
-          position: absolute;
-          content: url(../img/Adress_before.svg);
-          right: -20px;
-          top: -5px;
-          cursor: pointer;
-        }
+        margin-bottom: 10px;
+      }
+      &_tel-hide.hide {
+        display: none;
       }
       &_call {
         text-transform: lowercase;
@@ -217,8 +258,7 @@ header {
         color: #fff;
         cursor: pointer;
       }
-    }
-    
+    } 
   }
   &__item {
     display: flex;
@@ -628,10 +668,21 @@ header {
       }
     }
   }
+  
 }
 .benefit {
   background-color: #fff;
   padding: 110px 0 125px;
+  position: relative;
+  &__line {
+    position: absolute;
+    top: 0;
+    right: 775px;
+  }
+  & .line {
+    top: 0;
+    z-index: 3;
+  }
   & h2 {
     font-family: 'Kudryashev Display';
     font-weight: 400;
@@ -671,6 +722,7 @@ header {
   & .texture {
     margin-top: 0;
     pointer-events: none;
+    z-index: 0;
   }
   & .inner.result {
     margin: 150px 0 0 160px;
@@ -1144,7 +1196,6 @@ header {
         margin-bottom: 43px;
       }
     }
-    
     &__sale {
       display: flex;
       justify-content: center;
@@ -1181,15 +1232,25 @@ header {
         line-height: 184.5%;
         text-transform: uppercase;
         color: #fff;
+        text-align: left;
         &:focus {
           outline: none;
           text-align: center;
         }
-        &:focus + .action-feedback__userphone-placeholder {
-          display: none;
+        
+        &:focus + .action-feedback__userphone-placeholder,
+        &:not(:placeholder-shown) + .action-feedback__userphone-placeholder {
+          left: 68%;
+          top: 10px;
+          font-size: 12px;
+          transition: top, 0.5s ease 0s;
         }
-        &:focus + .action-feedback__username-placeholder {
-          display: none;
+        &:focus + .action-feedback__username-placeholder,
+        &:not(:placeholder-shown) + .action-feedback__username-placeholder {
+          left: 68%;
+          top: 10px;
+          font-size: 12px;
+          transition: top, 0.5s ease 0s;
         }
 
       }
@@ -1781,9 +1842,16 @@ header {
         line-height: 140.4%;
         color: #fff;
         margin-bottom: 14px;
-        &.hide {
-          display: none;
+        width: 280px;
+        &_hide {
+          line-height: 140.4%;
+          color: #fff;
+          margin-bottom: 14px;
+          &.hide {
+            display: none;
+          }
         }
+        
       }
       &-map {
         line-height: 20px;
@@ -1834,5 +1902,10 @@ header {
         text-align: left;
       }
     }
+  }
+}
+.popup-callback {
+  &.hide {
+    display: none;
   }
 }

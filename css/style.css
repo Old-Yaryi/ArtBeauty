@@ -64,6 +64,49 @@ header a {
   color: #fff;
 }
 
+.line {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 0;
+  height: 0;
+  content: "";
+}
+
+.line-svg {
+  display: none;
+}
+
+.line-animation {
+  stroke-dasharray: 1500;
+  stroke-dashoffset: 1500;
+  -webkit-animation: thread_line 7s linear 4s forwards;
+          animation: thread_line 7s linear 4s forwards;
+}
+
+@-webkit-keyframes thread_line {
+  100% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 1500;
+  }
+}
+
+@keyframes thread_line {
+  100% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 1500;
+  }
+}
+
+.line.element-show {
+  width: 100%;
+  height: 100%;
+}
+
+.line.element-show .line-svg {
+  display: block;
+}
+
 .container {
   max-width: 1420px;
   margin: 0 auto;
@@ -184,7 +227,7 @@ header a {
   height: auto;
 }
 
-.header__top-title, .header__top-adress, .header__top-adress_link {
+.header__top-title, .header__top-adress, .header__top-adress_link, .header__top-adress_link-hide {
   font-size: 14px;
   line-height: 158.9%;
 }
@@ -195,14 +238,28 @@ header a {
 
 .header__top-adress {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.header__top-adress::before {
+.header__top-adress_block {
+  position: relative;
+}
+
+.header__top-adress_before {
   position: absolute;
-  content: url(../img/Adress_before.svg);
-  bottom: 2px;
-  right: -20px;
+  bottom: -15px;
+  right: -40px;
   cursor: pointer;
+}
+
+.header__top-adress_link-hide.hide {
+  display: none;
 }
 
 .header__top-call {
@@ -214,23 +271,28 @@ header a {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 20px;
+  position: relative;
 }
 
-.header__top-call_tel {
+.header__top-call_before {
+  position: absolute;
+  right: -40px;
+  top: 4px;
+  cursor: pointer;
+}
+
+.header__top-call_tel, .header__top-call_tel-hide {
   font-family: 'Kudryashev Headline';
   font-size: 22px;
   line-height: 26px;
   letter-spacing: 0.05em;
   font-weight: 700;
   position: relative;
+  margin-bottom: 10px;
 }
 
-.header__top-call_tel::before {
-  position: absolute;
-  content: url(../img/Adress_before.svg);
-  right: -20px;
-  top: -5px;
-  cursor: pointer;
+.header__top-call_tel-hide.hide {
+  display: none;
 }
 
 .header__top-call_call {
@@ -750,6 +812,18 @@ header a {
 .benefit {
   background-color: #fff;
   padding: 110px 0 125px;
+  position: relative;
+}
+
+.benefit__line {
+  position: absolute;
+  top: 0;
+  right: 775px;
+}
+
+.benefit .line {
+  top: 0;
+  z-index: 3;
 }
 
 .benefit h2 {
@@ -801,6 +875,7 @@ header a {
 .example .texture {
   margin-top: 0;
   pointer-events: none;
+  z-index: 0;
 }
 
 .example .inner.result {
@@ -1440,6 +1515,7 @@ header a {
   line-height: 184.5%;
   text-transform: uppercase;
   color: #fff;
+  text-align: left;
 }
 
 .action-feedback__userphone-input:focus, .action-feedback__username-input:focus {
@@ -1447,12 +1523,24 @@ header a {
   text-align: center;
 }
 
-.action-feedback__userphone-input:focus + .action-feedback__userphone-placeholder, .action-feedback__username-input:focus + .action-feedback__userphone-placeholder {
-  display: none;
+.action-feedback__userphone-input:focus + .action-feedback__userphone-placeholder,
+.action-feedback__userphone-input:not(:placeholder-shown) + .action-feedback__userphone-placeholder, .action-feedback__username-input:focus + .action-feedback__userphone-placeholder,
+.action-feedback__username-input:not(:placeholder-shown) + .action-feedback__userphone-placeholder {
+  left: 68%;
+  top: 10px;
+  font-size: 12px;
+  -webkit-transition: top, 0.5s ease 0s;
+  transition: top, 0.5s ease 0s;
 }
 
-.action-feedback__userphone-input:focus + .action-feedback__username-placeholder, .action-feedback__username-input:focus + .action-feedback__username-placeholder {
-  display: none;
+.action-feedback__userphone-input:focus + .action-feedback__username-placeholder,
+.action-feedback__userphone-input:not(:placeholder-shown) + .action-feedback__username-placeholder, .action-feedback__username-input:focus + .action-feedback__username-placeholder,
+.action-feedback__username-input:not(:placeholder-shown) + .action-feedback__username-placeholder {
+  left: 68%;
+  top: 10px;
+  font-size: 12px;
+  -webkit-transition: top, 0.5s ease 0s;
+  transition: top, 0.5s ease 0s;
 }
 
 .action-feedback__userphone-placeholder, .action-feedback__username-placeholder {
@@ -2188,9 +2276,16 @@ header a {
   line-height: 140.4%;
   color: #fff;
   margin-bottom: 14px;
+  width: 280px;
 }
 
-.footer-item__contacts-adress.hide {
+.footer-item__contacts-adress_hide {
+  line-height: 140.4%;
+  color: #fff;
+  margin-bottom: 14px;
+}
+
+.footer-item__contacts-adress_hide.hide {
   display: none;
 }
 
@@ -2261,5 +2356,9 @@ header a {
   color: #fff;
   width: 225px;
   text-align: left;
+}
+
+.popup-callback.hide {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

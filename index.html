@@ -19,8 +19,12 @@
           <img class="header__top_logo" src="./img/Logo.svg" alt="logo">
           <div class="header__top-title">Нитевой лифтинг лица в Санкт-Петербурге</div>
           <div class="header__top-adress">
-            <p>Санкт-Петербург,</p>
+            <div class="header__top-adress_block">
+              <p>Санкт-Петербург,</p>
+              <img class="header__top-adress_before" src="./img/Adress_before.svg" alt="before" >
+            </div>
             <a class="header__top-adress_link" href="#">пр. Просвещения, д.33, корп.2</a>
+            <a class="header__top-adress_link-hide hide" href="#">пр. Комендантский, д.12, корп.1</a>
           </div>
         </div>
         <div class="header__top-inner social">
@@ -34,7 +38,11 @@
             <img src="./img/WhatsApp.svg" alt="header_watsapp">
           </a>
           <div class="header__top-call">
+            <div class="header__top-call_before">
+              <img src="./img/Adress_before.svg" alt="before">
+            </div>
             <a class="header__top-call_tel" href="tel:+79219676188">+7 (921) 967-61-88</a>
+            <a class="header__top-call_tel-hide hide" href="tel:+78122960994">+7 (812) 296-09-94</a>
             <button class="header__top-call_call" >ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</button>
           </div>
         </div>
@@ -112,6 +120,11 @@
     </div>
   </section>
   <section class="thread">
+    <div class="line">
+      <svg class="line-svg" width="916" height="3307" viewBox="0 0 916 3307" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="line-animation" opacity="0.4" d="M363.026 3306C388.143 3018.19 256.934 2824.99 145.515 2735.61M145.515 2735.61C63.8306 2670.08 -7.217 2660.36 1.76953 2710.06C14.0972 2778.25 69.2011 2848.2 145.515 2735.61ZM145.515 2735.61C200.712 2654.17 267.005 2477.24 336.233 2135.06C402.887 1805.62 518.801 1653.25 629.392 1599.1M651.163 1C753.204 115.781 705.048 333.672 642.091 459.893M642.091 459.893C600.107 544.065 551.541 587.471 536.547 532.344C519.166 468.443 576.716 441.527 642.091 459.893ZM642.091 459.893C717.686 481.13 803.745 562.913 796.515 718.071C783.033 1007.41 665.502 1116.38 584.799 1341.64C555.912 1422.27 581.686 1517.42 629.392 1599.1M629.392 1599.1C714.965 1745.61 871.105 1848.81 908.899 1747.21C943.975 1652.92 792.469 1519.24 629.392 1599.1Z" stroke="white" stroke-width="2"/>
+        </svg>
+    </div> 
     <div class="texture"></div>
     <img class="oval-left" src="./img/Aptos_oval_left.svg" alt="oval">
     <div class="container">
@@ -234,10 +247,15 @@
           </div>
         </div>
       </div>
-    </div>
-      
+    </div>   
   </section>
   <section class="benefit">
+    <div class="benefit__line">
+      <div class="line">
+        <svg class="line-svg" width="707" height="1749" fill="none">
+          <path class="line-animation" stroke="#EAD8CD" stroke-width="2" d="M293.826 1748c18.789-152.13-100.442-193.25-183.792-240.5m0 0C48.927 1472.87-4.223 1467.73 2.5 1494c9.222 36.04 50.444 73.02 107.534 13.5Zm0 0c41.292-43.04 111.96-197.58 163.748-378.45 49.863-174.143 136.576-254.681 219.308-283.308M509.376 1c76.335 60.672 40.31 175.848-6.786 242.568m0 0c-31.408 44.493-67.739 67.436-78.956 38.297-13.003-33.778 30.049-48.006 78.956-38.297Zm0 0c56.551 11.225 120.93 54.455 115.521 136.471-10.085 152.943-98.008 210.545-158.381 329.616-21.61 42.62-2.328 92.912 33.36 136.087m0 0c64.016 77.447 180.821 131.996 209.094 78.292 26.239-49.843-87.099-120.505-209.094-78.292Z" opacity=".4"/></svg>
+      </div>
+    </div>
     <div class="container">
       <h2>Преимущества <br> процедуры</h2>
       <div class="benefit__item">
@@ -549,9 +567,13 @@
             <span class="action-feedback__sale-through">46 900 ₽</span>
           </div>
         </div>
+        <div class="action-feedback__username">
+          <input class="action-feedback__username-input" placeholder=" " tabindex="4" type="text"  name="username">
+          <label class="action-feedback__username-placeholder">ваше имя</label>
+        </div>
         <div class="action-feedback__userphone">
-          <input class="action-feedback__userphone-input" tabindex="1" type="tel"  name="userphone">
-          <div class="action-feedback__userphone-placeholder">ваш телефон</div>
+          <input class="action-feedback__userphone-input" placeholder="+7" tabindex="1" type="tel"  name="userphone">
+          <label class="action-feedback__userphone-placeholder" >ваш телефон</label>
         </div>
         <button class="action-feedback__btn" tabindex="2" type="reset"  >записаться со скидкой</button>
         <div class="action-feedback__timer">
@@ -757,12 +779,12 @@
         <h3 class="action-feedback__h3" >Станьте моложе на 5 лет за 1 процедуру</h3>
         <p class="action-feedback__p">Запишитесь на процедуру и получите рекомендации от Доктора Медицинских Наук по нитевым методикам для вашего лица бесплатно!</p>
         <div class="action-feedback__username">
-          <input class="action-feedback__username-input" tabindex="4" type="text"  name="username">
-          <div class="action-feedback__username-placeholder">ваше имя</div>
+          <input class="action-feedback__username-input" placeholder=" " tabindex="4" type="text"  name="username">
+          <label class="action-feedback__username-placeholder">ваше имя</label>
         </div>
         <div class="action-feedback__userphone">
-          <input class="action-feedback__userphone-input" tabindex="4" type="tel"  name="userphone">
-          <div class="action-feedback__userphone-placeholder">ваш телефон</div>
+          <input class="action-feedback__userphone-input" placeholder="+7" tabindex="4" type="tel"  name="userphone">
+          <label class="action-feedback__userphone-placeholder">ваш телефон</label>
         </div>
         <button class="action-feedback__btn" tabindex="2" type="reset"  >записаться со скидкой</button>
       </form>
@@ -949,7 +971,7 @@
             </div>
             <a class="footer-item__contacts-adress" href="#">Санкт-Петербург, 
               пр. Просвещения, д.33, корп.2</a>
-            <a class="footer-item__contacts-adress hide" href="#">пр. Комендантский, д.12, корп.1</a>
+            <a class="footer-item__contacts-adress_hide hide" href="#">пр. Комендантский, д.12, корп.1</a>
             <a class="footer-item__contacts-map" href="#">Посмотреть на карте</a>
             <div class="footer-item-text">Эл. почта</div>
             <a class="footer-item__contacts-mail" href="mailto:artbeauty@inbox.ru">artbeauty@inbox.ru</a>
@@ -976,6 +998,21 @@
       </div>
     </div>
   </footer>
+  <div class="popup-callback hide">
+    <div class="popup-callback_close">X</div>
+    <form class="action-feedback__form" action="#">
+      <h3 class="action-feedback__h3" >заказ обратного звонка</h3>
+      <p class="action-feedback__p">Заполните поля:</p>
+      <div class="action-feedback__username">
+        <input class="action-feedback__username-input" tabindex="4" type="text"  name="username">
+        <div class="action-feedback__username-placeholder">ваше имя</div>
+      </div>
+      <div class="action-feedback__userphone">
+        <input class="action-feedback__userphone-input" tabindex="4" type="tel"  name="userphone">
+        <div class="action-feedback__userphone-placeholder">ваш телефон</div>
+      </div>
+      <button class="action-feedback__btn" tabindex="2" type="reset"  >отправить</button>
+  </div>
   <script src="./js/jquery-3.6.1.min.js"></script>
   <script src="./js/slick.min.js"></script>
   <script src="./js/jquery.anyimagecomparisonslider.min.js"></script>
