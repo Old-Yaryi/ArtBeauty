@@ -158,12 +158,13 @@ $(document).ready(function(){
   });  
 });
 
-//// ***************AnimationLineThread************////
+//// ***********AnimationLine************////
 function onEntry(entry) {
   entry.forEach(change => {
     if (change.isIntersecting) {
      change.target.classList.add('element-show');
     } 
+    
   });
 }
 let options = {
@@ -174,9 +175,6 @@ let elements = document.querySelectorAll('.line');
 for (let elm of elements) {
   observer.observe(elm);
 }
-
-
-
 //// ***************PopUpExclusive************////
 const popup = document.querySelector('.exclusive__popup');
 const close = document.querySelector('.exclusive__popup-close_x');

@@ -80,8 +80,8 @@ header a {
 .line-animation {
   stroke-dasharray: 1500;
   stroke-dashoffset: 1500;
-  -webkit-animation: thread_line 7s linear 4s forwards;
-          animation: thread_line 7s linear 4s forwards;
+  -webkit-animation: thread_line 10s linear 3s forwards;
+          animation: thread_line 10s linear 3s forwards;
 }
 
 @-webkit-keyframes thread_line {
@@ -105,6 +105,7 @@ header a {
 
 .line.element-show .line-svg {
   display: block;
+  pointer-events: none;
 }
 
 .container {
@@ -245,6 +246,7 @@ header a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 45px;
 }
 
 .header__top-adress_block {
@@ -272,6 +274,7 @@ header a {
           flex-direction: column;
   margin-top: 20px;
   position: relative;
+  height: 65px;
 }
 
 .header__top-call_before {
@@ -1678,6 +1681,18 @@ header a {
   font-family: 'Montserrat';
   background-color: #fff;
   padding: 155px 0 187px;
+  position: relative;
+}
+
+.advantage__line {
+  position: absolute;
+  top: 0;
+  right: 830px;
+}
+
+.advantage .line {
+  top: 0;
+  z-index: 3;
 }
 
 .advantage h2 {
@@ -2263,6 +2278,7 @@ header a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 230px;
 }
 
 .footer-item__contacts-before {
