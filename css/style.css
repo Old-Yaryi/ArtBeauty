@@ -320,6 +320,10 @@ header a {
   width: 580px;
 }
 
+.header__title .join {
+  height: 160px;
+}
+
 .header__title h1 {
   font-family: 'Kudryashev Headline';
   font-weight: 400;
@@ -2372,9 +2376,59 @@ header a {
   color: #fff;
   width: 225px;
   text-align: left;
+  cursor: pointer;
 }
 
-.popup-callback.hide {
+.popup-callback {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(182, 140, 110, 0.5);
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 10;
+}
+
+.popup-callback__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px 100px;
+  background-color: #1D1D1A;
+  position: relative;
+}
+
+.popup-callback_close {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.popup-callback .action-feedback__h3 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.popup-callback .action-feedback__p {
+  margin-bottom: 10px;
+}
+
+.popup-callback.close {
   display: none;
 }
 /*# sourceMappingURL=style.css.map */

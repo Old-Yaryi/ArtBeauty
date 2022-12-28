@@ -66,7 +66,6 @@
         </div> 
       </div>
     </div>
-    
   </header>
   <section class="problem">
     <div class="texture"></div>
@@ -1003,20 +1002,23 @@
       </div>
     </div>
   </footer>
-  <div class="popup-callback hide">
-    <div class="popup-callback_close">X</div>
+  <div class="popup-callback close">
+    <div class="popup-callback__item">
+      <div class="popup-callback_close">X</div>
     <form class="action-feedback__form" action="#">
       <h3 class="action-feedback__h3" >заказ обратного звонка</h3>
       <p class="action-feedback__p">Заполните поля:</p>
       <div class="action-feedback__username">
-        <input class="action-feedback__username-input" tabindex="4" type="text"  name="username">
-        <div class="action-feedback__username-placeholder">ваше имя</div>
+        <input class="action-feedback__username-input" placeholder=" " tabindex="4" type="text"  name="username">
+        <div class="action-feedback__username-placeholder" >ваше имя</div>
       </div>
       <div class="action-feedback__userphone">
-        <input class="action-feedback__userphone-input" tabindex="4" type="tel"  name="userphone">
+        <input class="action-feedback__userphone-input" placeholder="+7" tabindex="4" type="tel"  name="userphone">
         <div class="action-feedback__userphone-placeholder">ваш телефон</div>
       </div>
       <button class="action-feedback__btn" tabindex="2" type="reset"  >отправить</button>
+    </form> 
+    </div>
   </div>
   <script src="./js/jquery-3.6.1.min.js"></script>
   <script src="./js/slick.min.js"></script>

@@ -61,6 +61,7 @@ $bcgr-accent: #EACFBC;
 $bcgr-offer_bej: #D1AE8E;
 $bcgr-offer_dark:#1D1D1A;
 $font-accent: #B68C6E;
+
 // **********************************
 body {
   font-family: 'Montserrat';
@@ -268,6 +269,9 @@ header {
   }
   &__title {
     width: 580px;
+    & .join {
+      height: 160px;
+    }
     & h1 {
       font-family: 'Kudryashev Headline';
       font-weight: 400;
@@ -1914,12 +1918,44 @@ header {
         color: #fff;
         width: 225px;
         text-align: left;
+        cursor: pointer;
       }
     }
   }
 }
 .popup-callback {
-  &.hide {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color:rgba(182, 140, 110, 0.5);
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 100px;
+    background-color: $bcgr-offer_dark;
+    position: relative;
+  }
+  &_close {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    color: #fff;
+    cursor: pointer;
+  }
+  & .action-feedback__h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  & .action-feedback__p {
+    margin-bottom: 10px;
+  }
+  &.close {
     display: none;
   }
 }

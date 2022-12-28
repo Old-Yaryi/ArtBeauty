@@ -17,6 +17,21 @@ $(document).ready(function(){
       phoneHide.toggleClass('hide')
     })
   })
+  // --**********CallBackOrder**
+  const popupOpen = $('.popup-callback')
+  let orderCall = $('.header__top-call_call')
+    orderCall.on('click', function(){
+      popupOpen.toggleClass('close')
+  });
+  let popupFooter = $('.footer-item__phone-btn')
+    popupFooter.on('click', function (){
+      popupOpen.toggleClass('close')
+    });
+  let popupClose = $('.popup-callback_close')
+    popupClose.on('click', function (){
+      popupOpen.toggleClass('close')
+    });
+    
   // --**********SliderExamle**
   $('.example__slider').slick({
     arrows: true,
