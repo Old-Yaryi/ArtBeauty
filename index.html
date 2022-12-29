@@ -56,7 +56,7 @@
             <img class="join-ellips__small" src="./img/texture_oval_slim.svg" alt="oval_slim">
             <div class="join__link">
               <img class="join__link-img" src="./img/Arrow_right_white.svg" alt="arrow">
-              <a class="join__link-action">Записаться</a> 
+              <button class="join__link-action">Записаться</button> 
             </div>
           </div>
         </div>
@@ -111,7 +111,7 @@
             <img class="join-ellips__small" src="./img/texture_oval_slim_bej.svg" alt="oval_slim">
             <div class="join__link">
               <img class="join__link-img" src="./img/Arrow_right_bej.svg" alt="arrow">
-              <a class="join__link-action black">Записаться</a> 
+              <button class="join__link-action black">Записаться</button> 
             </div>
           </div>
         </div>
@@ -356,7 +356,7 @@
             <img class="join-ellips__small" src="./img/texture_oval_slim_bej.svg" alt="oval_slim">
             <div class="join__link">
               <img class="join__link-img" src="./img/Arrow_right_bej.svg" alt="arrow">
-              <a class="join__link-action black">Записаться</a> 
+              <button class="join__link-action black">Записаться</button> 
             </div>
           </div>
         </div>
@@ -497,7 +497,7 @@
             <img class="join-ellips__small" src="./img/texture_oval_slim_bej.svg" alt="oval_slim">
             <div class="join__link">
               <img class="join__link-img" src="./img/Arrow_right_bej.svg" alt="arrow">
-              <a class="join__link-action black">Записаться</a> 
+              <button class="join__link-action black">Записаться</button> 
             </div>
           </div>
         </div>
@@ -1005,20 +1005,43 @@
   <div class="popup-callback close">
     <div class="popup-callback__item">
       <div class="popup-callback_close">X</div>
-    <form class="action-feedback__form" action="#">
-      <h3 class="action-feedback__h3" >заказ обратного звонка</h3>
-      <p class="action-feedback__p">Заполните поля:</p>
-      <div class="action-feedback__username">
-        <input class="action-feedback__username-input" placeholder=" " tabindex="4" type="text"  name="username">
-        <div class="action-feedback__username-placeholder" >ваше имя</div>
-      </div>
-      <div class="action-feedback__userphone">
-        <input class="action-feedback__userphone-input" placeholder="+7" tabindex="4" type="tel"  name="userphone">
-        <div class="action-feedback__userphone-placeholder">ваш телефон</div>
-      </div>
-      <button class="action-feedback__btn" tabindex="2" type="reset"  >отправить</button>
-    </form> 
+      <form class="action-feedback__form" action="#">
+        <h3 class="action-feedback__h3" >заказ обратного звонка</h3>
+        <p class="action-feedback__p">Заполните поля:</p>
+        <div class="action-feedback__username">
+          <input class="action-feedback__username-input" placeholder=" " tabindex="4" type="text"  name="username">
+          <div class="action-feedback__username-placeholder" >ваше имя</div>
+        </div>
+        <div class="action-feedback__userphone">
+          <input class="action-feedback__userphone-input" placeholder="+7" tabindex="4" type="tel"  name="userphone">
+          <div class="action-feedback__userphone-placeholder">ваш телефон</div>
+        </div>
+        <button class="action-feedback__btn" tabindex="2" type="reset"  >отправить</button>
+      </form> 
     </div>
+  </div>
+  <div class="popup-registation close">
+    <div class="popup-registation__item">
+      <div class="popup-registation_close">X</div>
+      <form class="action-feedback__form" action="#">
+        <h3 class="action-feedback__h3" >Запись на прием</h3>
+        <p class="action-feedback__p">Заполните поля:</p>
+        <div class="action-feedback__username">
+          <input class="action-feedback__username-input" placeholder=" " tabindex="4" type="text"  name="username">
+          <label class="action-feedback__username-placeholder" >ваше имя</label>
+        </div>
+        <div class="action-feedback__userphone">
+          <input class="action-feedback__userphone-input" placeholder="+7" tabindex="4" type="tel"  name="userphone">
+          <label class="action-feedback__userphone-placeholder">ваш телефон</label>
+        </div>
+        <div class="action-feedback__date">
+          <input class="action-feedback__date-input" tabindex="5" type="datetime-local"  name="date">
+          <label class="action-feedback__date-placeholder">желаемые дата/время</label>
+        </div>
+        <button class="action-feedback__btn" tabindex="2" type="reset">отправить</button>
+      </form> 
+    </div>
+
   </div>
   <script src="./js/jquery-3.6.1.min.js"></script>
   <script src="./js/slick.min.js"></script>

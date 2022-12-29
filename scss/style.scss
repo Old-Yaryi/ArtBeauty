@@ -152,10 +152,13 @@ header {
       letter-spacing: 0.05em;
       text-transform: uppercase;
       cursor: pointer;
-      margin-left: 16px;
+      margin-left: -40px;
       transition: margin-left 0.3s ease 0s;
+      border: none;
+      background-color: inherit;
+      color: #fff;
       &:hover {
-        margin-left: 26px;
+        margin-left: -20px;
       }
       &.black {
         color: #1D1D1A
@@ -1225,7 +1228,7 @@ header {
         text-decoration: line-through;
       }
     }
-    &__userphone, &__username {
+    &__userphone, &__username, &__date {
       position: relative;
       margin-bottom: 22px;
       &-input {
@@ -1244,7 +1247,6 @@ header {
           outline: none;
           text-align: center;
         }
-        
         &:focus + .action-feedback__userphone-placeholder,
         &:not(:placeholder-shown) + .action-feedback__userphone-placeholder {
           left: 68%;
@@ -1259,7 +1261,13 @@ header {
           font-size: 12px;
           transition: top, 0.5s ease 0s;
         }
-
+        &:focus + .action-feedback__date-placeholder,
+        &:not(:placeholder-shown) + .action-feedback__date-placeholder {
+          left: 55%;
+          top: 10px;
+          font-size: 12px;
+          transition: top, 0.5s ease 0s;
+        }
       }
       &-placeholder {
         position: absolute;
@@ -1268,7 +1276,7 @@ header {
         font-size: 20px;
         line-height: 184.5%;
         text-transform: uppercase;
-        color: #504339;
+        color: $font-accent;
         left: 33%;
         top: 33%;
         pointer-events: none;
@@ -1923,7 +1931,8 @@ header {
     }
   }
 }
-.popup-callback {
+// **********PopUps***********
+.popup-callback, .popup-registation {
   position: fixed;
   top: 0;
   height: 100%;
@@ -1959,3 +1968,30 @@ header {
     display: none;
   }
 }
+.action-feedback__date{
+  border: 1px solid #B68C6E;
+  cursor: pointer;
+  &-input {
+    text-align: left;
+    font-size: 0px;
+    z-index: 15;
+    position: relative;
+    &::after {
+      content: url(../img/calendar.svg);
+      height: 40px;
+      width: 40px;
+      pointer-events: none;
+      position: absolute;
+      right: -13px;
+      top: 26%;
+      cursor: pointer;
+    }
+    &:focus {
+      opacity: 1;
+      color: #fff;
+      font-size: 28px;
+      text-align: left;
+      border: none;
+    }
+  }  
+} 

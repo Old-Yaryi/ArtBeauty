@@ -156,13 +156,16 @@ header a {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   cursor: pointer;
-  margin-left: 16px;
+  margin-left: -40px;
   -webkit-transition: margin-left 0.3s ease 0s;
   transition: margin-left 0.3s ease 0s;
+  border: none;
+  background-color: inherit;
+  color: #fff;
 }
 
 .join__link-action:hover {
-  margin-left: 26px;
+  margin-left: -20px;
 }
 
 .join__link-action.black {
@@ -1506,12 +1509,12 @@ header a {
   text-decoration: line-through;
 }
 
-.action-feedback__userphone, .action-feedback__username {
+.action-feedback__userphone, .action-feedback__username, .action-feedback__date {
   position: relative;
   margin-bottom: 22px;
 }
 
-.action-feedback__userphone-input, .action-feedback__username-input {
+.action-feedback__userphone-input, .action-feedback__username-input, .action-feedback__date-input {
   width: 497px;
   height: 93px;
   border: 1px solid #B68C6E;
@@ -1525,14 +1528,15 @@ header a {
   text-align: left;
 }
 
-.action-feedback__userphone-input:focus, .action-feedback__username-input:focus {
+.action-feedback__userphone-input:focus, .action-feedback__username-input:focus, .action-feedback__date-input:focus {
   outline: none;
   text-align: center;
 }
 
 .action-feedback__userphone-input:focus + .action-feedback__userphone-placeholder,
 .action-feedback__userphone-input:not(:placeholder-shown) + .action-feedback__userphone-placeholder, .action-feedback__username-input:focus + .action-feedback__userphone-placeholder,
-.action-feedback__username-input:not(:placeholder-shown) + .action-feedback__userphone-placeholder {
+.action-feedback__username-input:not(:placeholder-shown) + .action-feedback__userphone-placeholder, .action-feedback__date-input:focus + .action-feedback__userphone-placeholder,
+.action-feedback__date-input:not(:placeholder-shown) + .action-feedback__userphone-placeholder {
   left: 68%;
   top: 10px;
   font-size: 12px;
@@ -1542,7 +1546,8 @@ header a {
 
 .action-feedback__userphone-input:focus + .action-feedback__username-placeholder,
 .action-feedback__userphone-input:not(:placeholder-shown) + .action-feedback__username-placeholder, .action-feedback__username-input:focus + .action-feedback__username-placeholder,
-.action-feedback__username-input:not(:placeholder-shown) + .action-feedback__username-placeholder {
+.action-feedback__username-input:not(:placeholder-shown) + .action-feedback__username-placeholder, .action-feedback__date-input:focus + .action-feedback__username-placeholder,
+.action-feedback__date-input:not(:placeholder-shown) + .action-feedback__username-placeholder {
   left: 68%;
   top: 10px;
   font-size: 12px;
@@ -1550,14 +1555,25 @@ header a {
   transition: top, 0.5s ease 0s;
 }
 
-.action-feedback__userphone-placeholder, .action-feedback__username-placeholder {
+.action-feedback__userphone-input:focus + .action-feedback__date-placeholder,
+.action-feedback__userphone-input:not(:placeholder-shown) + .action-feedback__date-placeholder, .action-feedback__username-input:focus + .action-feedback__date-placeholder,
+.action-feedback__username-input:not(:placeholder-shown) + .action-feedback__date-placeholder, .action-feedback__date-input:focus + .action-feedback__date-placeholder,
+.action-feedback__date-input:not(:placeholder-shown) + .action-feedback__date-placeholder {
+  left: 55%;
+  top: 10px;
+  font-size: 12px;
+  -webkit-transition: top, 0.5s ease 0s;
+  transition: top, 0.5s ease 0s;
+}
+
+.action-feedback__userphone-placeholder, .action-feedback__username-placeholder, .action-feedback__date-placeholder {
   position: absolute;
   font-family: 'Montserrat';
   font-weight: 400;
   font-size: 20px;
   line-height: 184.5%;
   text-transform: uppercase;
-  color: #504339;
+  color: #B68C6E;
   left: 33%;
   top: 33%;
   pointer-events: none;
@@ -2379,7 +2395,7 @@ header a {
   cursor: pointer;
 }
 
-.popup-callback {
+.popup-callback, .popup-registation {
   position: fixed;
   top: 0;
   height: 100%;
@@ -2398,7 +2414,7 @@ header a {
   z-index: 10;
 }
 
-.popup-callback__item {
+.popup-callback__item, .popup-registation__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2411,7 +2427,7 @@ header a {
   position: relative;
 }
 
-.popup-callback_close {
+.popup-callback_close, .popup-registation_close {
   position: absolute;
   top: 30px;
   right: 50px;
@@ -2419,16 +2435,47 @@ header a {
   cursor: pointer;
 }
 
-.popup-callback .action-feedback__h3 {
+.popup-callback .action-feedback__h3, .popup-registation .action-feedback__h3 {
   font-size: 32px;
   margin-bottom: 10px;
 }
 
-.popup-callback .action-feedback__p {
+.popup-callback .action-feedback__p, .popup-registation .action-feedback__p {
   margin-bottom: 10px;
 }
 
-.popup-callback.close {
+.popup-callback.close, .popup-registation.close {
   display: none;
+}
+
+.action-feedback__date {
+  border: 1px solid #B68C6E;
+  cursor: pointer;
+}
+
+.action-feedback__date-input {
+  text-align: left;
+  font-size: 0px;
+  z-index: 15;
+  position: relative;
+}
+
+.action-feedback__date-input::after {
+  content: url(../img/calendar.svg);
+  height: 40px;
+  width: 40px;
+  pointer-events: none;
+  position: absolute;
+  right: -13px;
+  top: 26%;
+  cursor: pointer;
+}
+
+.action-feedback__date-input:focus {
+  opacity: 1;
+  color: #fff;
+  font-size: 28px;
+  text-align: left;
+  border: none;
 }
 /*# sourceMappingURL=style.css.map */
