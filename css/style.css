@@ -205,10 +205,21 @@ header a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 68px;
+}
+
+.header__top_logo {
+  margin-right: 26px;
+}
+
+.header__top-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 68px;
+  width: 100%;
 }
 
 .header__top-inner {
@@ -282,7 +293,7 @@ header a {
 
 .header__top-call_before {
   position: absolute;
-  right: -40px;
+  right: -25px;
   top: 4px;
   cursor: pointer;
 }
@@ -362,8 +373,32 @@ header a {
 .header__texture-ellipse {
   position: absolute;
   top: 130px;
-  left: 475px;
+  left: 460px;
   pointer-events: none;
+  -webkit-animation: rotating 15s linear infinite;
+  animation: rotating 15s linear infinite;
+}
+
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
 .problem {
