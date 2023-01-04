@@ -375,8 +375,8 @@ header a {
   top: 130px;
   left: 460px;
   pointer-events: none;
-  -webkit-animation: rotating 15s linear infinite;
-  animation: rotating 15s linear infinite;
+  -webkit-animation: rotating 20s linear infinite;
+  animation: rotating 20s linear infinite;
 }
 
 @-webkit-keyframes rotating {
@@ -654,6 +654,30 @@ header a {
   top: 10px;
   left: 50px;
   z-index: 5;
+  -webkit-animation: rotatin 20s linear infinite;
+  animation: rotatin 20s linear infinite;
+}
+
+@-webkit-keyframes rotatin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotatin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
 .how-item {
@@ -1174,6 +1198,7 @@ header a {
   height: 15px;
   color: #B68C6E;
   cursor: pointer;
+  font-size: 26px;
 }
 
 .exclusive__popup-title {
@@ -1407,6 +1432,14 @@ header a {
   height: 75%;
   background-color: #EACFBC;
   bottom: 0;
+}
+
+.price .inner.price-photo::after {
+  position: absolute;
+  content: url(../img/price/priceEllipse.svg);
+  top: -165px;
+  right: 0;
+  z-index: -1;
 }
 
 .price-photo__item {
@@ -2512,5 +2545,94 @@ header a {
   font-size: 28px;
   text-align: left;
   border: none;
+}
+
+@media (max-width: 1500px) {
+  .container {
+    max-width: 1256px;
+  }
+  .header__texture-ellipse {
+    left: 360px;
+  }
+  .problem {
+    padding-bottom: 61px;
+  }
+  .problem__img-problem {
+    left: -50px;
+  }
+  .problem .inner:last-child {
+    margin-left: 40px;
+  }
+  .problem-title {
+    margin-left: -120px;
+  }
+  .thread__inner-aptos {
+    bottom: 110px;
+  }
+  .thread__banner {
+    left: -50px;
+  }
+  .thread__photo_2 {
+    width: 36vw;
+  }
+  .thread__photo_3 {
+    left: -115px;
+    width: 15vw;
+  }
+  .benefit__item {
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
+  }
+  .benefit-text {
+    width: 300px;
+  }
+  .example__after {
+    left: 0;
+  }
+  .example__slider-controls .slick-arrow.slick-prev {
+    left: -65px;
+  }
+  .exclusive__slider-inner .slick-list {
+    margin-left: -17vw;
+  }
+  .exclusive__slider-controls {
+    -webkit-column-gap: 50%;
+            column-gap: 50%;
+  }
+  .price .inner.price-photo {
+    width: 50%;
+  }
+  .price .inner.price-photo::after {
+    top: -130px;
+    right: -35px;
+  }
+  .action-title__item {
+    font-size: 93px;
+  }
+  .advantage__item {
+    -webkit-column-gap: 65px;
+            column-gap: 65px;
+  }
+  .team-inner__cosmetolog-2 .team-inner__link::before {
+    right: -70px;
+  }
+  .tour-slider .slick-list {
+    margin-left: -4vw;
+  }
+  .action.action__second .action-title {
+    background-position-x: -75px;
+  }
+  .footer-item__logo {
+    width: 200px;
+  }
+  .footer-item__menu-item {
+    margin-right: 140px;
+  }
+  .footer-item__contacts {
+    width: 260px;
+  }
+  .footer-item__contacts-before {
+    right: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

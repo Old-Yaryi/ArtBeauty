@@ -204,7 +204,7 @@ close.addEventListener('click', function(){
   popup.classList.toggle('close')
 });
 // *************CounterAction***************
-const endDate = new Date('jan 01 2023 00:00:00'); //дата окончания акции
+const endDate = new Date('march 01 2023 00:00:00'); //дата окончания акции
 function counterAction() {
   const currentDate = new Date();
   const remainDate = endDate - currentDate;

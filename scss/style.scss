@@ -314,13 +314,12 @@ header {
       top: 130px;
       left: 460px;
       pointer-events: none;
-      -webkit-animation: rotating 15s linear infinite;
-      -moz-animation: rotating 15s linear infinite;
-      -ms-animation: rotating 15s linear infinite;
-      -o-animation: rotating 15s linear infinite;
-      animation: rotating 15s linear infinite;
+      -webkit-animation: rotating 20s linear infinite;
+      -moz-animation: rotating 20s linear infinite;
+      -ms-animation: rotating 20s linear infinite;
+      -o-animation: rotating 20s linear infinite;
+      animation: rotating 20s linear infinite;
     }
-    
   }
 }
 @keyframes rotating {
@@ -545,6 +544,27 @@ header {
     top: 10px;
     left: 50px;
     z-index: 5;
+    -webkit-animation: rotatin 20s linear infinite;
+    -moz-animation: rotatin 20s linear infinite;
+    -ms-animation: rotatin 20s linear infinite;
+    -o-animation: rotatin 20s linear infinite;
+    animation: rotatin 20s linear infinite;
+  }
+}
+@keyframes rotatin {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 .how {
@@ -962,6 +982,7 @@ header {
         height: 15px;
         color: $font-accent;
         cursor: pointer;
+        font-size: 26px;
       }
     }
     &-title {
@@ -1152,6 +1173,13 @@ header {
       height: 75%;
       background-color: $bcgr-accent;
       bottom: 0;
+    }
+    &::after {
+      position: absolute;
+      content: url(../img/price/priceEllipse.svg);
+      top: -165px;
+      right: 0;
+      z-index: -1;
     }
   }
   &-photo {
@@ -2024,5 +2052,96 @@ header {
   }  
 } 
 @media (max-width: 1500px) {
-
+  .container {
+    max-width: 1256px;
+  }
+  .header__texture-ellipse {
+    left: 360px;
+  }
+  .problem {
+    padding-bottom: 61px;
+    &__img-problem {
+      left: -50px;
+    }
+    & .inner:last-child {
+      margin-left: 40px;
+    }
+    &-title {
+      margin-left: -120px;
+    }
+  }
+  .thread {
+    &__inner-aptos {
+      bottom: 110px;
+    }
+    &__banner {
+      left: -50px;
+    }
+    &__photo_2 {
+      width: 36vw;
+    }
+    &__photo_3 {
+      left: -115px;
+      width: 15vw;
+    }
+  }
+  .benefit {
+    &__item {
+      column-gap: 30px;
+    }
+    &-text {
+      width: 300px;
+    }
+  }
+  .example__after {
+    left: 0;
+  }
+  .example__slider-controls .slick-arrow.slick-prev {
+    left: -65px;
+  }
+  .exclusive__slider-inner .slick-list {
+    margin-left: -17vw;
+  }
+  .exclusive__slider-controls {
+    column-gap: 50%;
+  }
+  .price .inner.price-photo {
+    width: 50%;
+  }
+  .price .inner.price-photo::after {
+    top: -130px;
+    right: -35px;
+  }
+  .action-title__item {
+    font-size: 93px;
+  }
+  .advantage__item {
+    column-gap: 65px;
+  }
+  .team-inner__cosmetolog-2 .team-inner__link::before {
+    right: -70px;
+  }
+  .tour-slider .slick-list {
+    margin-left: -4vw;
+  }
+  .action.action__second .action-title {
+    background-position-x: -75px;
+  }
+  .footer {
+    &-item {
+      &__logo {
+      width: 200px;
+      }
+      &__menu-item {
+        margin-right: 140px;
+      }
+      &__contacts {
+        width: 260px;
+        &-before {
+          right: 10px;
+        }
+      }
+      
+    }
+  }
 }
