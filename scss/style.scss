@@ -2237,12 +2237,28 @@ header {
     font-size: 80px;
   }
   .advantage {
-    padding-top: 100px;
+    padding: 155px 0 130px;
     &__line {
       right: 700px;
     }
     &__inner {
     width: 330px;
     }
+  }
+  .tour-slider {
+    margin-top: -35px;
+  }
+  .action.action__second .action-title {
+    background-position-x: -160px;
+    padding-top: 20px;
+  }
+  .action-title__unit {
+    margin-left: 20px;
+  }
+  .footer-item__menu {
+    width: 220px;
+  }
+  .action-feedback__userphone-input, .action-feedback__username-input, .action-feedback__date-input, .action-feedback__btn {
+    height: 75px;
   }
 }
