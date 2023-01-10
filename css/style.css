@@ -2674,6 +2674,9 @@ header a {
   .thread__quote::after {
     left: -60px;
   }
+  .thread__info {
+    margin-left: 90px;
+  }
   .thread__photo_2 {
     width: 34vw;
   }
@@ -2688,7 +2691,7 @@ header a {
     margin-bottom: 0;
   }
   .benefit-text {
-    width: 285px;
+    width: 280px;
     font-size: 17px;
   }
   .exclusive__slider-controls {
@@ -2710,8 +2713,14 @@ header a {
   .price-photo__before {
     left: 10px;
   }
+  .action-feedback {
+    padding-top: 55px;
+  }
   .action-title__item {
     font-size: 80px;
+  }
+  .action-feedback__timer {
+    margin-bottom: 55px;
   }
   .advantage {
     padding: 155px 0 130px;
@@ -2722,12 +2731,17 @@ header a {
   .advantage__inner {
     width: 330px;
   }
+  .team-inner__cosmetolog-2 .team-inner__link::before {
+    right: -60px;
+  }
   .tour-slider {
     margin-top: -35px;
   }
+  .action.action__second .action-feedback {
+    padding: 55px 0;
+  }
   .action.action__second .action-title {
-    background-position-x: -160px;
-    padding-top: 20px;
+    background-position-x: 0;
   }
   .action-title__unit {
     margin-left: 20px;
