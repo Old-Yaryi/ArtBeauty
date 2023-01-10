@@ -188,7 +188,8 @@ header {
 }
 // ************SECTION**************
 .header {
-  margin-bottom: -3px;
+  // margin-bottom: -3px;
+  height: 100vh;
   &__top {
     display: flex;
     margin-bottom: 68px;
@@ -2143,5 +2144,10 @@ header {
       }
       
     }
+  }
+}
+@media (max-width: 1300px) {
+  .container {
+    max-width: 1172px;
   }
 }

@@ -198,7 +198,7 @@ header a {
 }
 
 .header {
-  margin-bottom: -3px;
+  height: 100vh;
 }
 
 .header__top {
@@ -2633,6 +2633,12 @@ header a {
   }
   .footer-item__contacts-before {
     right: 10px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .container {
+    max-width: 1172px;
   }
 }
 /*# sourceMappingURL=style.css.map */
