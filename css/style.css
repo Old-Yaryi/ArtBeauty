@@ -2669,7 +2669,7 @@ header a {
   .thread__quote-text {
     font-size: 30px;
     width: 500px;
-    margin-bottom: 122px;
+    margin-bottom: 150px;
   }
   .thread__quote::after {
     left: -60px;
@@ -2679,6 +2679,17 @@ header a {
   }
   .thread__photo_3 {
     width: 17vw;
+    left: -150px;
+  }
+  .how-video__block {
+    margin-bottom: 250px;
+  }
+  .how-step {
+    margin-bottom: 0;
+  }
+  .benefit-text {
+    width: 285px;
+    font-size: 17px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -2184,7 +2184,7 @@ header {
       &-text {
       font-size: 30px;
       width: 500px;
-      margin-bottom: 122px;
+      margin-bottom: 150px;
       }
       &::after {
         left: -60px;
@@ -2195,6 +2195,21 @@ header {
     }
     &__photo_3 {
       width: 17vw;
+      left: -150px;
+    }
+  }
+  .how {
+    &-video__block {
+      margin-bottom: 250px;
+    }
+    &-step {
+      margin-bottom: 0;
+    }
+  }
+  .benefit {
+    &-text {
+      width: 285px;
+      font-size: 17px;
     }
   }
 }
