@@ -2216,4 +2216,21 @@ header {
     margin-left: 70px;
     margin-top: -30%;
   }
+  .price {
+    &-inner__price {
+      margin-left: -50px;
+    }
+    & .inner.price-photo {
+      margin-top: 40px;
+    }
+    &-photo__inner {
+      text-align: center;
+      & img {
+        width: 85%;
+      }
+    }
+    &-photo__before {
+      left: 10px;
+    }
+  }
 }

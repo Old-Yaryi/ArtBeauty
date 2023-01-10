@@ -2695,5 +2695,20 @@ header a {
     margin-left: 70px;
     margin-top: -30%;
   }
+  .price-inner__price {
+    margin-left: -50px;
+  }
+  .price .inner.price-photo {
+    margin-top: 40px;
+  }
+  .price-photo__inner {
+    text-align: center;
+  }
+  .price-photo__inner img {
+    width: 85%;
+  }
+  .price-photo__before {
+    left: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
