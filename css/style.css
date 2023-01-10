@@ -2691,5 +2691,9 @@ header a {
     width: 285px;
     font-size: 17px;
   }
+  .exclusive__slider-controls {
+    margin-left: 70px;
+    margin-top: -30%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
