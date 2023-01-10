@@ -2710,5 +2710,17 @@ header a {
   .price-photo__before {
     left: 10px;
   }
+  .action-title__item {
+    font-size: 80px;
+  }
+  .advantage {
+    padding-top: 100px;
+  }
+  .advantage__line {
+    right: 700px;
+  }
+  .advantage__inner {
+    width: 330px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
