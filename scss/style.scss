@@ -2150,4 +2150,51 @@ header {
   .container {
     max-width: 1172px;
   }
+  .header {
+    height: 100%;
+  }
+  .problem {
+    &-title {
+      margin-left: -77px;
+    }
+    &-subtitle {
+      margin-left: 40px;
+    }
+    &-block {
+      margin-left: 40px;
+      &__item {
+        column-gap: 15px;
+      }
+      &__text {
+        width: 190px;
+      }
+    }
+    & .inner .join {
+      margin-top: -20px;
+    }
+  }
+  .thread {
+    &__inner {
+      &-aptos {
+        bottom: 125px;
+        right: 100px;
+      }
+    }
+    &__quote{
+      &-text {
+      font-size: 30px;
+      width: 500px;
+      margin-bottom: 122px;
+      }
+      &::after {
+        left: -60px;
+      }
+    }
+    &__photo_2 {
+      width: 34vw;
+    }
+    &__photo_3 {
+      width: 17vw;
+    }
+  }
 }

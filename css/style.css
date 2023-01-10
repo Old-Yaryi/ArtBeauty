@@ -2640,5 +2640,45 @@ header a {
   .container {
     max-width: 1172px;
   }
+  .header {
+    height: 100%;
+  }
+  .problem-title {
+    margin-left: -77px;
+  }
+  .problem-subtitle {
+    margin-left: 40px;
+  }
+  .problem-block {
+    margin-left: 40px;
+  }
+  .problem-block__item {
+    -webkit-column-gap: 15px;
+            column-gap: 15px;
+  }
+  .problem-block__text {
+    width: 190px;
+  }
+  .problem .inner .join {
+    margin-top: -20px;
+  }
+  .thread__inner-aptos {
+    bottom: 125px;
+    right: 100px;
+  }
+  .thread__quote-text {
+    font-size: 30px;
+    width: 500px;
+    margin-bottom: 122px;
+  }
+  .thread__quote::after {
+    left: -60px;
+  }
+  .thread__photo_2 {
+    width: 34vw;
+  }
+  .thread__photo_3 {
+    width: 17vw;
+  }
 }
 /*# sourceMappingURL=style.css.map */
