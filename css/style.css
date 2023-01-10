@@ -2636,7 +2636,7 @@ header a {
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
   .container {
     max-width: 1172px;
   }
