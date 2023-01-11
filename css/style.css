@@ -2788,8 +2788,17 @@ header a {
   .problem__img::after {
     left: -180px;
   }
+  .problem-title {
+    margin-left: -115px;
+  }
+  .problem-subtitle {
+    margin-left: 10px;
+  }
   .problem-block {
     margin-left: 20px;
+  }
+  .problem .inner .join {
+    margin-top: -85px;
   }
 }
 /*# sourceMappingURL=style.css.map */

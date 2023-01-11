@@ -2311,8 +2311,17 @@ header {
     &__img::after {
       left: -180px;
     }
+    &-title {
+      margin-left: -115px;
+    }
+    &-subtitle {
+      margin-left: 10px;
+    }
     &-block {
       margin-left: 20px;
+    }
+    & .inner .join {
+      margin-top: -85px;
     }
   }
 }
