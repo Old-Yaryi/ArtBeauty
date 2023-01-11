@@ -2324,4 +2324,30 @@ header {
       margin-top: -85px;
     }
   }
+  .thread {
+    & .inner.info {
+      padding-top: 140px;
+    }
+    &__info {
+      margin-left: 30px;
+    }
+    &__title {
+      margin-left: -80px;
+    }
+    & .inner.before::before {
+      height: 490px;
+    }
+    &__inner-aptos {
+      bottom: 50px;
+    }
+    &__quote-text {
+      margin-bottom: 80px;
+    }
+    &__banner {
+      left: -40px;
+    }
+    &__photo_3 {
+      left: -120px;
+    }
+  }
 }

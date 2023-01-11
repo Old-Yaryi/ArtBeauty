@@ -2800,5 +2800,29 @@ header a {
   .problem .inner .join {
     margin-top: -85px;
   }
+  .thread .inner.info {
+    padding-top: 140px;
+  }
+  .thread__info {
+    margin-left: 30px;
+  }
+  .thread__title {
+    margin-left: -80px;
+  }
+  .thread .inner.before::before {
+    height: 490px;
+  }
+  .thread__inner-aptos {
+    bottom: 50px;
+  }
+  .thread__quote-text {
+    margin-bottom: 80px;
+  }
+  .thread__banner {
+    left: -40px;
+  }
+  .thread__photo_3 {
+    left: -120px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
