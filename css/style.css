@@ -2782,5 +2782,14 @@ header a {
   .header__texture-ellipse {
     left: 270px;
   }
+  .problem__img > img:first-child {
+    width: 100%;
+  }
+  .problem__img::after {
+    left: -180px;
+  }
+  .problem-block {
+    margin-left: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

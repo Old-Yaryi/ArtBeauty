@@ -2304,4 +2304,15 @@ header {
       left: 270px;
     }
   }
+  .problem {
+    &__img > img:first-child {
+      width: 100%;
+    }
+    &__img::after {
+      left: -180px;
+    }
+    &-block {
+      margin-left: 20px;
+    }
+  }
 }
