@@ -2346,8 +2346,15 @@ header {
     &__banner {
       left: -40px;
     }
+    &__photo {
+      margin-bottom: 150px;
+    }
+    &__photo_2 {
+      width: 32vw;
+    }
     &__photo_3 {
       left: -120px;
+      bottom: -100px;
     }
   }
 }

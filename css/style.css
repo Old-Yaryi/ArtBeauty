@@ -2821,8 +2821,15 @@ header a {
   .thread__banner {
     left: -40px;
   }
+  .thread__photo {
+    margin-bottom: 150px;
+  }
+  .thread__photo_2 {
+    width: 32vw;
+  }
   .thread__photo_3 {
     left: -120px;
+    bottom: -100px;
   }
 }
 /*# sourceMappingURL=style.css.map */
