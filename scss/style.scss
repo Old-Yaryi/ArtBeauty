@@ -598,15 +598,12 @@ header {
   & .inner.step {
     padding-top: 66px;
     margin-left: 28px;
+    margin-bottom: 100px;
   }
   &-video {
     &__block {
       position: relative;
       margin-bottom: 100px;
-    }
-    &__video {
-      z-index: -1;
-      right: 55px;
     }
     &__play {
       position: absolute;
@@ -710,8 +707,12 @@ header {
       }
     }
   }
+  &-list {
+    padding-top: 25px;
+  }
   &-desription {
     margin-bottom: 120px;
+    width: 50%;
     &__item {
       display: flex;
       border-bottom: $font-accent 1px solid;
@@ -2372,6 +2373,17 @@ header {
     &__photo_3 {
       left: -120px;
       bottom: -100px;
+    }
+  }
+  .how {
+    &-video__video {
+      width: 100%;
+    }
+    & .inner.video::after {
+      width: 125%;
+    }
+    & .inner.step {
+      margin-left: 0;
     }
   }
 }

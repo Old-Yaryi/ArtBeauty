@@ -732,11 +732,6 @@ header a {
   margin-bottom: 100px;
 }
 
-.how-video__video {
-  z-index: -1;
-  right: 55px;
-}
-
 .how-video__play {
   position: absolute;
   top: 41%;
@@ -860,8 +855,13 @@ header a {
   width: 460px;
 }
 
+.how-list {
+  padding-top: 25px;
+}
+
 .how-desription {
   margin-bottom: 120px;
+  width: 50%;
 }
 
 .how-desription__item {
@@ -2852,6 +2852,12 @@ header a {
   .thread__photo_3 {
     left: -120px;
     bottom: -100px;
+  }
+  .how-video__video {
+    width: 100%;
+  }
+  .how .inner.video::after {
+    width: 125%;
   }
 }
 /*# sourceMappingURL=style.css.map */
