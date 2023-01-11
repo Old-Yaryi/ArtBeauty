@@ -200,6 +200,7 @@ header {
       display: flex;
       justify-content: space-between;
       width: 100%;
+      align-items: center;
     }
     &-inner {
       display: flex;
@@ -225,6 +226,7 @@ header {
       display: flex;
       flex-direction: column;
       height: 45px;
+      margin-left: -240px;
       &_block {
         position: relative;
       }
@@ -2059,6 +2061,9 @@ header {
   .header__texture-ellipse {
     left: 360px;
   }
+  .header__top-adress {
+    margin-left: -100px;
+  }
   .problem {
     padding-bottom: 61px;
     &__img-problem {
@@ -2152,6 +2157,12 @@ header {
   }
   .header {
     height: 100%;
+    &__top-inner {
+      column-gap: 0;
+      &.social {
+        column-gap: 18px;
+      }
+    }
   }
   .problem {
     &-title {
@@ -2276,5 +2287,21 @@ header {
   }
   .action-feedback__userphone-input, .action-feedback__username-input, .action-feedback__date-input, .action-feedback__btn {
     height: 75px;
+  }
+}
+@media (max-width: 1300px) {
+  .container {
+    max-width: 1080px;
+  }
+  .header {
+    &__top-adress {
+      margin-left: -60px;
+    }
+    &__texture-cell {
+      left: 0;
+    }
+    &__texture-ellipse {
+      left: 270px;
+    }
   }
 }
