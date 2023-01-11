@@ -535,6 +535,24 @@ header a {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 120px;
+  margin-bottom: 0;
+}
+
+.thread .inner.photo {
+  margin-bottom: 119px;
+}
+
+.thread .inner.left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.thread .inner.right .thread__description {
+  margin-left: 100px;
 }
 
 .thread__inner-img {
@@ -617,15 +635,7 @@ header a {
   font-size: 35px;
   line-height: 154%;
   color: #B68C6E;
-  margin-bottom: 110px;
   padding-bottom: 52px;
-}
-
-.thread__quote p {
-  font-family: 'Montserrat';
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 200%;
 }
 
 .thread__photo {
@@ -645,8 +655,11 @@ header a {
   left: -150px;
 }
 
-.thread__photo-text {
-  margin-left: 100px;
+.thread__description {
+  width: 580px;
+}
+
+.thread__description p {
   font-family: 'Montserrat';
   font-weight: 400;
   font-size: 18px;
@@ -2692,12 +2705,21 @@ header a {
   .thread__info {
     margin-left: 90px;
   }
+  .thread .inner.photo {
+    margin-bottom: 40px;
+  }
   .thread__photo_2 {
     width: 34vw;
   }
   .thread__photo_3 {
     width: 17vw;
     left: -150px;
+  }
+  .thread .inner.right .thread__description {
+    margin-left: 90px;
+  }
+  .thread__description {
+    width: 490px;
   }
   .how-video__block {
     margin-bottom: 250px;

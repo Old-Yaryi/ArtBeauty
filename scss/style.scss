@@ -441,6 +441,17 @@ header {
       display: flex;
       justify-content: center;
       padding-top: 120px;
+      margin-bottom: 0;
+    }
+    &.photo {
+      margin-bottom: 119px;
+    }
+    &.left {
+      display: flex;
+      justify-content: center;
+    }
+    &.right .thread__description {
+      margin-left: 100px;
     }
   }
   &__inner {
@@ -514,14 +525,7 @@ header {
       font-size: 35px;
       line-height: 154%;
       color: #B68C6E;
-      margin-bottom: 110px;
       padding-bottom: 52px;
-    }
-    & p {
-      font-family: 'Montserrat';
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 200%;
     }
   }
   &__photo {
@@ -534,8 +538,10 @@ header {
       bottom: -70px;
       left: -150px;
     }
-    &-text {
-      margin-left: 100px;
+  }
+  &__description {
+    width: 580px;
+    & p {
       font-family: 'Montserrat';
       font-weight: 400;
       font-size: 18px;
@@ -2204,12 +2210,23 @@ header {
     &__info {
       margin-left: 90px;
     }
+    & .inner.photo{
+      margin-bottom: 40px;
+    }
     &__photo_2 {
       width: 34vw;
     }
     &__photo_3 {
       width: 17vw;
       left: -150px;
+    }
+    & .inner.right {
+      & .thread__description {
+      margin-left: 90px;
+      }
+    }
+    &__description {
+      width: 490px;
     }
   }
   .how {
