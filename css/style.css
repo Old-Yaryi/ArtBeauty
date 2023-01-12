@@ -649,6 +649,10 @@ header a {
   margin-bottom: 119px;
 }
 
+.thread__photo_2 {
+  margin-right: -30px;
+}
+
 .thread__photo_3 {
   position: absolute;
   bottom: -70px;
@@ -725,6 +729,7 @@ header a {
 .how .inner.step {
   padding-top: 66px;
   margin-left: 28px;
+  margin-bottom: 100px;
 }
 
 .how-video__block {
@@ -2858,6 +2863,9 @@ header a {
   }
   .how .inner.video::after {
     width: 125%;
+  }
+  .how .inner.step {
+    margin-left: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

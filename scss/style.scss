@@ -533,6 +533,9 @@ header {
     justify-content: flex-end;
     position: relative;
     margin-bottom: 119px;
+    &_2 {
+      margin-right: -30px;
+    }
     &_3 {
       position: absolute;
       bottom: -70px;
