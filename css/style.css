@@ -2957,4 +2957,35 @@ header a {
     margin-right: 60px;
   }
 }
+
+@media (max-width: 1200px) {
+  .header {
+    background-position-x: -265px;
+  }
+  .header__top-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header__top-inner.social {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .header__title h1 {
+    font-size: 50px;
+  }
+  .header__title h1 span {
+    font-size: 70px;
+  }
+  .header__texture-cell {
+    left: -165px;
+  }
+  .header__texture-ellipse {
+    left: 100px;
+    top: 265px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

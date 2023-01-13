@@ -2498,3 +2498,31 @@ header {
 
   }
 }
+@media (max-width: 1200px) {
+  .header {
+    background-position-x: -265px;
+    &__top-inner {
+      flex-direction: column;
+      &.social {
+        flex-direction: row;
+      }
+    }
+    &__title {
+      & h1 {
+        font-size: 50px;
+        & span {
+          font-size: 70px;
+        }
+      }
+    }
+    &__texture {
+      &-cell {
+        left: -165px;
+      }
+      &-ellipse {
+        left: 100px;
+        top: 265px;
+      }
+    }
+  }
+}
