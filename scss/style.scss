@@ -2064,6 +2064,7 @@ header {
     }
   }  
 } 
+// **********ADAPTIVE***********
 @media (max-width: 1500px) {
   .container {
     max-width: 1256px;
@@ -2371,7 +2372,7 @@ header {
       margin-bottom: 150px;
     }
     &__photo_2 {
-      width: 32vw;
+      width: 40vw;
     }
     &__photo_3 {
       left: -120px;
@@ -2501,6 +2502,7 @@ header {
 @media (max-width: 1200px) {
   .header {
     background-position-x: -265px;
+    height: 100vh;
     &__top-inner {
       flex-direction: column;
       &.social {
@@ -2524,5 +2526,32 @@ header {
         top: 265px;
       }
     }
+  }
+  .problem {
+    padding-bottom: 20px;
+    &__img {
+      margin-left: 50px;
+    }
+    & .inner:last-child {
+      margin-left: -65px;
+      margin-top: -120px;
+    }
+  }
+  .thread {
+    &__description {
+      width: 430px;
+    }
+    & .inner {
+      width: auto;
+    }
+    &__banner {
+      left: -130px;
+    }
+    &__photo_3 {
+      left: -50px;
+    }
+  }
+  .how {
+    
   }
 }

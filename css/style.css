@@ -2852,7 +2852,7 @@ header a {
     margin-bottom: 150px;
   }
   .thread__photo_2 {
-    width: 32vw;
+    width: 40vw;
   }
   .thread__photo_3 {
     left: -120px;
@@ -2961,6 +2961,7 @@ header a {
 @media (max-width: 1200px) {
   .header {
     background-position-x: -265px;
+    height: 100vh;
   }
   .header__top-inner {
     -webkit-box-orient: vertical;
@@ -2986,6 +2987,28 @@ header a {
   .header__texture-ellipse {
     left: 100px;
     top: 265px;
+  }
+  .problem {
+    padding-bottom: 20px;
+  }
+  .problem__img {
+    margin-left: 50px;
+  }
+  .problem .inner:last-child {
+    margin-left: -65px;
+    margin-top: -120px;
+  }
+  .thread__description {
+    width: 430px;
+  }
+  .thread .inner {
+    width: auto;
+  }
+  .thread__banner {
+    left: -130px;
+  }
+  .thread__photo_3 {
+    left: -50px;
   }
 }
 /*# sourceMappingURL=style.css.map */
