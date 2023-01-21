@@ -198,17 +198,20 @@ header {
     }
     &-menu {
       display: flex;
-      justify-content: space-between;
       width: 100%;
       align-items: center;
+      justify-content: space-between;
     }
-    &-inner {
+    &-logo {
       display: flex;
       column-gap: 30px;
       align-items: center;
-      &.social {
-        margin-right: 30px;
-      }
+    }
+    &-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 50%;
     }
     &_logo {
       width: 17vw;
@@ -226,7 +229,7 @@ header {
       display: flex;
       flex-direction: column;
       height: 45px;
-      margin-left: -240px;
+      margin-left: -190px;
       &_block {
         position: relative;
       }
@@ -238,6 +241,14 @@ header {
       }
       &_link-hide.hide {
         display: none;
+      }
+    }
+    &-social {
+      margin-right: 30px;
+      display: flex;
+      align-items: center;
+      & a {
+        margin-right: 30px;
       }
     }
     &-call {
@@ -2166,10 +2177,13 @@ header {
   }
   .header {
     height: 100%;
-    &__top-inner {
+    &__top-logo {
       column-gap: 0;
-      &.social {
-        column-gap: 18px;
+    }
+    &__top-social {
+      column-gap: 18px;
+      & a {
+        margin-right: 15px;
       }
     }
   }
@@ -2314,8 +2328,11 @@ header {
     max-width: 1080px;
   }
   .header {
+    &__top-logo {
+      flex-direction: column;
+    }
     &__top-adress {
-      margin-left: -60px;
+      margin-left: -270px;
     }
     &__texture-cell {
       left: 0;
@@ -2499,13 +2516,9 @@ header {
 }
 @media (max-width: 1200px) {
   .header {
-    background-position-x: -265px;
-    height: 100vh;
-    &__top-inner {
-      flex-direction: column;
-      &.social {
-        flex-direction: row;
-      }
+    
+    &__top-social {
+      flex-direction: row;
     }
     &__title {
       & h1 {
@@ -2687,12 +2700,11 @@ header {
   .action.action__second {
     margin-bottom: 45px;
     & .action-title {
-      height: 100vh;
-      padding-top: 0;
+      padding: 50% 0 50%;
       background-position: center;
       &__item {
-        margin-top: -370px;
-        margin-left: -130px;
+        margin-top: -70%;
+        margin-left: -10%;
       }
     }
   }
