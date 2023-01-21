@@ -1763,7 +1763,6 @@ header a {
   top: 30%;
   left: 23%;
   opacity: 0.9;
-  cursor: pointer;
   -webkit-transition: opacity 0.6s ease 0s;
   transition: opacity 0.6s ease 0s;
 }
@@ -1802,7 +1801,7 @@ header a {
 
 .advantage .line {
   top: 0;
-  z-index: 3;
+  z-index: 0;
 }
 
 .advantage h2 {
@@ -2998,17 +2997,157 @@ header a {
     margin-left: -65px;
     margin-top: -120px;
   }
+  .problem-block {
+    margin-left: 185px;
+    margin-top: -35px;
+  }
   .thread__description {
     width: 430px;
   }
   .thread .inner {
     width: auto;
+    margin-bottom: 22px;
   }
   .thread__banner {
     left: -130px;
   }
   .thread__photo_3 {
     left: -50px;
+  }
+  .how-step__item-title {
+    margin-right: 0;
+  }
+  .example {
+    padding-bottom: 100px;
+  }
+  .example .inner.slider {
+    margin-left: 95px;
+  }
+  .example__title {
+    margin-top: -170px;
+    margin-left: -140px;
+  }
+  .example__text {
+    margin-left: -125px;
+    margin-bottom: 190px;
+  }
+  .example__slider-controls .slick-arrow.slick-prev {
+    left: -83px;
+  }
+  .example__slider-controls .slick-arrow.slick-next {
+    right: -35px;
+  }
+  .example .join {
+    margin-left: -120px;
+  }
+  .exclusive {
+    margin-bottom: 35px;
+  }
+  .exclusive__slider-controls {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .exclusive__slider-controls .slick-arrow {
+    margin-left: -80px;
+  }
+  .exclusive__slider-inner .slick-track .slick-center img {
+    margin-left: -33%;
+  }
+  .exclusive__popup {
+    left: 24%;
+  }
+  .price .inner.price-photo::after {
+    right: 0;
+  }
+  .action {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .action-title {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    width: 100%;
+    padding: 120px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .action-title__item {
+    width: 75%;
+  }
+  .action-title__img {
+    top: 10%;
+    left: 29%;
+  }
+  .action-feedback {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+  }
+  .advantage {
+    padding-bottom: 30px;
+  }
+  .advantage__item {
+    -webkit-column-gap: 0;
+            column-gap: 0;
+  }
+  .team {
+    padding-bottom: 30px;
+  }
+  .team-inner:nth-last-child(2) {
+    margin-left: 30px;
+  }
+  .team-inner__img img {
+    width: 100%;
+  }
+  .team-inner__img:hover:before {
+    height: 100%;
+  }
+  .team-inner__dermatolog .team-inner__link::before {
+    top: -360px;
+    left: 390px;
+  }
+  .team-inner__cosmetolog-2 .team-inner__link::before {
+    right: 0;
+    width: 400px;
+  }
+  .tour__header {
+    margin-bottom: 50px;
+  }
+  .tour__title {
+    margin-top: 0;
+  }
+  .tour__categories {
+    margin-top: 50px;
+  }
+  .tour__categories__item {
+    margin-right: 0;
+  }
+  .tour-slider .slick-list {
+    margin-left: -6vw;
+  }
+  .tour-slider__controls-cabinet {
+    left: 30px;
+  }
+  .action.action__second .action-title {
+    height: 100vh;
+    padding-top: 0;
+    background-position: center;
+  }
+  .action.action__second .action-title__item {
+    margin-top: -370px;
+    margin-left: -130px;
   }
 }
 /*# sourceMappingURL=style.css.map */

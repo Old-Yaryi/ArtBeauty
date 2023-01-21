@@ -1433,7 +1433,6 @@ header {
       top: 30%;
       left: 23%;
       opacity: 0.9;
-      cursor: pointer;
       transition: opacity 0.6s ease 0s;
       &:hover {
         opacity: 0.3;
@@ -1451,7 +1450,6 @@ header {
       text-align: left;
       margin-left: 86px;
     }
-    
   }
 }
 .advantage {
@@ -1467,7 +1465,7 @@ header {
   }
   & .line {
     top: 0;
-    z-index: 3;
+    z-index: 0;
   }
   & h2 {
     width: 770px;
@@ -2536,6 +2534,10 @@ header {
       margin-left: -65px;
       margin-top: -120px;
     }
+    &-block {
+      margin-left: 185px;
+      margin-top: -35px;
+    }
   }
   .thread {
     &__description {
@@ -2543,6 +2545,7 @@ header {
     }
     & .inner {
       width: auto;
+      margin-bottom: 22px;
     }
     &__banner {
       left: -130px;
@@ -2552,6 +2555,138 @@ header {
     }
   }
   .how {
-    
+    &-step__item-title {
+      margin-right: 0;
+    }
+  }
+  .example {
+    padding-bottom: 100px;
+    & .inner.slider {
+      margin-left: 95px;
+    }
+    &__title {
+      margin-top: -170px;
+      margin-left: -140px;
+    }
+    &__text {
+      margin-left: -125px;
+      margin-bottom: 190px;
+    }
+    &__slider-controls {
+      & .slick-arrow.slick-prev {
+        left: -83px;
+      }
+      & .slick-arrow.slick-next {
+        right: -35px;
+      }
+    }
+    & .join {
+      margin-left: -120px;
+    }
+  }
+  .exclusive {
+    margin-bottom: 35px;
+    &__slider-controls {
+      justify-content: space-between;
+      & .slick-arrow {
+        margin-left: -80px;
+      }
+    }
+    &__slider-inner {
+      & .slick-track .slick-center img {
+        margin-left: -33%;
+      }
+    } 
+    &__popup {
+      left: 24%;
+    }
+  }
+  .price {
+    & .inner.price-photo::after {
+      right: 0;
+    }
+  } 
+  .action {
+    flex-direction: column;
+    &-title {
+      order: 0;
+      width: 100%;
+      padding: 120px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &__item {
+        width: 75%;
+      }
+      &__img {
+        top: 10%;
+        left: 29%;
+      }
+    }
+    &-feedback {
+      order: 1;
+      width: 100%;
+    }
+  }
+  .advantage {
+    padding-bottom: 30px;
+    &__item {
+      column-gap: 0;
+    }
+  }
+  .team {
+    padding-bottom: 30px;
+    &-inner {
+      &:nth-last-child(2) {
+        margin-left: 30px;
+      }
+      &__img img {
+        width: 100%;
+      }
+      &__img:hover:before {
+        height: 100%;
+      }
+      &__dermatolog .team-inner__link::before {
+        top: -360px;
+        left: 390px;
+      }
+      &__cosmetolog-2 .team-inner__link::before {
+        right: 0;
+        width: 400px;
+      }
+    }
+  }
+  .tour {
+    &__header {
+      margin-bottom: 50px;
+    }
+    &__title {
+      margin-top: 0;
+    }
+    &__categories {
+      margin-top: 50px;
+      &__item {
+      margin-right: 0;
+      }
+    }
+    &-slider {
+      & .slick-list {
+      margin-left: -6vw;
+      }
+      &__controls-cabinet {
+        left: 30px;
+      }
+    }
+  }
+  .action.action__second {
+    & .action-title {
+      height: 100vh;
+      padding-top: 0;
+      background-position: center;
+      &__item {
+        margin-top: -370px;
+        margin-left: -130px;
+      }
+    }
   }
 }
