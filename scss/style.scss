@@ -2558,6 +2558,12 @@ header {
     &-step__item-title {
       margin-right: 0;
     }
+    &-desription {
+      margin-bottom: 60px;
+    }
+  }
+  .benefit {
+    padding: 30px 0 80px;
   }
   .example {
     padding-bottom: 100px;
@@ -2679,6 +2685,7 @@ header {
     }
   }
   .action.action__second {
+    margin-bottom: 45px;
     & .action-title {
       height: 100vh;
       padding-top: 0;
@@ -2688,5 +2695,34 @@ header {
         margin-left: -130px;
       }
     }
+  }
+  .clients {
+    &-header {
+      &__title {
+        width: 70%;
+      }
+    }
+    &-slider{
+      margin-bottom: 30px;
+      &__controls {
+      align-items: center;
+      }
+    }
+  }
+  .footer {
+    padding: 30px 0;
+    &-item {
+      padding: 30px 10px 45px;
+      &__head {
+        margin-right: 25px;
+      }
+      &__menu {
+        width: 210px;
+      }
+      &__contacts {
+        margin-right: 20px;
+      }
+    }
+    
   }
 }
