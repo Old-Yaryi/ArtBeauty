@@ -17,6 +17,15 @@ $(document).ready(function(){
       phoneHide.toggleClass('hide')
     })
   })
+  // --**********MenuMobile**
+  $(function(){
+    let menuMobile = $('.header__burger')
+    menuMobile.on('click', function(){
+      let menuOpen = $('.header__mobile')
+      menuOpen.toggleClass('active')
+      menuMobile.toggleClass('active')
+    })
+  })
   // --**********CallBackOrder**
   const popupOpen = $('.popup-callback')
   let orderCall = $('.header__top-call_call')
