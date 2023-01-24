@@ -3071,4 +3071,39 @@ header {
       bottom: -85px;
     }
   }
+  &.exclusive {
+    height: 660px;
+    margin-bottom: 30px;
+    &__slider-inner {
+      & .slick-track .slick-center img {
+        height: auto;
+      }
+    }
+    &__slider-img {
+      height: auto;
+    }
+    &__popup {
+      left: 27%;
+      &-title {
+        margin-bottom: 20px;
+      }
+      &-item {
+        margin-bottom: 30px;
+      }
+      &-sale{
+        & p {
+          font-size: 80px;
+        }
+        &::before {
+          height: 95px;
+        }
+      } 
+      &-text {
+        font-size: 45px;
+      }
+      &-subtext {
+        font-size: 25px;
+      }
+    }
+  }
 }

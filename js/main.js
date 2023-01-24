@@ -90,7 +90,13 @@ $(document).ready(function(){
     slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: true,
-    appendArrows:'.exclusive__slider-controls'
+    appendArrows:'.exclusive__slider-controls',
+      responsive: [{
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1
+        }
+      }]
   });
 
   // --************PriceList**

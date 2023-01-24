@@ -3613,5 +3613,36 @@ header a {
     left: 180px;
     bottom: -85px;
   }
+  .exclusive {
+    height: 660px;
+    margin-bottom: 30px;
+  }
+  .exclusive__slider-inner .slick-track .slick-center img {
+    height: auto;
+  }
+  .exclusive__slider-img {
+    height: auto;
+  }
+  .exclusive__popup {
+    left: 27%;
+  }
+  .exclusive__popup-title {
+    margin-bottom: 20px;
+  }
+  .exclusive__popup-item {
+    margin-bottom: 30px;
+  }
+  .exclusive__popup-sale p {
+    font-size: 80px;
+  }
+  .exclusive__popup-sale::before {
+    height: 95px;
+  }
+  .exclusive__popup-text {
+    font-size: 45px;
+  }
+  .exclusive__popup-subtext {
+    font-size: 25px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
