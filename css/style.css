@@ -895,12 +895,14 @@ header a {
 }
 
 .how-video__img-play {
+  border: none;
+  background: inherit;
   position: absolute;
   top: 30%;
-  left: 38%;
+  left: 33%;
   cursor: pointer;
-  -webkit-transition: top, left 0.3s ease 0s;
-  transition: top, left 0.3s ease 0s;
+  -webkit-transition: top 0.3s ease 0s, left 0.3s ease 0s;
+  transition: top 0.3s ease 0s, left 0.3s ease 0s;
 }
 
 .how-video__img-play img {
@@ -910,12 +912,12 @@ header a {
 }
 
 .how-video__img-play:hover {
-  top: 28%;
-  left: 36%;
+  top: 25%;
+  left: 31%;
 }
 
 .how-video__img-play:hover img {
-  width: 130%;
+  width: 150%;
 }
 
 .how-list__link {
@@ -3539,6 +3541,77 @@ header a {
         -ms-flex-order: 0;
             order: 0;
     margin-bottom: 15px;
+  }
+  .benefit {
+    padding-bottom: 30px;
+  }
+  .benefit__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 30px;
+  }
+  .example {
+    position: relative;
+    padding-bottom: 280px;
+  }
+  .example .texture {
+    margin-left: 100px;
+  }
+  .example .item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .example .inner {
+    width: auto;
+  }
+  .example .inner.slider {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 0;
+    margin-top: -55px;
+  }
+  .example .inner.result {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    margin: 0;
+  }
+  .example__title {
+    margin: 0 0 30px;
+  }
+  .example__title-gold {
+    margin-left: 0;
+  }
+  .example__text {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .example .join {
+    position: absolute;
+    bottom: 0;
+    margin-left: 0;
+    bottom: -715px;
+  }
+  .example__slider-controls .slick-arrow.slick-prev {
+    left: 60px;
+  }
+  .example__slider-controls .slick-arrow.slick-next {
+    right: 60px;
+  }
+  .example__after {
+    left: 180px;
+    bottom: -85px;
   }
 }
 /*# sourceMappingURL=style.css.map */
