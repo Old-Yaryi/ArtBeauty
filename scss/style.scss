@@ -3136,7 +3136,7 @@ header {
         display: none;
       }
       &::before {
-        height: 50%;
+        height: 250px;
         bottom: 40px;
       }
     }
@@ -3176,4 +3176,10 @@ header {
       }
     }
   }
+  &.action {
+    &-title__img {
+      left: auto;
+    }
+  }
+
 }

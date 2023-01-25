@@ -3681,7 +3681,7 @@ header a {
     display: none;
   }
   .price .inner.price-photo::before {
-    height: 50%;
+    height: 250px;
     bottom: 40px;
   }
   .price .inner.price-block .join {
@@ -3716,6 +3716,9 @@ header a {
   }
   .price-photo__item:nth-last-child(1) {
     margin-top: 540px;
+  }
+  .action-title__img {
+    left: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
