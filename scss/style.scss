@@ -3181,5 +3181,10 @@ header {
       left: auto;
     }
   }
+  &.advantage {
+    & h2 {
+      width: 740px;
+    }
+  }
 
 }

@@ -3720,5 +3720,8 @@ header a {
   .action-title__img {
     left: auto;
   }
+  .advantage h2 {
+    width: 740px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
