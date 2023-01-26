@@ -3815,6 +3815,9 @@ header a {
     right: 15px;
     bottom: -23px;
   }
+  .tour {
+    padding-bottom: 40px;
+  }
   .tour__categories {
     margin-top: 150px;
   }
@@ -3828,6 +3831,9 @@ header a {
   .tour-slider__controls-cabinet, .tour-slider__controls-recepton, .tour-slider__controls-hall {
     -webkit-column-gap: 505px;
             column-gap: 505px;
+  }
+  .action-title__unit {
+    font-size: 100px;
   }
 }
 /*# sourceMappingURL=style.css.map */

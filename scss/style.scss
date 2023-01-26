@@ -3262,6 +3262,7 @@ header {
     }
   }
   .tour {
+    padding-bottom: 40px;
     &__categories {
       margin-top: 150px;
     }
@@ -3275,6 +3276,9 @@ header {
   }
   .tour-slider__controls-cabinet, .tour-slider__controls-recepton, .tour-slider__controls-hall {
     column-gap: 505px;
+  }
+  .action-title__unit {
+    font-size: 100px;
   }
 
 }
