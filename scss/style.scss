@@ -2989,6 +2989,7 @@ header {
       &.detail {
         order: 1;
         text-align: center;
+        margin-bottom: 30px;
       }
     }
     &-video__block {
@@ -3007,9 +3008,10 @@ header {
       flex-direction: column;
       align-items: center;
     }
-    &-description {
+    &-desription {
       order: 0;
       margin-bottom: 15px;
+      width: 100%;
     }
   }
   .benefit {
@@ -3292,6 +3294,32 @@ header {
     &-slider__controls {
       margin-bottom: 30px;
       justify-content: end;
+    }
+  }
+  .footer {
+    padding: 30px 30px;
+    &-item {
+      flex-wrap: wrap;
+      justify-content: center;
+      &__head {
+        width: 350px;
+        margin-right: 0;
+      }
+      &__menu {
+        width: 350px;
+        margin-right: 0;
+      }
+      &__contacts {
+        width: 350px;
+        margin-right: 0;
+      }
+      &__phone {
+        width: 350px;
+        margin-right: 0;
+      }
+      &__contacts-before {
+        right: 70px;
+      }
     }
   }
 
