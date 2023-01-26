@@ -3280,5 +3280,19 @@ header {
   .action-title__unit {
     font-size: 100px;
   }
+  .clients {
+    &-header {
+      flex-direction: column;
+      &__title {
+        width: 100%;
+        margin-bottom: 40px;
+        margin-right: 30px;
+      }
+    }
+    &-slider__controls {
+      margin-bottom: 30px;
+      justify-content: end;
+    }
+  }
 
 }

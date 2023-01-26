@@ -176,14 +176,17 @@ $(document).ready(function(){
     });
   // --************ClientsSlider**
   $('.clients-slider').slick({
-    // infinite: true,
       arrows: true,
       dots: false,
       slidesToShow: 4,
       slidesToScroll: 1,
-      // centerMode: true,
-      // centerPadding: '100px',
-      appendArrows:'.clients-slider__controls'
+      appendArrows:'.clients-slider__controls',
+      responsive: [{
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3
+        }
+      }]
     });
     // --************FooterAdress**
   $(function(){
