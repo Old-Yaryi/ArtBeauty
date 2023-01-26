@@ -3071,7 +3071,7 @@ header {
       bottom: -85px;
     }
   }
-  &.exclusive {
+  .exclusive {
     height: 660px;
     margin-bottom: 0px;
     &__slider-inner {
@@ -3106,7 +3106,7 @@ header {
       }
     }
   }
-  &.price {
+  .price {
     position: relative;
     &-inner {
       flex-direction: column;
@@ -3176,14 +3176,89 @@ header {
       }
     }
   }
-  &.action {
+  .action {
     &-title__img {
       left: auto;
     }
   }
-  &.advantage {
+  .advantage {
+    padding-bottom: 0;
     & h2 {
       width: 740px;
+    }
+  }
+  .team {
+    position: relative;
+    &-item {
+      flex-direction: column;
+      align-items: center;
+    }
+    &-title {
+      position: absolute;
+      top: 0;
+    }
+    &-inner {
+      position: static;
+      width: 100%;
+      height: auto;
+      &:nth-last-child(2) {
+        order: 0;
+        margin-top: 235px;
+        margin-left: 0;
+        margin-bottom: 42px;
+      }
+      &:nth-last-child(3) {
+        order: 2;
+        margin-top: -300px;
+      }
+      &:last-child {
+        order: 1;
+      }
+
+      &__dermatolog, &__cosmetolog-1, &__cosmetolog-2 {
+        position: relative;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & .team-inner__unit {
+          position: relative;
+          left: 0;
+          right: 0;
+          top: 0;
+        }
+      }
+      &__cosmetolog-1::after {
+        height: 50%;
+        width: 450px;
+        top: auto;
+        bottom: 52px;
+        left: auto;
+        right: auto;
+        margin-right: 115px;
+      }
+      &__cosmetolog-2 .team-inner__link::before {
+        width: 450px;
+        margin-right: 15px;
+        bottom: -20px;
+      }
+      &__dermatolog .team-inner__link::before {
+        display: none;
+      }
+      &__dermatolog {
+        & .team-inner__unit {
+          width: 450px;
+          z-index: 1;
+        }
+        .team-inner__link::after {
+          width: 450px;
+          height: 50%;
+          left: auto;
+          right: 15px;
+          bottom: -23px;
+  
+        }
+      }
     }
   }
 
