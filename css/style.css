@@ -3728,6 +3728,7 @@ header a {
   }
   .team {
     position: relative;
+    padding-bottom: 330px;
   }
   .team-item {
     -webkit-box-orient: vertical;
@@ -3813,6 +3814,20 @@ header a {
     left: auto;
     right: 15px;
     bottom: -23px;
+  }
+  .tour__categories {
+    margin-top: 150px;
+  }
+  .tour-slider__inner.slick-center img {
+    width: 180%;
+    margin-left: -195px;
+  }
+  .tour-slider__categories h5 {
+    font-size: 75px;
+  }
+  .tour-slider__controls-cabinet, .tour-slider__controls-recepton, .tour-slider__controls-hall {
+    -webkit-column-gap: 505px;
+            column-gap: 505px;
   }
 }
 /*# sourceMappingURL=style.css.map */

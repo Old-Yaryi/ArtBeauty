@@ -3189,6 +3189,7 @@ header {
   }
   .team {
     position: relative;
+    padding-bottom: 330px;
     &-item {
       flex-direction: column;
       align-items: center;
@@ -3214,7 +3215,6 @@ header {
       &:last-child {
         order: 1;
       }
-
       &__dermatolog, &__cosmetolog-1, &__cosmetolog-2 {
         position: relative;
         margin-top: 0;
@@ -3260,6 +3260,21 @@ header {
         }
       }
     }
+  }
+  .tour {
+    &__categories {
+      margin-top: 150px;
+    }
+    &-slider__inner.slick-center img {
+      width: 180%;
+      margin-left: -195px;
+    }
+    &-slider__categories h5 {
+      font-size: 75px;
+    }
+  }
+  .tour-slider__controls-cabinet, .tour-slider__controls-recepton, .tour-slider__controls-hall {
+    column-gap: 505px;
   }
 
 }
