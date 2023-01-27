@@ -3468,5 +3468,36 @@ header {
       width: 40%;
     }
   }
-   
+  .how {
+    &-item {
+      padding-right: 0;
+    }
+    & .inner {
+      &.video {
+        &::after {
+          width: 90%;
+          right: 0;
+        }
+      }
+    }
+    &-video__img {
+      right: 20px;
+    }
+    &-title {
+      font-size: 50px;
+      margin-top: 23px;
+    }
+    &-step {
+      margin-left: 0;
+      &__item {
+        margin-bottom: 25px;
+        &-move {
+          font-size: 23px;
+        }
+        &-text {
+          font-size: 14px;
+        }
+      }
+    }
+  }
 }

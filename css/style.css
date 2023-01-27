@@ -4017,5 +4017,31 @@ header a {
     right: 54px;
     width: 40%;
   }
+  .how-item {
+    padding-right: 0;
+  }
+  .how .inner.video::after {
+    width: 90%;
+    right: 0;
+  }
+  .how-video__img {
+    right: 20px;
+  }
+  .how-title {
+    font-size: 50px;
+    margin-top: 23px;
+  }
+  .how-step {
+    margin-left: 0;
+  }
+  .how-step__item {
+    margin-bottom: 25px;
+  }
+  .how-step__item-move {
+    font-size: 23px;
+  }
+  .how-step__item-text {
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
