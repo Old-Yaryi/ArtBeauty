@@ -3501,8 +3501,43 @@ header {
     }
   }
   .benefit {
+    padding-bottom: 60px;
     & h2 {
       font-size: 50px;
+    }
+  }
+  .example {
+    &__title {
+      &-gold {
+        font-size: 50px;
+      }
+      &-black {
+        font-size: 50px;
+      }
+    }
+    &__text {
+      width: 375px;
+    }
+    & .texture {
+      margin-left: auto;
+      left: -100px;
+      top: -125px;
+    }
+    &__slider {
+      width: 550px;
+      &-controls {
+        & .slick-arrow {
+          &.slick-prev {
+            left: 0;
+          }
+          &.slick-next {
+            right: 0;
+          }
+        }
+      }
+    }
+    &__after {
+      left: 20px;
     }
   }
 }

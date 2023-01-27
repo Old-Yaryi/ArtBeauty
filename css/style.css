@@ -4043,8 +4043,37 @@ header a {
   .how-step__item-text {
     font-size: 14px;
   }
+  .benefit {
+    padding-bottom: 60px;
+  }
   .benefit h2 {
     font-size: 50px;
+  }
+  .example__title-gold {
+    font-size: 50px;
+  }
+  .example__title-black {
+    font-size: 50px;
+  }
+  .example__text {
+    width: 375px;
+  }
+  .example .texture {
+    margin-left: auto;
+    left: -100px;
+    top: -125px;
+  }
+  .example__slider {
+    width: 550px;
+  }
+  .example__slider-controls .slick-arrow.slick-prev {
+    left: 0;
+  }
+  .example__slider-controls .slick-arrow.slick-next {
+    right: 0;
+  }
+  .example__after {
+    left: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
