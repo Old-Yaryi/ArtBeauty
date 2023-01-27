@@ -4075,5 +4075,45 @@ header a {
   .example__after {
     left: 20px;
   }
+  .exclusive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+  }
+  .exclusive h2 {
+    font-size: 50px;
+  }
+  .exclusive__slider-inner .slick-list {
+    margin-left: 0;
+    width: 100vw;
+  }
+  .exclusive__slider-inner .slick-track .slick-center img {
+    width: 80%;
+    margin-left: -7%;
+  }
+  .exclusive__slider-controls {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-column-gap: 70%;
+            column-gap: 70%;
+    margin-top: -40%;
+  }
+  .exclusive__slider-img {
+    width: 80%;
+  }
+  .exclusive__popup {
+    position: relative;
+    left: 0;
+    bottom: 45%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
