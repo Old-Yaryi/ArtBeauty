@@ -3574,4 +3574,15 @@ header {
       bottom: 45%;
     }
   }
+  .action {
+    &-title {
+      padding: 70px 0;
+      &__item {
+        font-size: 50px;
+      }
+      &__img {
+        width: 55%;
+      }
+    }
+  }
 }

@@ -4115,5 +4115,14 @@ header a {
     left: 0;
     bottom: 45%;
   }
+  .action-title {
+    padding: 70px 0;
+  }
+  .action-title__item {
+    font-size: 50px;
+  }
+  .action-title__img {
+    width: 55%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
