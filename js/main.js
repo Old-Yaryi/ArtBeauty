@@ -145,34 +145,46 @@ $(document).ready(function(){
   })
   // --************TourSliders**
   $('.tour-slider__item-cabinet').slick({
-  // infinite: true,
     arrows: true,
     dots: false,
     slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: true,
-    // centerPadding: '100px',
-    appendArrows:'.tour-slider__controls-cabinet'
+    appendArrows:'.tour-slider__controls-cabinet',
+    responsive: [{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1
+      }
+    }]
   });
   $('.tour-slider__item-reception').slick({
-    // infinite: true,
       arrows: true,
       dots: false,
       slidesToShow: 3,
       slidesToScroll: 1,
       centerMode: true,
-      // centerPadding: '100px',
-      appendArrows:'.tour-slider__controls-recepton'
+      appendArrows:'.tour-slider__controls-recepton',
+      responsive: [{
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1
+        }
+      }]
   });
   $('.tour-slider__item-hall').slick({
-    // infinite: true,
       arrows: true,
       dots: false,
       slidesToShow: 3,
       slidesToScroll: 1,
       centerMode: true,
-      // centerPadding: '100px',
-      appendArrows:'.tour-slider__controls-hall'
+      appendArrows:'.tour-slider__controls-hall',
+      responsive: [{
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1
+        }
+      }]
     });
   // --************ClientsSlider**
   $('.clients-slider').slick({

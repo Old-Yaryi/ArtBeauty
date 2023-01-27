@@ -4136,5 +4136,69 @@ header a {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
+  .team-inner__dermatolog, .team-inner__cosmetolog-1, .team-inner__cosmetolog-2 {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .team {
+    padding-bottom: 390px;
+  }
+  .team-inner__cosmetolog-1::after {
+    margin-right: 15px;
+    width: 550px;
+  }
+  .team-inner__cosmetolog-2 .team-inner__link::before {
+    width: 550px;
+  }
+  .team-inner__dermatolog .team-inner__link::after {
+    width: 550px;
+  }
+  .tour__header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .tour__title h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+  .tour__categories {
+    margin-top: 0;
+  }
+  .tour__categories__item {
+    margin-left: 60px;
+  }
+  .tour__categories-inner.categories__active::after {
+    width: 30px;
+    left: -45px;
+  }
+  .tour-slider {
+    margin-left: 10%;
+  }
+  .tour-slider__inner.slick-center img {
+    width: 100%;
+    margin-left: -240px;
+  }
+  .tour-slider__img {
+    width: 100%;
+  }
+  .tour-slider__categories {
+    left: 115px;
+  }
+  .tour-slider__categories h5 {
+    font-size: 50px;
+  }
+  .tour-slider__controls-cabinet, .tour .tour-slider__controls-recepton, .tour .tour-slider__controls-hall {
+    width: 100%;
+    -webkit-column-gap: 30%;
+            column-gap: 30%;
+  }
+  .tour-slider__controls-cabinet, .tour .tour-slider__controls-recepton, .tour .tour-slider__controls-hall {
+    left: auto;
+    right: 70px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
