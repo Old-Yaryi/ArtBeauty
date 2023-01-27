@@ -4124,5 +4124,17 @@ header a {
   .action-title__img {
     width: 55%;
   }
+  .advantage {
+    padding: 40px 0 55px;
+  }
+  .advantage h2 {
+    font-size: 50px;
+    width: 450px;
+  }
+  .advantage__item {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 /*# sourceMappingURL=style.css.map */

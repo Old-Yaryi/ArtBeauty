@@ -3585,4 +3585,14 @@ header {
       }
     }
   }
+  .advantage {
+    padding: 40px 0 55px;
+    & h2 {
+      font-size: 50px;
+      width: 450px;
+    }
+    &__item {
+      justify-content: flex-start;
+    }
+  }
 }
