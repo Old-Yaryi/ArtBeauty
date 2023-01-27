@@ -3884,4 +3884,53 @@ header a {
     right: 70px;
   }
 }
+
+@media (max-width: 768px) {
+  .header__top {
+    margin-bottom: 33px;
+  }
+  .header__top-logo {
+    width: 150px;
+  }
+  .header__top_logo {
+    width: 100%;
+    margin-right: 0;
+  }
+  .header__top-title {
+    margin-left: 25px;
+  }
+  .header__title {
+    width: 200px;
+  }
+  .header__title h1 {
+    font-size: 30px;
+    line-height: 131.2%;
+    margin-bottom: 40px;
+  }
+  .header__title h1 span {
+    font-size: 30px;
+    line-height: 131.2%;
+  }
+  .header__title p {
+    font-size: 18px;
+    width: 250px;
+  }
+  .header__texture-ellipse {
+    top: 182px;
+    left: 98px;
+  }
+  .header__mobile {
+    padding-bottom: 200px;
+  }
+  .header__mobile-top {
+    margin-bottom: 15px;
+  }
+  .header__mobile-menu .header__top-adress {
+    margin-bottom: 15px;
+  }
+  .header__mobile-menu .header__top-call {
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */

@@ -3324,3 +3324,58 @@ header {
   }
 
 }
+@media (max-width: 768px) {
+  .header {
+    &__top {
+      margin-bottom: 33px;
+      &-logo {
+        width: 150px;
+      }
+      &_logo {
+        width: 100%;
+        margin-right: 0;
+      }
+      &-title {
+        margin-left: 25px;
+      }
+    }
+    &__title {
+      width: 200px;
+      & h1 {
+        font-size: 30px;
+        line-height: 131.2%;
+        margin-bottom: 40px;
+        & span {
+          font-size: 30px;
+          line-height: 131.2%;
+        }
+      }
+      & p {
+        font-size: 18px;
+        width: 250px;
+      }
+    }
+    &__texture {
+      &-ellipse {
+        top: 182px;
+        left: 98px;
+      }
+    }
+    &__mobile {
+      padding-bottom: 200px;
+      &-top {
+        margin-bottom: 15px;
+      }
+      &-menu {
+        & .header__top-adress {
+          margin-bottom: 15px;
+        }
+        & .header__top-call {
+          margin-bottom: 20px;
+          margin-top: 0;
+        }
+      }
+    }
+    
+  } 
+}
