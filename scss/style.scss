@@ -3359,6 +3359,7 @@ header {
       &-ellipse {
         top: 182px;
         left: 98px;
+        width: 200px;
       }
     }
     &__mobile {
@@ -3377,5 +3378,34 @@ header {
       }
     }
     
+  }
+  .problem {
+    padding-top: 30px;
+    & .texture {
+      margin-left: -30%;
+      margin-top: 610px;
+      pointer-events: none;
+    }
+    &__img {
+      margin-left: 0;
+      text-align: center;
+      margin-bottom: 25px;
+      &::after {
+        width: 100%;
+        left: 0;
+      }
+      &-problem {
+        left: 0;
+        font-size: 70px;
+      }
+    }
+    &-title {
+      font-size: 50px;
+      line-height: 105%;
+    }
+    &-subtitle {
+      font-size: 45px;
+      line-height: 105%;
+    }
   } 
 }

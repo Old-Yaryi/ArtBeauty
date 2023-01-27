@@ -3918,6 +3918,7 @@ header a {
   .header__texture-ellipse {
     top: 182px;
     left: 98px;
+    width: 200px;
   }
   .header__mobile {
     padding-bottom: 200px;
@@ -3931,6 +3932,35 @@ header a {
   .header__mobile-menu .header__top-call {
     margin-bottom: 20px;
     margin-top: 0;
+  }
+  .problem {
+    padding-top: 30px;
+  }
+  .problem .texture {
+    margin-left: -30%;
+    margin-top: 610px;
+    pointer-events: none;
+  }
+  .problem__img {
+    margin-left: 0;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .problem__img::after {
+    width: 100%;
+    left: 0;
+  }
+  .problem__img-problem {
+    left: 0;
+    font-size: 70px;
+  }
+  .problem-title {
+    font-size: 50px;
+    line-height: 105%;
+  }
+  .problem-subtitle {
+    font-size: 45px;
+    line-height: 105%;
   }
 }
 /*# sourceMappingURL=style.css.map */
