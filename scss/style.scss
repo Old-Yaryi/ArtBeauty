@@ -3769,6 +3769,7 @@ header {
     }
   }
   .problem {
+    padding-bottom: 90px;
     & .texture {
       margin-left: -40%;
       margin-top: 370px;
@@ -3796,6 +3797,88 @@ header {
       margin-left: 75px;
       & span {
         font-size: 14px;
+      }
+    }
+  }
+  .thread {
+    & .texture {
+      margin-left: -45%;
+      margin-top: 125px;
+    }
+    &__inner {
+      &-img {
+        text-align: end;
+      }
+      &-face {
+        top: -70px;
+        width: 65%;
+      } 
+      &-aptos {
+        font-size: 50px;
+        bottom: 45px;
+        right: 15px;
+      }
+    }
+    & .inner.before::before {
+      height: 265px;
+      bottom: 25px;
+    }
+    & .inner.info {
+      margin-top: -110px;
+    }
+    & .inner.left {
+      margin-bottom: 10px;
+    }
+    &__title, &__subtitle {
+      font-size: 37px;
+    }
+    &__title {
+      margin-top: 40px;
+    }
+    &__info {
+      width: 375px;
+      & h3 {
+        font-size: 14px;
+        margin-left: 50px;
+      }
+      & p {
+        font-size: 14px;
+        margin-left: 50px;
+      }
+    }
+    &__banner {
+      width: 100px;
+      top: auto;
+      bottom: 180px;
+      right: auto;
+      left: 35px;
+    }
+    &__photo {
+      margin-bottom: 130px;
+    }
+    &__photo_2 {
+      width: 100%;
+    }
+    &__photo_3 {
+      right: 0;
+      width: 50%;
+    }
+    &__quote {
+      width: 220px;
+      justify-content: end;
+      &::after {
+        left: -80px;
+      }
+      &-text {
+        width: 220px;
+        font-size: 18px;
+        padding-bottom: 10px;
+      }
+    }
+    &__description {
+      width: 375px;
+      & p {
+        font-size: 16px;
       }
     }
   }

@@ -4321,6 +4321,9 @@ header a {
     width: 250px;
     font-size: 18px;
   }
+  .problem {
+    padding-bottom: 90px;
+  }
   .problem .texture {
     margin-left: -40%;
     margin-top: 370px;
@@ -4349,6 +4352,86 @@ header a {
   }
   .problem-subtitle span {
     font-size: 14px;
+  }
+  .thread .texture {
+    margin-left: -45%;
+    margin-top: 125px;
+  }
+  .thread__inner-img {
+    text-align: end;
+  }
+  .thread__inner-face {
+    top: -70px;
+    width: 65%;
+  }
+  .thread__inner-aptos {
+    font-size: 50px;
+    bottom: 45px;
+    right: 15px;
+  }
+  .thread .inner.before::before {
+    height: 265px;
+    bottom: 25px;
+  }
+  .thread .inner.info {
+    margin-top: -110px;
+  }
+  .thread .inner.left {
+    margin-bottom: 10px;
+  }
+  .thread__title, .thread__subtitle {
+    font-size: 37px;
+  }
+  .thread__title {
+    margin-top: 40px;
+  }
+  .thread__info {
+    width: 375px;
+  }
+  .thread__info h3 {
+    font-size: 14px;
+    margin-left: 50px;
+  }
+  .thread__info p {
+    font-size: 14px;
+    margin-left: 50px;
+  }
+  .thread__banner {
+    width: 100px;
+    top: auto;
+    bottom: 180px;
+    right: auto;
+    left: 35px;
+  }
+  .thread__photo {
+    margin-bottom: 130px;
+  }
+  .thread__photo_2 {
+    width: 100%;
+  }
+  .thread__photo_3 {
+    right: 0;
+    width: 50%;
+  }
+  .thread__quote {
+    width: 220px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  .thread__quote::after {
+    left: -80px;
+  }
+  .thread__quote-text {
+    width: 220px;
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+  .thread__description {
+    width: 375px;
+  }
+  .thread__description p {
+    font-size: 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */
