@@ -4203,5 +4203,62 @@ header a {
     left: auto;
     right: 70px;
   }
+  .clients-header__title {
+    text-align: center;
+  }
+  .clients-header__title h2 {
+    font-size: 50px;
+  }
+  .footer-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-item__head {
+    text-align: center;
+  }
+  .footer-item__menu {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-item__menu-item {
+    margin-right: 0;
+  }
+  .footer-item__contacts {
+    text-align: center;
+  }
+  .footer-item__contacts-list {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-item__contacts-before {
+    right: 30px;
+  }
+  .footer-item__contacts-adress {
+    margin-bottom: 0;
+  }
+  .footer-item__phone {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
