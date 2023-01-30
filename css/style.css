@@ -4321,5 +4321,34 @@ header a {
     width: 250px;
     font-size: 18px;
   }
+  .problem .texture {
+    margin-left: -40%;
+    margin-top: 370px;
+  }
+  .problem__img {
+    margin-bottom: 20px;
+  }
+  .problem__img::after {
+    height: 155px;
+    width: 75%;
+    bottom: -40px;
+  }
+  .problem__img img:first-child {
+    width: 65%;
+  }
+  .problem__img-problem {
+    font-size: 50px;
+  }
+  .problem-title {
+    margin: 0 0 10px;
+    font-size: 37px;
+  }
+  .problem-subtitle {
+    font-size: 32px;
+    margin-left: 75px;
+  }
+  .problem-subtitle span {
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

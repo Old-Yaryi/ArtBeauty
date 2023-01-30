@@ -3768,5 +3768,36 @@ header {
       }
     }
   }
+  .problem {
+    & .texture {
+      margin-left: -40%;
+      margin-top: 370px;
+    }
+    &__img{
+      margin-bottom: 20px;
+      &::after {
+        height: 155px;
+        width: 75%;
+        bottom: -40px;
+      }
+      & img:first-child {
+        width: 65%;
+      }
+      &-problem {
+        font-size: 50px;
+      }
+    }
+    &-title {
+      margin: 0 0 10px;
+      font-size: 37px;
+    }
+    &-subtitle {
+      font-size: 32px;
+      margin-left: 75px;
+      & span {
+        font-size: 14px;
+      }
+    }
+  }
 
 }
