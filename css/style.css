@@ -883,6 +883,8 @@ header a {
   position: absolute;
   bottom: -10px;
   right: -40px;
+  font-family: 'Quente Script';
+  font-size: 92px;
 }
 
 .how-video__img-1 {
@@ -4048,6 +4050,7 @@ header a {
   }
   .how-video__img {
     right: 20px;
+    font-size: 70px;
   }
   .how-title {
     font-size: 50px;
@@ -4431,6 +4434,43 @@ header a {
     width: 375px;
   }
   .thread__description p {
+    font-size: 16px;
+  }
+  .how-title {
+    font-size: 37px;
+    margin-bottom: 30px;
+  }
+  .how .inner.video {
+    margin-bottom: 5px;
+  }
+  .how .inner.detail {
+    text-align: left;
+  }
+  .how-video__img {
+    font-size: 50px;
+  }
+  .how-step__item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .how-step__item-title {
+    margin-bottom: 10px;
+  }
+  .how-step__item-text {
+    margin-left: 40px;
+  }
+  .how-desription__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 30px 0 30px;
+    row-gap: 15px;
+  }
+  .how-desription__item-value {
     font-size: 16px;
   }
 }

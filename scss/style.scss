@@ -710,6 +710,8 @@ header {
       position: absolute;
       bottom: -10px;
       right: -40px;
+      font-family: 'Quente Script';
+      font-size: 92px;
       &-1 {
         position: relative;
       }
@@ -3500,6 +3502,7 @@ header {
     }
     &-video__img {
       right: 20px;
+      font-size: 70px;
     }
     &-title {
       font-size: 50px;
@@ -3882,5 +3885,43 @@ header {
       }
     }
   }
-
+  .how {
+    &-title {
+      font-size: 37px;
+      margin-bottom: 30px;
+    }
+    & .inner {
+      &.video {
+        margin-bottom: 5px;
+      }
+      &.detail {
+        text-align: left;
+      }
+    }
+    &-video__img {
+      font-size: 50px;
+    }
+    &-step {
+      &__item {
+        flex-wrap: wrap;
+        &-title {
+          margin-bottom: 10px;
+        }
+        &-text {
+          margin-left: 40px;
+        }
+      }
+    }
+    &-desription {
+      &__item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px 0 30px;
+        row-gap: 15px;
+        &-value {
+          font-size: 16px;
+        }
+      }
+    }
+  }
 }
