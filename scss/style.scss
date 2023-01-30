@@ -3946,4 +3946,52 @@ header {
       font-size: 16px;
     }
   }
+  .example {
+    & .texture {
+      left: -240px;
+      top: -330px;
+    }
+    & .inner.slider {
+      position: relative;
+    }
+    &__slider {
+      width: 350px;
+      & .slick-track {
+        height: 340px;
+      }
+      &-controls{
+        position: absolute;
+        top: 60%;
+        & .slick-arrow {
+          height: 40px;
+          width: 40px;
+          &.slick-prev {
+            top: 13%;
+            left: -10px;
+          }
+          &.slick-next {
+            top: 13%;
+            right: -10px;
+          }
+        }
+        
+      } 
+    }
+    &__after{
+      left: 75px;
+      bottom: -40px;
+      h5 {
+        font-size: 50px;
+      }
+    } 
+    &__title {
+      margin-bottom: 15px;
+      &-gold, &-black {
+        font-size: 37px;
+      }
+    }
+    &__text {
+      font-size: 14px;
+    }
+  }
 }

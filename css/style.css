@@ -4497,5 +4497,50 @@ header a {
   .benefit-title {
     font-size: 16px;
   }
+  .example .texture {
+    left: -240px;
+    top: -330px;
+  }
+  .example .inner.slider {
+    position: relative;
+  }
+  .example__slider {
+    width: 350px;
+  }
+  .example__slider .slick-track {
+    height: 340px;
+  }
+  .example__slider-controls {
+    position: absolute;
+    top: 60%;
+  }
+  .example__slider-controls .slick-arrow {
+    height: 40px;
+    width: 40px;
+  }
+  .example__slider-controls .slick-arrow.slick-prev {
+    top: 13%;
+    left: -10px;
+  }
+  .example__slider-controls .slick-arrow.slick-next {
+    top: 13%;
+    right: -10px;
+  }
+  .example__after {
+    left: 75px;
+    bottom: -40px;
+  }
+  .example__after h5 {
+    font-size: 50px;
+  }
+  .example__title {
+    margin-bottom: 15px;
+  }
+  .example__title-gold, .example__title-black {
+    font-size: 37px;
+  }
+  .example__text {
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
