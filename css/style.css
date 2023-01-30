@@ -4473,5 +4473,29 @@ header a {
   .how-desription__item-value {
     font-size: 16px;
   }
+  .how .item:last-child {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .benefit h2 {
+    font-size: 37px;
+    margin-bottom: 35px;
+  }
+  .benefit__item {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .benefit-text {
+    width: 350px;
+    font-size: 14px;
+  }
+  .benefit-ing {
+    width: 47px;
+  }
+  .benefit-title {
+    font-size: 16px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

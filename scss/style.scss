@@ -3923,5 +3923,27 @@ header {
         }
       }
     }
+    & .item:last-child {
+      align-items: flex-start;
+    }
+  }
+  .benefit {
+    & h2 {
+      font-size: 37px;
+      margin-bottom: 35px;
+    }
+    &__item {
+      align-items: flex-start;
+    }
+    &-text {
+      width: 350px;
+      font-size: 14px;
+    }
+    &-ing {
+      width: 47px;
+    }
+    &-title {
+      font-size: 16px;
+    }
   }
 }
