@@ -3722,4 +3722,25 @@ header {
       }
     }
   }
+  .popup-callback__item, .popup-registation__item {
+    padding: 30px 50px;
+  }
+  .popup-callback_close, .popup-registation_close {
+    right: 30px;
+  }
+  .popup-callback .action-feedback__h3, .popup-registation .action-feedback__h3 {
+    width: 430px;
+  }
+  .popup-callback .action-feedback__p, .popup-registation .action-feedback__p {
+    width: 430px;
+  }
+  .action-feedback__userphone-input, .action-feedback__username-input, .action-feedback__date-input {
+    width: 430px;
+  }
+  .action-feedback__userphone-input, .action-feedback__username-input, .action-feedback__date-input, .action-feedback__btn {
+    width: 430px;
+  }
+  .action-feedback__userphone-input, .action-feedback__username-input, .action-feedback__date-input {
+    font-size: 25px;
+  }
 }
