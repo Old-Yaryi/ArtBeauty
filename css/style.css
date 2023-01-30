@@ -2451,7 +2451,7 @@ header a {
 }
 
 .footer-item {
-  margin: 0 auto;
+  margin: 0 auto 30px;
   background-color: #D1AE8E;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2620,6 +2620,28 @@ header a {
   width: 225px;
   text-align: left;
   cursor: pointer;
+}
+
+.footer__copiryght {
+  text-align: center;
+  font-family: 'Montserrat';
+}
+
+.footer__copiryght p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #DCD5CE;
+  text-transform: none;
+}
+
+.footer__copiryght a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #DCD5CE;
 }
 
 .popup-callback, .popup-registation {
