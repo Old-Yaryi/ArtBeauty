@@ -3562,7 +3562,7 @@ header {
       &-controls {
         justify-content: center;
         column-gap: 70%;
-        margin-top: -40%;
+        margin-top: -50%;
       }
       &-img {
         width: 80%;
@@ -3582,6 +3582,9 @@ header {
       }
       &__img {
         width: 55%;
+      }
+      &__unit {
+        font-size: 75px;
       }
     }
   }

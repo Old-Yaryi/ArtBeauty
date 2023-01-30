@@ -4105,7 +4105,7 @@ header a {
             justify-content: center;
     -webkit-column-gap: 70%;
             column-gap: 70%;
-    margin-top: -40%;
+    margin-top: -50%;
   }
   .exclusive__slider-img {
     width: 80%;
@@ -4123,6 +4123,9 @@ header a {
   }
   .action-title__img {
     width: 55%;
+  }
+  .action-title__unit {
+    font-size: 75px;
   }
   .advantage {
     padding: 40px 0 55px;
