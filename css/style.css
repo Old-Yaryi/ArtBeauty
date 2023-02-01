@@ -4632,5 +4632,60 @@ header a {
   .exclusive__popup-link a::before {
     top: -1px;
   }
+  .price__title {
+    margin-bottom: 25px;
+  }
+  .price__title h2 {
+    font-size: 37px;
+    width: 200px;
+  }
+  .price-service {
+    font-size: 18px;
+    margin-left: 46px;
+  }
+  .price-inner__after {
+    margin-left: 0;
+  }
+  .price-inner__after::after {
+    width: 30px;
+  }
+  .price-inner__text {
+    margin-left: 46px;
+  }
+  .price .inner.price-photo {
+    width: 100%;
+    left: 0;
+  }
+  .price .inner.price-photo::before {
+    width: 100%;
+    bottom: 65px;
+  }
+  .price-photo__inner img {
+    width: 60vw;
+  }
+  .price-photo__before {
+    left: 45%;
+  }
+  .price-photo__before h5 {
+    font-size: 50px;
+  }
+  .price-photo__item:nth-last-child(6) {
+    margin-top: 100px;
+  }
+  .price-photo__item:nth-last-child(5) {
+    margin-top: 160px;
+  }
+  .price-photo__item:nth-last-child(4) {
+    margin-top: 240px;
+  }
+  .price-photo__item:nth-last-child(3) {
+    margin-top: 380px;
+  }
+  .price-photo__item:nth-last-child(2) {
+    margin-top: 330px;
+  }
+  .price-photo__item:nth-last-child(1) {
+    margin-top: 410px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

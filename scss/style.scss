@@ -4083,4 +4083,72 @@ header {
       }
     }
   }
+  .price {
+    &__title {
+      margin-bottom: 25px;
+      & h2 {
+        font-size: 37px;
+        width: 200px;
+      }
+    }
+    &-service {
+      font-size: 18px;
+      margin-left: 46px;
+    }
+    &-inner {
+      &__after{
+        margin-left: 0;
+        &::after {
+          width: 30px;
+        }
+      }
+      &__text {
+        margin-left: 46px;
+      }
+    }
+    & .inner {
+      &.price-photo {
+        width: 100%;
+        left: 0;
+        &::before {
+          width: 100%;
+          bottom: 65px;
+        }
+        
+      }
+    }
+    &-photo {
+      &__inner {
+        & img {
+          width: 60vw;
+        }
+      }
+      &__before {
+        left: 45%;
+        & h5 {
+          font-size: 50px;
+        }
+      }
+      &__item{
+        &:nth-last-child(6) {
+          margin-top: 100px;
+        }
+        &:nth-last-child(5) {
+          margin-top: 160px;
+        }
+        &:nth-last-child(4) {
+          margin-top: 240px;
+        }
+        &:nth-last-child(3) {
+          margin-top: 380px;
+        }
+        &:nth-last-child(2) {
+          margin-top: 330px;
+        }
+        &:nth-last-child(1) {
+          margin-top: 410px;
+        }
+      }
+    }
+  }
 }
