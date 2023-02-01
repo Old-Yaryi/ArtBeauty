@@ -4497,6 +4497,9 @@ header a {
   .benefit-title {
     font-size: 16px;
   }
+  .example {
+    padding-bottom: 230px;
+  }
   .example .texture {
     left: -240px;
     top: -330px;
@@ -4541,6 +4544,93 @@ header a {
   }
   .example__text {
     font-size: 14px;
+  }
+  .example .join {
+    bottom: -500px;
+    left: 80px;
+  }
+  .exclusive {
+    height: 690px;
+  }
+  .exclusive h2 {
+    font-size: 37px;
+  }
+  .exclusive-ellipse {
+    left: 15px;
+  }
+  .exclusive__slider-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .exclusive__slider-inner .slick-list {
+    margin-left: 0;
+  }
+  .exclusive__slider-inner .slick-track .slick-center img {
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+  }
+  .exclusive__slider-img {
+    width: 100%;
+    padding: 0;
+  }
+  .exclusive__slider-controls {
+    width: 78%;
+    margin-left: 0;
+    -webkit-column-gap: 45%;
+            column-gap: 45%;
+    margin-top: -42%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .exclusive__slider-controls .slick-arrow {
+    height: 40px;
+    width: 40px;
+    margin-left: 0;
+  }
+  .exclusive__popup {
+    bottom: 22%;
+    padding: 30px 20px;
+  }
+  .exclusive__popup-close_x {
+    top: -10px;
+  }
+  .exclusive__popup-title h3 {
+    font-size: 3vw;
+  }
+  .exclusive__popup-sale {
+    padding-right: 8px;
+  }
+  .exclusive__popup-sale p {
+    font-size: 13vw;
+  }
+  .exclusive__popup-sale::before {
+    height: 75px;
+  }
+  .exclusive__popup-inner {
+    margin-left: 8px;
+    padding-left: 8px;
+  }
+  .exclusive__popup-text {
+    font-size: 7vw;
+  }
+  .exclusive__popup-subtext {
+    font-size: 4vw;
+  }
+  .exclusive__popup-link a {
+    font-size: 3vw;
+  }
+  .exclusive__popup-link a::before {
+    top: -1px;
   }
 }
 /*# sourceMappingURL=style.css.map */
