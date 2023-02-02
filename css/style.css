@@ -4759,5 +4759,43 @@ header a {
   .team-inner__dermatolog .team-inner__unit {
     text-align: right;
   }
+  .tour__title h2 {
+    font-size: 37px;
+  }
+  .tour__categories-inner {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .tour-slider {
+    margin-left: 0;
+  }
+  .tour-slider .slick-list {
+    margin-left: -20px;
+    width: 100%;
+  }
+  .tour-slider .slick-track {
+    -webkit-column-gap: 0;
+            column-gap: 0;
+  }
+  .tour-slider__inner.slick-center img {
+    margin-left: -160px;
+    width: 90%;
+  }
+  .tour-slider__img {
+    width: 90%;
+  }
+  .tour-slider__controls-cabinet, .tour-slider .tour-slider__controls-recepton, .tour-slider .tour-slider__controls-hall {
+    right: auto;
+    -webkit-column-gap: 70%;
+            column-gap: 70%;
+    top: 45%;
+  }
+  .tour-slider__controls-cabinet .slick-arrow, .tour-slider .tour-slider__controls-recepton .slick-arrow, .tour-slider .tour-slider__controls-hall .slick-arrow {
+    width: 40px;
+    height: 40px;
+  }
+  .tour-slider__categories h5 {
+    font-size: 65px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
