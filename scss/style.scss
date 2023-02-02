@@ -4336,7 +4336,12 @@ header {
         }
       }
     }
-    
+  }
+  .footer {
+    padding: 30px 10px;
+    &__item {
+      padding: 30px 0 45px;
+    }
   }
 }
 

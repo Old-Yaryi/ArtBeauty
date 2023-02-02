@@ -4848,5 +4848,11 @@ header a {
   .clients-slider__controls .slick-arrow.slick-prev, .clients-slider__controls .slick-arrow.slick-next {
     background-size: 30%;
   }
+  .footer {
+    padding: 30px 10px;
+  }
+  .footer__item {
+    padding: 30px 0 45px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
