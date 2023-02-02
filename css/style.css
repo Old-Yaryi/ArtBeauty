@@ -4741,5 +4741,10 @@ header a {
   .action-feedback__userphone-input:focus + .action-feedback__username-placeholder, .action .action-feedback__userphone-input:not(:placeholder-shown) + .action-feedback__username-placeholder, .action .action-feedback__username-input:focus + .action-feedback__username-placeholder, .action .action-feedback__username-input:not(:placeholder-shown) + .action-feedback__username-placeholder, .action .action-feedback__date-input:focus + .action-feedback__username-placeholder, .action .action-feedback__date-input:not(:placeholder-shown) + .action-feedback__username-placeholder {
     font-size: 8px;
   }
+  .advantage h2 {
+    font-size: 37px;
+    width: 320px;
+    margin-bottom: 40px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
