@@ -4687,5 +4687,59 @@ header a {
   .price-photo__item:nth-last-child(1) {
     margin-top: 410px;
   }
+  .action-title__item {
+    font-size: 43px;
+    width: 300px;
+  }
+  .action-title__img {
+    top: auto;
+    width: 175px;
+    bottom: 123px;
+  }
+  .action-feedback__form h3 {
+    font-size: 29px;
+    width: 290px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .action-feedback__form_small {
+    font-size: 16px;
+  }
+  .action-feedback__sale {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 10px;
+    margin-bottom: 20px;
+  }
+  .action-feedback__timer-item {
+    -webkit-column-gap: 40px;
+            column-gap: 40px;
+  }
+  .action-feedback__timer-value {
+    font-size: 13vw;
+  }
+  .action-feedback__timer-value::before {
+    right: -20px;
+  }
+  .action-feedback__btn {
+    margin-bottom: 35px;
+  }
+  .action-feedback__userphone-input, .action .action-feedback__username-input, .action .action-feedback__date-input, .action .action-feedback__userphone-input, .action .action-feedback__btn {
+    width: 290px;
+    height: 60px;
+    font-size: 16px;
+  }
+  .action-feedback__userphone-placeholder, .action .action-feedback__username-placeholder, .action .action-feedback__date-placeholder {
+    left: 25%;
+    top: 25%;
+  }
+  .action-feedback__userphone-placeholder, .action .action-feedback__username-placeholder, .action .action-feedback__date-placeholder {
+    font-size: 16px;
+  }
+  .action-feedback__userphone-input:focus + .action-feedback__username-placeholder, .action .action-feedback__userphone-input:not(:placeholder-shown) + .action-feedback__username-placeholder, .action .action-feedback__username-input:focus + .action-feedback__username-placeholder, .action .action-feedback__username-input:not(:placeholder-shown) + .action-feedback__username-placeholder, .action .action-feedback__date-input:focus + .action-feedback__username-placeholder, .action .action-feedback__date-input:not(:placeholder-shown) + .action-feedback__username-placeholder {
+    font-size: 8px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

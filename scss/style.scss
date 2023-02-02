@@ -4151,4 +4151,67 @@ header {
       }
     }
   }
+  .action {
+    &-title { 
+      &__item {
+        font-size: 43px;
+        width: 300px;
+      }
+      &__img {
+        top: auto;
+        width: 175px;
+        bottom: 123px;
+      }
+    }
+    &-feedback {
+      &__form {
+        & h3 {
+          font-size: 29px;
+          width: 290px;
+          text-align: center;
+          margin-bottom: 15px;
+        }
+        &_small {
+          font-size: 16px;
+        }
+      }
+      &__sale {
+        flex-direction: column;
+        row-gap: 10px;
+        margin-bottom: 20px;
+      }
+      &__timer {
+        &-item {
+          column-gap: 40px;
+        }
+        &-value {
+          font-size: 13vw;
+          &::before {
+            right: -20px;
+
+          }
+        }
+      }
+      &__btn {
+        margin-bottom: 35px;
+      }
+    }
+    &-feedback__userphone-input, .action-feedback__username-input, .action-feedback__date-input, .action-feedback__userphone-input, .action-feedback__btn {
+      width: 290px;
+      height: 60px;
+      font-size: 16px;
+    }
+    &-feedback__userphone-placeholder, .action-feedback__username-placeholder, .action-feedback__date-placeholder {
+      left: 25%;
+      top: 25%;
+    }
+    &-feedback__userphone-placeholder, .action-feedback__username-placeholder, .action-feedback__date-placeholder {
+      font-size: 16px;
+    }
+    &-feedback__userphone-input:focus + .action-feedback__username-placeholder, .action-feedback__userphone-input:not(:placeholder-shown) + .action-feedback__username-placeholder, .action-feedback__username-input:focus + .action-feedback__username-placeholder, .action-feedback__username-input:not(:placeholder-shown) + .action-feedback__username-placeholder, .action-feedback__date-input:focus + .action-feedback__username-placeholder, .action-feedback__date-input:not(:placeholder-shown) + .action-feedback__username-placeholder {
+      font-size: 8px;
+    }
+  }
 }
+
+
