@@ -4305,6 +4305,39 @@ header {
       }
     }
   }
+  .clients {
+    position: relative;
+    &-header {
+      &__title {
+        margin-right: 0;
+        & h2 {
+          font-size: 37px;
+        }
+      }
+    }
+    &-slider {
+      pointer-events: none;
+      &__item {
+        border-right: none;
+      }
+      &__controls {
+        position: absolute;
+        width: 100%;
+        justify-content: center;
+        column-gap: 70%;
+        left: 0;
+        bottom: 45%;
+        & .slick-arrow {
+          height: 40px;
+          width: 40px; 
+          &.slick-prev, &.slick-next {
+            background-size: 30%;
+          }
+        }
+      }
+    }
+    
+  }
 }
 
 

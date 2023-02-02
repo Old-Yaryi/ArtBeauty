@@ -4815,5 +4815,38 @@ header a {
   .tour-slider__categories h5 {
     font-size: 65px;
   }
+  .clients {
+    position: relative;
+  }
+  .clients-header__title {
+    margin-right: 0;
+  }
+  .clients-header__title h2 {
+    font-size: 37px;
+  }
+  .clients-slider {
+    pointer-events: none;
+  }
+  .clients-slider__item {
+    border-right: none;
+  }
+  .clients-slider__controls {
+    position: absolute;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-column-gap: 70%;
+            column-gap: 70%;
+    left: 0;
+    bottom: 45%;
+  }
+  .clients-slider__controls .slick-arrow {
+    height: 40px;
+    width: 40px;
+  }
+  .clients-slider__controls .slick-arrow.slick-prev, .clients-slider__controls .slick-arrow.slick-next {
+    background-size: 30%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

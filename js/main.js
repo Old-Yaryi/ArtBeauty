@@ -197,6 +197,10 @@ $(document).ready(function(){
         breakpoint: 992,
         settings: {
           slidesToShow: 3
+        },
+        breakpoint: 577,
+        settings: {
+          slidesToShow: 1
         }
       }]
     });
