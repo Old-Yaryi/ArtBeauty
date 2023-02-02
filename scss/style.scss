@@ -4162,6 +4162,9 @@ header {
         width: 175px;
         bottom: 123px;
       }
+      &__unit {
+        font-size: 50px;
+      }
     }
     &-feedback {
       &__form {
@@ -4173,6 +4176,15 @@ header {
         }
         &_small {
           font-size: 16px;
+        }
+        & .action-feedback__h3 {
+          font-size: 29px;
+          width: 223px;
+        }
+        & .action-feedback__p {
+          width: 290px;
+          font-size: 14px;
+          margin-bottom: 25px;
         }
       }
       &__sale {
@@ -4210,6 +4222,14 @@ header {
     }
     &-feedback__userphone-input:focus + .action-feedback__username-placeholder, .action-feedback__userphone-input:not(:placeholder-shown) + .action-feedback__username-placeholder, .action-feedback__username-input:focus + .action-feedback__username-placeholder, .action-feedback__username-input:not(:placeholder-shown) + .action-feedback__username-placeholder, .action-feedback__date-input:focus + .action-feedback__username-placeholder, .action-feedback__date-input:not(:placeholder-shown) + .action-feedback__username-placeholder {
       font-size: 8px;
+    }
+    &.action__second {
+      & .action-feedback {
+        padding: 50px 0;
+      }
+      & .action-feedback__btn {
+        margin-bottom: 0;
+      }
     }
   }
   .advantage {
