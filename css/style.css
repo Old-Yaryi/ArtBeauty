@@ -4903,8 +4903,24 @@ header a {
   .container {
     padding: 0 15px;
   }
+  .join-ellips {
+    width: 80px;
+  }
+  .join-ellips__small {
+    width: 80px;
+  }
+  .join__link {
+    top: 20px;
+  }
+  .join__link-img {
+    width: 15px;
+  }
+  .join__link-action {
+    width: 205px;
+    font-size: 14px;
+  }
   .header {
-    background-position-x: -420px;
+    background-position-x: -290px;
   }
   .header__burger-img {
     width: 30px;
@@ -4916,6 +4932,43 @@ header a {
   }
   .header__burger.active .header__burger-img::before {
     width: 30px;
+  }
+  .header__title h1 {
+    margin-bottom: 10px;
+  }
+  .header__title p {
+    font-size: 12px;
+    width: 170px;
+  }
+  .header__title .join {
+    height: 100px;
+  }
+  .header__mobile {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-bottom: 125px;
+  }
+  .header__mobile-top {
+    padding: 0;
+  }
+  .header__mobile .header__top-title {
+    display: none;
+  }
+  .header__mobile-menu .header__top-adress {
+    margin-left: 30px;
+  }
+  .header__mobile-menu .header__top-call_before {
+    right: -57px;
+  }
+  .header__texture-cell {
+    left: -100px;
+    width: 200px;
+    top: -120px;
+  }
+  .header__texture-ellipse {
+    top: 175px;
+    left: -20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

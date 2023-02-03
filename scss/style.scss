@@ -4395,8 +4395,26 @@ header {
   .container {
     padding: 0 15px;
   }
+  .join {
+    &-ellips {
+      width: 80px;
+      &__small {
+        width: 80px;
+      }
+    }
+    &__link {
+      top: 20px;
+      &-img {
+        width: 15px;
+      }
+      &-action {
+        width: 205px;
+        font-size: 14px;
+      }
+    }
+  }
   .header {
-    background-position-x: -420px;
+    background-position-x: -290px;
     &__burger {
       &-img {
         width: 30px;
@@ -4408,6 +4426,47 @@ header {
       }
       &.active .header__burger-img::before {
         width: 30px;
+      }
+    }
+    &__title {
+      & h1 {
+        margin-bottom: 10px;
+      }
+      & p {
+        font-size: 12px;
+        width: 170px;
+      }
+      & .join {
+        height: 100px;
+      }
+    }
+    &__mobile {
+      align-items: flex-start;
+      padding-bottom: 125px;
+      &-top {
+        padding: 0;
+      }
+      & .header__top-title {
+        display: none;
+      }
+      &-menu {
+        & .header__top-adress {
+          margin-left: 30px;
+        }
+        & .header__top-call_before {
+          right: -57px;
+        }
+      }
+    }
+    &__texture {
+      &-cell {
+        left: -100px;
+        width: 200px;
+        top: -120px;
+      }
+      &-ellipse {
+        top: 175px;
+        left: -20px;
       }
     }
   }
