@@ -4898,4 +4898,24 @@ header a {
     font-size: 10px;
   }
 }
+
+@media (max-width: 416px) {
+  .container {
+    padding: 0 15px;
+  }
+  .header {
+    background-position-x: -420px;
+  }
+  .header__burger-img {
+    width: 30px;
+    right: 0;
+  }
+  .header__burger-img::before {
+    width: 15px;
+    top: 15px;
+  }
+  .header__burger.active .header__burger-img::before {
+    width: 30px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
