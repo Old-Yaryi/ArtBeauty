@@ -4970,6 +4970,9 @@ header a {
     top: 175px;
     left: -40px;
   }
+  .problem {
+    padding-bottom: 0;
+  }
   .problem .texture {
     margin-left: -60px;
     margin-top: 340px;
@@ -5008,6 +5011,71 @@ header a {
   }
   .problem-block__text {
     width: 155px;
+    font-size: 14px;
+  }
+  .thread .texture {
+    margin-left: -40px;
+    margin-top: 280px;
+    width: 240px;
+  }
+  .thread__banner {
+    bottom: 45%;
+    left: 21%;
+  }
+  .thread .oval-left {
+    top: 410px;
+  }
+  .thread .inner.before::before {
+    width: 105%;
+    right: -15px;
+  }
+  .thread .inner.quote {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  .thread .inner.left {
+    width: 220px;
+  }
+  .thread .inner.right {
+    width: 220px;
+  }
+  .thread__subtitle {
+    font-size: 32px;
+    width: 220px;
+    margin-bottom: 10px;
+  }
+  .thread__inner-face {
+    width: 90%;
+  }
+  .thread__info {
+    width: 280px;
+  }
+  .thread__info h3 {
+    width: 230px;
+  }
+  .thread__info p {
+    width: 220px;
+  }
+  .thread__photo {
+    margin-bottom: 120px;
+  }
+  .thread__photo_2 {
+    width: 108%;
+  }
+  .thread__photo_3 {
+    width: 67%;
+    right: -15px;
+  }
+  .thread__quote::after {
+    top: -10px;
+  }
+  .thread .item:last-child {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .thread__description p {
     font-size: 14px;
   }
 }

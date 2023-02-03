@@ -4471,6 +4471,7 @@ header {
     }
   }
   .problem {
+    padding-bottom: 0;
     & .texture {
       margin-left: -60px;
       margin-top: 340px;
@@ -4506,6 +4507,77 @@ header {
       }
       &__text {
         width: 155px;
+        font-size: 14px;
+      }
+    }
+  }
+  .thread {
+    & .texture {
+      margin-left: -40px;
+      margin-top: 280px;
+      width: 240px;
+    }
+    &__banner {
+      bottom: 45%;
+      left: 21%;
+    }
+    & .oval-left {
+      top: 410px;
+    }
+    & .inner {
+      &.before::before {
+        width: 105%;
+        right: -15px;
+      }
+      &.quote {
+        justify-content: end;
+      }
+      &.left {
+        width: 220px;
+      }
+      &.right {
+        width: 220px;
+      }
+    }
+    &__subtitle {
+      font-size: 32px;
+      width: 220px;
+      margin-bottom: 10px;
+    }
+    &__inner {
+      &-face {
+        width: 90%;
+      }
+    }
+    &__info {
+      width: 280px;
+      & h3 {
+        width: 230px;
+      }
+      & p {
+        width: 220px;
+      }
+    }
+    &__photo {
+      margin-bottom: 120px;
+    }
+    &__photo_2 {
+      width: 108%;
+    }
+    &__photo_3 {
+      width: 67%;
+      right: -15px;
+    }
+    &__quote {
+      &::after {
+        top: -10px;
+      }
+    }
+    & .item:last-child {
+      align-items: flex-end;
+    }
+    &__description {
+      & p {
         font-size: 14px;
       }
     }
