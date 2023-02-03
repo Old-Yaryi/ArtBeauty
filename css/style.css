@@ -4968,7 +4968,40 @@ header a {
   }
   .header__texture-ellipse {
     top: 175px;
+    left: -40px;
+  }
+  .problem .texture {
+    margin-left: -60px;
+    margin-top: 340px;
+    width: 240px;
+    height: 240px;
+  }
+  .problem__img {
+    text-align: right;
+  }
+  .problem__img img:first-child {
+    width: 88%;
+  }
+  .problem__img::after {
+    width: 267px;
     left: -20px;
+  }
+  .problem__img-problem {
+    left: 6px;
+    bottom: 12px;
+  }
+  .problem-subtitle {
+    margin-left: 30px;
+  }
+  .problem-block {
+    margin-left: 30px;
+  }
+  .problem-block__item img {
+    width: 35px;
+  }
+  .problem-block__text {
+    width: 155px;
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=style.css.map */
