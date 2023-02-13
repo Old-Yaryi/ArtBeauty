@@ -4582,6 +4582,20 @@ header {
       }
     }
   }
+  .how {
+    & .inner {
+      &.video {
+        &::after {
+          right: -15px;
+        }
+      }
+    }
+    &-video {
+      &__play {
+        left: 33%;
+      }
+    }
+  }
 }
 
 

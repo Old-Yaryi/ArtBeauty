@@ -5078,5 +5078,11 @@ header a {
   .thread__description p {
     font-size: 14px;
   }
+  .how .inner.video::after {
+    right: -15px;
+  }
+  .how-video__play {
+    left: 33%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
