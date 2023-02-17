@@ -4641,6 +4641,7 @@ header {
     }
   }
   .exclusive {
+    height: 540px;
     & h2 {
       margin-bottom: 35px;
     }
@@ -4650,6 +4651,64 @@ header {
     &__slider {
       &-controls {
         width: 75%;
+      }
+    }
+  }
+  .price {
+    margin-bottom: 150px;
+    &-inner {
+      &__text {
+        width: 205px;
+        font-size: 14px;
+      }
+      &__img {
+        &_slim {
+          width: 110px;
+        top: -65px;
+        left: 15px;
+        }
+        &_fat {
+          width: 92px;
+        }
+      }
+      &__sale {
+        font-size: 17px;
+        margin-top: -20px;
+      }
+    }
+    &-service {
+      font-size: 16px;
+    }
+    &-service.price-active + .price-inner {
+      margin-bottom: 310px;
+    }
+    &-photo{
+      &__inner {
+        & img {
+          width: 250px;
+        }
+      }
+      &__before {
+        left: 15%;
+      }
+      &__item {
+        &:nth-last-child(6) {
+          margin-top: 75px;
+        }
+        &:nth-last-child(5) {
+          margin-top: 140px;
+        }
+        &:nth-last-child(4) {
+          margin-top: 220px;
+        }
+        &:nth-last-child(3) {
+          margin-top: 360px;
+        }
+      }
+    }
+    & .inner.price-block {
+      & .join {
+        bottom: -25px;
       }
     }
   }

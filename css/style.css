@@ -5128,6 +5128,9 @@ header a {
   .example .join__link {
     left: 25px;
   }
+  .exclusive {
+    height: 540px;
+  }
   .exclusive h2 {
     margin-bottom: 35px;
   }
@@ -5136,6 +5139,52 @@ header a {
   }
   .exclusive__slider-controls {
     width: 75%;
+  }
+  .price {
+    margin-bottom: 150px;
+  }
+  .price-inner__text {
+    width: 205px;
+    font-size: 14px;
+  }
+  .price-inner__img_slim {
+    width: 110px;
+    top: -65px;
+    left: 15px;
+  }
+  .price-inner__img_fat {
+    width: 92px;
+  }
+  .price-inner__sale {
+    font-size: 17px;
+    margin-top: -20px;
+  }
+  .price-service {
+    font-size: 16px;
+  }
+  .price-service.price-active + .price-inner {
+    margin-bottom: 310px;
+  }
+  .price-photo__inner img {
+    width: 250px;
+  }
+  .price-photo__before {
+    left: 15%;
+  }
+  .price-photo__item:nth-last-child(6) {
+    margin-top: 75px;
+  }
+  .price-photo__item:nth-last-child(5) {
+    margin-top: 140px;
+  }
+  .price-photo__item:nth-last-child(4) {
+    margin-top: 220px;
+  }
+  .price-photo__item:nth-last-child(3) {
+    margin-top: 360px;
+  }
+  .price .inner.price-block .join {
+    bottom: -25px;
   }
 }
 /*# sourceMappingURL=style.css.map */
