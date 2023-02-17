@@ -4792,7 +4792,55 @@ header {
       }
     }
   }
-
+  .clients {
+    &-header__title {
+      margin-bottom: 25px;
+    }
+    &-slider__text {
+      margin-bottom: 15px;
+    }
+  }
+  .footer {
+    
+    padding: 15px 0 0;
+    & p {
+      font-size: 18px;
+    }
+    &-item {
+      padding: 30px 0px 30px;
+      margin-bottom: 10px;
+      &__head {
+        width: 288px;
+        font-size: 10px;
+      }
+      &__contacts-before {
+        top: 0;
+        right: 50px;
+      }
+      &__logo {
+        margin-bottom: -15px;
+      }
+      &__menu {
+        width: 288px;
+      }
+      &__contacts {
+        width: 288px;
+      }
+      &__phone {
+        width: 288px;
+        padding-top: 25px;
+      }
+    }
+    &__copiryght-item {
+      & p {
+        font-size: 12px;
+      }
+      & a {
+        font-size: 12px;
+      }
+    }
+  }
+  
 }
 
 
