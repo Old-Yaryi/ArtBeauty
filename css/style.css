@@ -5218,6 +5218,12 @@ header a {
     width: 295px;
     height: 65px;
   }
+  .action.action__second .action-title__item {
+    margin-left: -5%;
+  }
+  .action.action__second .action-feedback {
+    padding-top: 40px;
+  }
   .advantage h2 {
     font-size: 34px;
     width: 289px;

@@ -4745,6 +4745,14 @@ header {
       width: 295px;
       height: 65px;
     }
+    &.action__second {
+      & .action-title__item {
+        margin-left: -5%;
+      }
+      & .action-feedback {
+        padding-top: 40px;
+      }
+    }
   }
   .advantage {
     & h2 {
@@ -4784,6 +4792,7 @@ header {
       }
     }
   }
+
 }
 
 
