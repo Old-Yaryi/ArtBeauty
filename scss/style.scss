@@ -4596,6 +4596,46 @@ header {
       }
     }
   }
+  .benefit {
+    padding-top: 50px;
+    & h2 {
+      line-height: 110%;
+    }
+    &-img {
+      width: 47px;
+      margin-bottom: 15px;
+    }
+    &-title {
+      margin-bottom: 7px;
+    }
+    &-text {
+      width: 288px;
+    }
+  }
+  .example {
+    & .texture {
+      left: 0;
+      top: -85px;
+      width: 288px;
+    }
+    &__text {
+      width: 250px;
+    }
+    &__slider {
+      width: 300px;
+    }
+    &__after {
+      left: 0;
+      bottom: 20px;
+    }
+    & .join{
+      bottom: -430px;
+      left: 35px;
+      &__link {
+      left: 25px;
+      }
+    }
+  }
 }
 
 

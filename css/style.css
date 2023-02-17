@@ -5084,5 +5084,43 @@ header a {
   .how-video__play {
     left: 33%;
   }
+  .benefit {
+    padding-top: 50px;
+  }
+  .benefit h2 {
+    line-height: 110%;
+  }
+  .benefit-img {
+    width: 47px;
+    margin-bottom: 15px;
+  }
+  .benefit-title {
+    margin-bottom: 7px;
+  }
+  .benefit-text {
+    width: 288px;
+  }
+  .example .texture {
+    left: 0;
+    top: -85px;
+    width: 288px;
+  }
+  .example__text {
+    width: 250px;
+  }
+  .example__slider {
+    width: 300px;
+  }
+  .example__after {
+    left: 0;
+    bottom: 20px;
+  }
+  .example .join {
+    bottom: -430px;
+    left: 35px;
+  }
+  .example .join__link {
+    left: 25px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
