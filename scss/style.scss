@@ -953,6 +953,7 @@ header {
     position: absolute;
     bottom: -90px;
     left: 75px;
+    pointer-events: none;
     & h5 {
       font-family: 'Quente Script';
       font-size: 92px;

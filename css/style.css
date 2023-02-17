@@ -1192,6 +1192,7 @@ header a {
   position: absolute;
   bottom: -90px;
   left: 75px;
+  pointer-events: none;
 }
 
 .example__after h5 {
