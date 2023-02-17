@@ -5237,5 +5237,20 @@ header a {
   .advantage__inner-text {
     font-size: 14px;
   }
+  .team-inner__dermatolog, .team .team-inner__cosmetolog-1, .team .team-inner__cosmetolog-2 {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .team-inner__dermatolog .team-inner__unit {
+    text-align: left;
+    width: 288px;
+  }
+  .team-inner__cosmetolog-1 .team-inner__unit {
+    width: 286px;
+  }
+  .team-inner__cosmetolog-1::after {
+    right: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

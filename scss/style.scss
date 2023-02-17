@@ -4767,6 +4767,23 @@ header {
       }
     }
   }
+  .team {
+    &-inner__dermatolog, .team-inner__cosmetolog-1, .team-inner__cosmetolog-2 {
+      align-items: flex-start;
+    }
+    &-inner__dermatolog .team-inner__unit {
+      text-align: left;
+      width: 288px;
+    }
+    &-inner__cosmetolog-1{
+      & .team-inner__unit {
+        width: 286px;
+      }
+      &::after {
+        right: 0;
+      }
+    }
+  }
 }
 
 
