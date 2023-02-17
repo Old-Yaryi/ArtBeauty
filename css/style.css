@@ -5100,6 +5100,9 @@ header a {
   .benefit-text {
     width: 288px;
   }
+  .example {
+    padding-bottom: 120px;
+  }
   .example .texture {
     left: 0;
     top: -85px;
@@ -5111,6 +5114,9 @@ header a {
   .example__slider {
     width: 300px;
   }
+  .example__slider-controls {
+    width: 100%;
+  }
   .example__after {
     left: 0;
     bottom: 20px;
@@ -5121,6 +5127,15 @@ header a {
   }
   .example .join__link {
     left: 25px;
+  }
+  .exclusive h2 {
+    margin-bottom: 35px;
+  }
+  .exclusive-ellipse {
+    display: none;
+  }
+  .exclusive__slider-controls {
+    width: 75%;
   }
 }
 /*# sourceMappingURL=style.css.map */
