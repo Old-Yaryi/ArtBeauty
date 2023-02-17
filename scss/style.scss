@@ -4746,6 +4746,27 @@ header {
       height: 65px;
     }
   }
+  .advantage {
+    & h2 {
+      font-size: 34px;
+      width: 289px;
+      margin-left: -3px;
+    }
+    &__inner {
+      margin-bottom: 35px;
+      &-img {
+        width: 41px;
+        margin-bottom: 15px;
+      }
+      &-title {
+        font-size: 16px;
+        margin-bottom: 7px;
+      }
+      &-text {
+        font-size: 14px;
+      }
+    }
+  }
 }
 
 
