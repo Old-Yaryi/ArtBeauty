@@ -5186,5 +5186,37 @@ header a {
   .price .inner.price-block .join {
     bottom: -25px;
   }
+  .action-title {
+    padding: 40px 0 60px 0;
+  }
+  .action-title__item {
+    font-size: 37px;
+    line-height: 185%;
+  }
+  .action-title__img {
+    width: 143px;
+    bottom: 110px;
+  }
+  .action-feedback {
+    padding-top: 35px;
+  }
+  .action-feedback__timer {
+    margin-bottom: 40px;
+  }
+  .action-feedback__timer p {
+    font-size: 12px;
+  }
+  .action-feedback__timer-param {
+    font-size: 12px;
+  }
+  .action-feedback__timer-item {
+    -webkit-column-gap: 36px;
+            column-gap: 36px;
+  }
+  .action .action-feedback__btn {
+    font-size: 14px;
+    width: 295px;
+    height: 65px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

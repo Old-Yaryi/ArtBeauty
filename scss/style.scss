@@ -4712,6 +4712,40 @@ header {
       }
     }
   }
+  .action {
+    &-title {
+      padding: 40px 0 60px 0;
+      &__item {
+        font-size: 37px;
+        line-height: 185%;
+      }
+      &__img {
+        width: 143px;
+        bottom: 110px;
+      }
+    }
+    &-feedback {
+      padding-top: 35px;
+      &__timer {
+        margin-bottom: 40px;
+        & p {
+          font-size: 12px;
+        }
+        &-param {
+          font-size: 12px;
+        }
+        &-item {
+          column-gap: 36px;
+        }
+      }
+      
+    }
+    & .action-feedback__btn {
+      font-size: 14px;
+      width: 295px;
+      height: 65px;
+    }
+  }
 }
 
 
