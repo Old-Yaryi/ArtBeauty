@@ -5113,6 +5113,7 @@ header a {
   }
   .example__slider {
     width: 300px;
+    overscroll-behavior-x: none;
   }
   .example__slider-controls {
     width: 100%;
@@ -5127,6 +5128,9 @@ header a {
   }
   .example .join__link {
     left: 25px;
+  }
+  .example .dragger {
+    margin-top: 100px;
   }
   .exclusive {
     height: 540px;
@@ -5300,6 +5304,9 @@ header a {
   }
   .footer__copiryght-item a {
     font-size: 12px;
+  }
+  .popup-callback_close, .popup-registation_close {
+    right: 45px;
   }
 }
 /*# sourceMappingURL=style.css.map */
