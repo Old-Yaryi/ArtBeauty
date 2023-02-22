@@ -913,7 +913,6 @@ header {
       top: 45%;
       width: 90%;
       margin-top: -25px;
-
       & .slick-arrow {
         height: 100px;
         width: 100px;
@@ -946,7 +945,6 @@ header {
   & .dragger{
     pointer-events: none;
     margin-top: 55px;
-
   }
   &__after {
     z-index: 2;
@@ -4847,6 +4845,14 @@ header {
   }
   .popup-callback_close, .popup-registation_close {
     right: 45px;
+  }
+  .popup-callback, .popup-registation {
+    & .action-feedback__btn {
+      width: 295px;
+    }
+  }
+  .action-feedback__date {
+    border: none;
   }
 }
 

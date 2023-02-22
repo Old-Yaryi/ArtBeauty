@@ -98,7 +98,6 @@ $(document).ready(function(){
         }
       }]
   });
-
   // --************PriceList**
   $(function(){
     let service = $('.price-service');
@@ -213,7 +212,6 @@ $(document).ready(function(){
     })
   });  
 });
-
 //// ***********AnimationLine************////
 function onEntry(entry) {
   entry.forEach(change => {
@@ -227,7 +225,6 @@ let options = {
   rootMargin: '0px 0px -300px 0px' };
 let observer = new IntersectionObserver(onEntry, options);
 let elements = document.querySelectorAll('.line');
-
 for (let elm of elements) {
   observer.observe(elm);
 }
@@ -238,7 +235,7 @@ close.addEventListener('click', function(){
   popup.classList.toggle('close')
 });
 // *************CounterAction***************
-const endDate = new Date('march 01 2023 00:00:00'); //дата окончания акции
+const endDate = new Date('may 01 2023 00:00:00'); //дата окончания акции
 function counterAction() {
   const currentDate = new Date();
   const remainDate = endDate - currentDate;
@@ -250,7 +247,6 @@ function counterAction() {
   const hoursAfter = Math.floor(remainDate / 1000 / 60 / 60 ) % 24;
   const minAfter = Math.floor(remainDate / 1000 / 60 ) % 60;
   const secAfter = Math.floor(remainDate / 1000 ) % 60;
-
   days.innerText = daysAfter;
   hours.innerText = hoursAfter < 10 ? '0' + hoursAfter : hoursAfter ;
   minutes.innerText = minAfter < 10 ? '0' + minAfter : minAfter ;
