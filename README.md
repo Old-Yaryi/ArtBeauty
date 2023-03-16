@@ -1,4 +1,6 @@
 # ArtBeauty
+![ArtBeauty](https://user-images.githubusercontent.com/90776708/225570445-47479b1b-64f7-4c03-b15f-caff37f6dfd9.png)
+
 ## Адаптивная (резиновая) верстка лэндинга услуги.
 ### Используются:
 * Препроцессор SAAS\SCSS.
